@@ -1,0 +1,365 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+
+    --fs-2xs: 1.2rem;
+    --fs-xs: 1.4rem;
+    --fs-sm: 1.6rem;
+    --fs-md: 2.0rem;
+    --fs-lg: 2.4rem;
+    --fs-xl: 2.8rem;
+    --fs-2xl: 3.2rem;
+    --fs-3xl: 3.6rem;
+    --fs-4xl: 4.5rem;
+    --fs-5xl: 5.6rem;
+
+    --lh-2xs: 1.8rem;
+    --lh-xs: 2.0rem;
+    --lh-sm: 2.3rem;
+    --lh-md: 3.0rem;
+    --lh-lg: 3.2rem;
+    --lh-xl: 3.6rem;
+    --lh-2xl: 4.0rem;
+    --lh-3xl: 4.3rem;
+    --lh-4xl: 5.4rem;
+    --lh-5xl: 6.7rem;
+
+    --ff-serif-display: "DM Serif Display", serif;
+    --ff-serif: "DM Serif Text", serif;
+    --ff-sans: "Funnel Sans", sans-serif;
+
+}
+
+body {
+    font-family: var(--ff-sans)
+}
+
+/* Display / Display Large */
+.display-large {
+    font-family: var(--ff-serif-display, "DM Serif Display");
+    font-size: var(--fs-5xl, 56px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-5xl, 67px);
+}
+
+.display-large-e {
+    font-family: var(--ff-serif-display, "DM Serif Display");
+    font-size: var(--fs-5xl, 56px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-5xl, 67px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
+    text-decoration-thickness: 10%;
+    /* 5.6px */
+    text-underline-offset: 5.5%;
+    /* 3.08px */
+    text-underline-position: from-font;
+}
+
+/* Display / Display medium */
+.display-medium {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-4xl, 45px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-4xl, 54px);
+    /* 120% */
+}
+
+.display-medium-e {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-4xl, 45px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-4xl, 54px);
+    /* 120% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
+    text-decoration-thickness: 10%;
+    /* 4.5px */
+    text-underline-offset: 5.5%;
+    /* 2.475px */
+    text-underline-position: from-font;
+}
+
+/* Display / Display small */
+.display-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xl, 32px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--lh-2xl, 40px);
+    /* 125% */
+}
+
+.display-small-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xl, 32px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--lh-2xl, 40px);
+    /* 125% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    /* 3.6px */
+    text-underline-offset: 5.5%;
+    /* 1.98px */
+    text-underline-position: from-font;
+}
+
+/* Headline / Headline large */
+.headline-large {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-2xl, 32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-2xl, 40px);
+    /* 100% */
+}
+
+.headline-large-e {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-2xl, 32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-2xl, 40px);
+    /* 100% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Headline / Headline medium */
+.headline-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xl, 36px);
+    /* 128.571% */
+}
+
+.headline-medium-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xl, 36px);
+    /* 128.571% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Headline / Headline small */
+.headline-small {
+    font-family: var(--Font-Family-Headline-small, "Funnel Sans");
+    font-size: var(--Font-Size-lg, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--Font-Line-height-lg, 32px);
+    /* 133.333% */
+}
+
+.headline-small-e {
+    font-family: var(--Font-Family-Headline-small, "Funnel Sans");
+    font-size: var(--Font-Size-lg, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--Font-Line-height-lg, 32px);
+    /* 133.333% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Title / Title large */
+.title-large {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xl, 36px);
+    /* 128.571% */
+}
+
+.title-large-e {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xl, 36px);
+    /* 128.571% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Title / Title medium */
+.title-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-md, 30px);
+    /* 150% */
+}
+
+.title-medium-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-md, 30px);
+    /* 150% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Title / Title small */
+.title-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-sm, 23px);
+    /* 143.75% */
+}
+
+.title-small-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-sm, 23px);
+    /* 143.75% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5.5%;
+    text-underline-position: from-font;
+}
+
+/* Body / Body large */
+.body-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-md, 30px);
+    /* 150% */
+}
+
+.body-large-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-md, 30px);
+    /* 150% */
+}
+
+/* Body / Body medium */
+.body-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-sm, 23px);
+    /* 150% */
+}
+
+.body-medium-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-sm, 23px);
+    /* 150% */
+}
+
+/* Body / Body small */
+.body-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+    /* 150% */
+}
+
+.body-small-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-xs, 20px);
+    /* 150% */
+}
+
+/* Label / Label large */
+.label-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-sm, 23px);
+    /* 143.75% */
+    text-transform: uppercase;
+}
+
+/* Label / Label medium */
+.label-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-xs, 20px);
+    /* 142.857% */
+    text-transform: uppercase;
+}
+
+/* Label / Label small */
+.label-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xs, 12px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-2xs, 18px);
+    /* 150% */
+    text-transform: uppercase;
+}
