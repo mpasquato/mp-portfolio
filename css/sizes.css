@@ -1,0 +1,23 @@
+:root {
+
+    --sz-none: 0;
+    --sz-min: 1px;
+    --sz-1: 2px;
+    --sz-2: 4px;
+    --sz-3: 8px;
+    --sz-4: 12px;
+    --sz-5: 16px;
+    --sz-6: 20px;
+    --sz-7: 24px;
+    --sz-8: 32px;
+    --sz-9: 40px;
+    --sz-10: 48px;
+    --sz-11: 64px;
+    --sz-12: 80px;
+    --sz-13: 96px;
+    --sz-14: 96px;
+    --sz-15: 120px;
+    --sz-16: 164px;
+    --sz-max: 999px;
+
+}

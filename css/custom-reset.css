@@ -1,0 +1,58 @@
+/* Apply border-box to everything + preventing it to be applied to unintended components */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Body setup */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Image setup */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* Setup form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Prevent animations to be used when requested by user */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+}
