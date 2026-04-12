@@ -9,3 +9,23 @@
     white-space: nowrap;
     border: 0;
 }
+
+.bg-dark {
+    background-color: hsl(var(--clr-grape-35));
+}
+
+.bg-light {
+    background-color: hsl(var(--clr-plump-purple-98));
+}
+
+.text-dark {
+    color: hsl(var(--clr-basic-black));
+}
+
+.text-light {
+    color: hsl(var(--clr-basic-white));
+}
+
+.text-accent {
+    color: hsl(var(--clr-bittersweet-60));
+}

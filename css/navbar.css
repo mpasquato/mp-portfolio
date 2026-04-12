@@ -1,0 +1,15 @@
+/* Desktop navbar */
+
+.navbar {
+    position: sticky;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+
+    color: hsl(var(--clr-basic-white));
+
+    background-color: hsl(var(--clr-grape-15));
+}
+
+/* Mobile Navbar */

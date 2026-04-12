@@ -1,0 +1,10 @@
+:root {
+
+    --elv-0: none;
+    --elv-1: var(--sz-none) var(--sz-2) var(--sz-2) -1px hsla(var(--clr-grape-5), 0.20);
+    --elv-2: var(--sz-none) 6px var(--sz-3) var(--sz-none) hsla(var(--clr-grape-5), 0.20), var(--sz-none) var(--sz-2) var(--sz-2) -1px hsla(var(--clr-grape-5), 0.30);
+    --elv-3: var(--sz-none) var(--sz-10) var(--sz-10) -6px hsla(var(--clr-grape-5), 0.40), var(--sz-none) var(--sz-6) var(--sz-6) -6px hsla(var(--clr-grape-5), 0.30);
+    --elv-4: var(--sz-3) var(--sz-3) var(--sz-none) var(--sz-none) hsla(var(--clr-grape-5), 1);
+    --elv-5: var(--sz-none) var(--sz-6) var(--sz-6) -4px hsla(var(--clr-grape-5), 0.35), var(--sz-none) var(--sz-2) var(--sz-2) -2px hsla(var(--clr-grape-5), 0.3);
+
+}
