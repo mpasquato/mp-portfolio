@@ -1,7 +1,9 @@
+/* Setting up font-size to be 10px for default browsers (to make rem calculations easier) */
 html {
     font-size: 62.5%;
 }
 
+/* Setting up variables */
 :root {
 
     --fs-2xs: 1.2rem;
@@ -32,9 +34,27 @@ html {
 
 }
 
+/* Default body text */
 body {
     font-family: var(--ff-sans)
 }
+
+/* 
+Typography explained
+Display styles: decorative/one shots (e.g. big hero text)
+Headline styles: big titles/Section titles
+Title styles: lower importance titles
+Body: body text
+Labels: labels...
+
+Style naming
+Base formatting:
+    .style-size
+Emphasized formatting:
+    .style-size-e
+Interactive elements (e.g. hover effects):
+    .style-size-int
+*/
 
 /* Display / Display medium */
 .display-medium {
@@ -70,7 +90,7 @@ body {
 }
 
 .headline-medium-e {
-    font-family: var(--ff-sans, "Funnel Sans");
+    font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-3xl, 36px);
     font-style: normal;
     font-weight: 400;
@@ -78,23 +98,23 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
 }
 
 /* Headline / Headline small - will be used, among other, for navigation */
-.headline-medium {
-    font-family: var(--ff-sans, "Funnel Sans");
+.headline-small {
+    font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-lg, 24px);
     font-style: normal;
     font-weight: 400;
     line-height: var(--lh-lg, 32px);
 }
 
-.headline-medium-e {
-    font-family: var(--ff-sans, "Funnel Sans");
+.headline-small-e {
+    font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-lg, 24px);
     font-style: normal;
     font-weight: 400;
@@ -102,11 +122,59 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
 }
+
+.headline-small-int {
+    display: inline-block;
+    position: relative;
+
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-lg, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-lg, 32px);
+
+    transition: all .5s ease-out;
+
+}
+
+.headline-small-int::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: hsl(var(--clr-bittersweet-60));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .headline-small-int:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* .headline-small-int:hover {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-lg, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-lg, 32px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 6%;
+    text-underline-position: from-font;
+} */
 
 /* Title / Title large */
 .title-large {
@@ -126,7 +194,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
@@ -150,7 +218,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
@@ -174,7 +242,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: var(--clr-bittersweet-60);
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
@@ -236,8 +304,17 @@ body {
     font-family: var(--ff-sans, "Funnel Sans");
     font-size: var(--fs-sm, 16px);
     font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-sm, 23px);
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+}
+
+.label-large-int {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+    transition: color 0.25s ease-out;
 }
 
 /* Label / Label medium */

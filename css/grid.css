@@ -1,42 +1,16 @@
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
+/* Device sizes and containers' max width defined as variables */
+:root {
+    --dev-sm: 576px;
+    --dev-md: 768px;
+    --dev-lg: 992px;
+    --dev-xl: 1200px;
+    --dev-xxl: 1400px;
 
-.bg-dark {
-    background-color: hsl(var(--clr-grape-35));
-}
-
-.bg-light {
-    background-color: hsl(var(--clr-plump-purple-98));
-}
-
-.text-dark {
-    color: hsl(var(--clr-basic-black));
-}
-
-.text-light {
-    color: hsl(var(--clr-basic-white));
-}
-
-.text-accent {
-    color: hsl(var(--clr-bittersweet-60));
-}
-
-/* Custom margins and gutter for devices under 576px */
-.container {
-    --bs-gutter-x: 24px;
-}
-
-.row {
-    --bs-gutter-x: 24px;
+    --max-w-sm: 528px;
+    --max-w-md: 648px;
+    --max-w-lg: 872px;
+    --max-w-xl: 960px;
+    --max-w-xxl: 1160px;
 }
 
 /* Customise max-width and gutters between columns for other devices*/

@@ -29,6 +29,20 @@
 
 @font-face {
     font-family: "Funnel Sans";
+    src: url("../fonts/funnel-sans/funnel-sans_semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Funnel Sans";
+    src: url("../fonts/funnel-sans/funnel-sans_semibold-italic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Funnel Sans";
     src: url("../fonts/funnel-sans/funnel-sans_bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
