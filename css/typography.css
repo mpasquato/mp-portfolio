@@ -34,7 +34,7 @@ html {
 
 }
 
-/* Default body text */
+/* Default body font */
 body {
     font-family: var(--ff-sans)
 }
