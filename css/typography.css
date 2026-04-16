@@ -138,7 +138,7 @@ Interactive elements (e.g. hover effects):
     font-weight: 400;
     line-height: var(--lh-lg, 32px);
 
-    transition: all .5s ease-out;
+    transition: transform .5s ease-out;
 
 }
 
@@ -314,23 +314,17 @@ Interactive elements (e.g. hover effects):
     font-style: normal;
     font-weight: 500;
     line-height: var(--lh-xs, 20px);
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
     transition: color 0.3s ease-out;
 }
 
 .label-large-int:hover {
     color: hsl(var(--clr-bittersweet-50));
-    text-decoration-color: hsl(var(--clr-basic-black));
 }
 
 .label-large-int:active {
     color: hsl(var(--clr-bittersweet-40));
 }
+
 
 /* Label / Label medium */
 .label-medium {
