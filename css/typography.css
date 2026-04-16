@@ -153,7 +153,7 @@ Interactive elements (e.g. hover effects):
     left: 0;
     background-color: hsl(var(--clr-bittersweet-60));
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.3s ease-out;
   }
 
   .headline-small-int:hover::after {
@@ -304,7 +304,7 @@ Interactive elements (e.g. hover effects):
     font-family: var(--ff-sans, "Funnel Sans");
     font-size: var(--fs-sm, 16px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: var(--lh-xs, 20px);
 }
 
@@ -312,9 +312,24 @@ Interactive elements (e.g. hover effects):
     font-family: var(--ff-sans, "Funnel Sans");
     font-size: var(--fs-sm, 16px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: var(--lh-xs, 20px);
-    transition: color 0.25s ease-out;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+    transition: color 0.3s ease-out;
+}
+
+.label-large-int:hover {
+    color: hsl(var(--clr-bittersweet-50));
+    text-decoration-color: hsl(var(--clr-basic-black));
+}
+
+.label-large-int:active {
+    color: hsl(var(--clr-bittersweet-40));
 }
 
 /* Label / Label medium */

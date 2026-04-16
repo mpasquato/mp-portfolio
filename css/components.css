@@ -1,0 +1,55 @@
+/* Components */
+
+/* Button */
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sz-3);
+    padding: var(--sz-3) var(--sz-4);
+    border-radius: var(--sz-4);
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out, background-color 300ms ease-out;
+
+    @media screen and (max-width: 768px) {
+        min-width: 196px;
+    }
+}
+
+.button--primary--on-dark {
+    color: hsl(var(--clr-plump-purple-5));
+    background-color: hsl(var(--clr-bittersweet-60));
+}
+
+.button--secondary--on-dark {
+    color: hsl(var(--clr-plump-purple-5));
+    background-color: hsl(var(--clr-basic-white));
+}
+
+.button--primary--on-dark:hover, .button--secondary--on-dark:hover {
+    box-shadow: var(--elv-4);
+    transform: translate(calc(var(--sz-2)*(-1)), calc(var(--sz-2)*(-1)));
+}
+
+.button--primary--on-dark:active {
+    background-color: hsl(var(--clr-bittersweet-50));
+}
+
+.button--secondary--on-dark:active {
+    background-color: hsl(var(--clr-neutral-90));
+}
+
+.button--tertiary--on-dark {
+    color: hsl(var(--clr-bittersweet-60));
+    background-color: none;
+}
+
+.button__label {}
+
+.button__icon {
+    font-size: var(--sz-6);
+}
+
+.project-card {
+    display: grid;
+}

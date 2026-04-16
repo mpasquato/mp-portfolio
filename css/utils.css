@@ -30,67 +30,6 @@
     color: hsl(var(--clr-bittersweet-60));
 }
 
-/* Custom margins and gutter for devices under 576px */
-.container {
-    --bs-gutter-x: 24px;
-}
-
-.row {
-    --bs-gutter-x: 24px;
-}
-
-/* Customise max-width and gutters between columns for other devices*/
-/* Small devices */
-@media (min-width: 576px) {
-    .container {
-        max-width: 528px;
-    }
-
-    .row {
-        --bs-gutter-x: 24px;
-    }
-}
-
-/* Medium devices (>=768px) */
-@media (min-width: 768px) {
-    .container {
-        max-width: 648px;
-    }
-
-    .row {
-        --bs-gutter-x: 24px;
-    }
-}
-
-/* Large devices (>=992px) */
-@media (min-width: 992px) {
-    .container {
-        max-width: 872px;
-    }
-
-    .row {
-        --bs-gutter-x: 40px;
-    }
-}
-
-/* Extra large (>=1200px) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-
-    .row {
-        --bs-gutter-x: 80px;
-    }
-}
-
-/* XXL devices (≥1400px) */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1160px;
-    }
-
-    .row {
-        --bs-gutter-x: 80px;
-    }
+.text-center {
+    text-align: center;
 }
