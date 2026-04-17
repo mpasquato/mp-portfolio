@@ -1,4 +1,6 @@
-/* Elements */
+/* ELEMENTS */
+
+
 
 /* Button */
 
@@ -69,8 +71,19 @@
     text-decoration: none;
 }
 
-.button__icon {
-    font-size: var(--sz-6);
+
+
+/* Text link */
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sz-2);
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.text-link__label {
+
 }
 
 
@@ -85,6 +98,7 @@
     padding: var(--sz-2) var(--sz-3);
     border-radius: var(--sz-3);
 
+    color: hsl(var(--clr-basic-black));
     background-color: hsl(var(--clr-grape-80));
 
     transition: transform 300ms ease-out, box-shadow 300ms ease-out, background-color 300ms ease-out;

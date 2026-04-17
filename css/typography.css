@@ -321,7 +321,30 @@ Interactive elements (e.g. hover effects):
     color: hsl(var(--clr-bittersweet-50));
 }
 
-.label-large-int:active {
+.label-large-:active {
+    color: hsl(var(--clr-bittersweet-40));
+}
+
+.label-large-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xs, 20px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+    transition: all 0.3s ease-out;
+}
+
+.label-large-link:hover {
+    color: hsl(var(--clr-bittersweet-50));
+}
+
+.label-large-link:active {
     color: hsl(var(--clr-bittersweet-40));
 }
 

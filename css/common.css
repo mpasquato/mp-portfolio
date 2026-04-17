@@ -1,3 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover {
     cursor: pointer;
 }
+
+body {
+    background-color: hsl(var(--clr-grape-15));
+}
+
+footer {
+    padding-top: var(--sz-11);
+    padding-bottom: var(--sz-16);
+
+    background-color: hsl(var(--clr-grape-5));
+}
+
+.footer-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--sz-7);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    grid-column: span 1;
+    gap: var(--sz-4);
+}
+
+.footer-content__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sz-3);
+}
+

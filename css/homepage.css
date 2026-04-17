@@ -1,7 +1,33 @@
-body {
+/* HOMEPAGE */
+
+
+
+/* Adjust scroll margins for sections */
+
+#my-work {
+    scroll-margin-top: var(--sz-9);
+}
+
+#about-me {
+    scroll-margin-top: var(--sz-9);
+}
+
+#contacts {
+    scroll-margin-top: var(--sz-9);
+}
+
+
+
+/* Section styles */
+
+.page-container {
     background-color: hsl(var(--clr-grape-35));
 }
 
 .project-cards-container {
     padding: 0 var(--sz-12);
+}
+
+.home-hero {
+    background-color: hsl(var(--clr-grape-25));
 }
