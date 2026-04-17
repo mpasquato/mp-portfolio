@@ -1,3 +1,7 @@
 body {
     background-color: hsl(var(--clr-grape-35));
 }
+
+.project-cards-container {
+    padding: 0 var(--sz-12);
+}

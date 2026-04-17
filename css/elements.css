@@ -72,3 +72,33 @@
 .button__icon {
     font-size: var(--sz-6);
 }
+
+
+
+/* Tag */
+
+.tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sz-2);
+    padding: var(--sz-2) var(--sz-3);
+    border-radius: var(--sz-3);
+
+    background-color: hsl(var(--clr-grape-80));
+
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out, background-color 300ms ease-out;
+}
+
+.tag--clickable {
+
+}
+
+.tag--clickable:hover {
+    box-shadow: var(--elv-4);
+    transform: translate(calc(var(--sz-2)*(-1)), calc(var(--sz-2)*(-1)));
+}
+
+.tag--card {
+    background-color: hsl(var(--clr-grape-90));
+}

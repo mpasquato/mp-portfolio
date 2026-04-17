@@ -178,7 +178,7 @@ Interactive elements (e.g. hover effects):
 
 /* Title / Title large */
 .title-large {
-    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-family: var(--ff-sans, "Funnel Sans");
     font-size: var(--fs-lg, 24px);
     font-style: normal;
     font-weight: 800;
@@ -186,7 +186,7 @@ Interactive elements (e.g. hover effects):
 }
 
 .title-large-e {
-    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-family: var(--ff-sans, "Funnel Sans");
     font-size: var(--fs-lg, 24px);
     font-style: normal;
     font-weight: 800;

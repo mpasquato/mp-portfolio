@@ -33,3 +33,13 @@
 .text-center {
     text-align: center;
 }
+
+.radius-8 {
+    border-radius: var(--sz-8);
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
