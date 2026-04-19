@@ -7,8 +7,11 @@
 .project-card {
     position: relative;
 
-    display: grid;
-    grid-template-rows: 2;
+    height: 100%;
+
+    display: flex;
+    /* grid-template-rows: 2; */
+flex-direction: column;
 
     background-color: hsl(var(--clr-grape-15));
 
@@ -71,6 +74,8 @@
     color: hsl(var(--clr-basic-white));
     gap: var(--sz-5);
     padding: var(--sz-7);
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .project-card__content {
@@ -85,5 +90,4 @@
 }
 
 .project-card__button > a {
-    z-index: 2;
 }

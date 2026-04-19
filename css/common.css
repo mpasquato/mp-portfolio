@@ -28,7 +28,7 @@ footer {
     grid-template-rows: subgrid;
     grid-row: span 2;
     grid-column: span 1;
-    gap: var(--sz-4);
+    row-gap: var(--sz-4);
 }
 
 .footer-content__body {

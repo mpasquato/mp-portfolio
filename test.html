@@ -4,40 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/grid.css">
     <title>Document</title>
     <style>
-        .grid {
-            background-color: lightgrey;
+        body {
+            box-sizing: border-box;
         }
 
-        
-
-        .col-sm-4 {
-
+        .wrapper {
+            width: 90%;
+            margin: 100px auto;
+            /* display: flex; */
+            border: 2px solid red;
         }
 
-        .col-12 {
-            background-color: lightcoral;
+        .group {
+            display: inline-flex;
+            /* flex: 1 1 0; */
+            gap: 10px;
+            border: 2px solid green;
+        }
+
+        .item {
+            border: 2px solid blue;
+            /* flex: 1 1 20%; */
         }
     </style>
 </head>
 
 <body>
-    <div class="grid">
-        <div class="col-12 col-sm-4">
-            asdf
+    <div class="wrapper">
+        <div class="group">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
         </div>
-
-        <div class="col-12 col-sm-4">
-            asdf
-        </div>
-
-        <div class="col-12 col-sm-4">
-            asdf
+        <div class="group">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
         </div>
     </div>
-
 </body>
 
 </html>

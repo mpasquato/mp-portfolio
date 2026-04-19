@@ -98,6 +98,7 @@
 /* Grid container */
 
 .grid {
+    width: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 
@@ -123,6 +124,55 @@
         column-gap: var(--sz-10);
     }
 }
+
+.grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-9 {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-11 {
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+
 
 
 /* Column spanning classes */
@@ -2091,6 +2141,11 @@
 
 /* XS devices */
 
+.row-gap-0 {
+    row-gap: 0;
+}
+
+
 .row-gap-1 {
     row-gap: var(--sz-1);
 }
@@ -2158,6 +2213,10 @@
 /* SM devices */
 
 @media screen and (min-width: 528px) {
+
+    .row-sm-gap-0 {
+        row-gap: 0;
+    }
 
     .row-sm-gap-1 {
         row-gap: var(--sz-1);
@@ -2229,6 +2288,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .row-md-gap-0 {
+        row-gap: 0;
+    }
+
     .row-md-gap-1 {
         row-gap: var(--sz-1);
     }
@@ -2298,6 +2361,10 @@
 /* LG devices */
 
 @media screen and (min-width: 992px) {
+
+    .row-lg-gap-0 {
+        row-gap: 0;
+    }
 
     .row-lg-gap-1 {
         row-gap: var(--sz-1);
@@ -2369,6 +2436,10 @@
 
 @media screen and (min-width: 1200px) {
 
+    .row-xl-gap-0 {
+        row-gap: 0;
+    }
+
     .row-xl-gap-1 {
         row-gap: var(--sz-1);
     }
@@ -2438,6 +2509,10 @@
 /* XXL devices */
 
 @media screen and (min-width: 1400px) {
+
+    .row-xxl-gap-0 {
+        row-gap: 0;
+    }
 
     .row-xxl-gap-1 {
         row-gap: var(--sz-1);
@@ -2510,6 +2585,10 @@
 
 /* XS devices */
 
+.col-gap-0 {
+    column-gap: 0;
+}
+
 .col-gap-1 {
     column-gap: var(--sz-1);
 }
@@ -2578,7 +2657,11 @@
 
 @media screen and (min-width: 528px) {
 
-    .col-gap-sm-1 {
+    .col-sm-gap-0 {
+        column-gap: 0;
+    }
+
+    .col-sm-gap-1 {
         column-gap: var(--sz-1);
     }
 
@@ -2647,6 +2730,10 @@
 /* MD devices */
 
 @media screen and (min-width: 768px) {
+
+    .col-md-gap-0 {
+        column-gap: 0;
+    }
 
     .col-md-gap-1 {
         column-gap: var(--sz-1);
@@ -2718,6 +2805,10 @@
 
 @media screen and (min-width: 992px) {
 
+    .col-lg-gap-0 {
+        column-gap: 0;
+    }
+
     .col-lg-gap-1 {
         column-gap: var(--sz-1);
     }
@@ -2788,6 +2879,10 @@
 
 @media screen and (min-width: 1200px) {
 
+    .col-xl-gap-0 {
+        column-gap: 0;
+    }
+
     .col-xl-gap-1 {
         column-gap: var(--sz-1);
     }
@@ -2857,6 +2952,10 @@
 /* XXL devices */
 
 @media screen and (min-width: 1400px) {
+
+    .col-xxl-gap-0 {
+        column-gap: 0;
+    }
 
     .col-xxl-gap-1 {
         column-gap: var(--sz-1);

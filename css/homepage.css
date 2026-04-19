@@ -31,3 +31,46 @@
 .home-hero {
     background-color: hsl(var(--clr-grape-25));
 }
+
+
+
+/* Social proof */
+
+.social-proof__title {
+    color: hsl(var(--clr-neutral-90));
+}
+
+.social-proof__carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border: 3px solid green;
+}
+
+.social-proof__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.social-proof__logo-container {
+    display: flex;
+    /* flex: 1 0 0; */
+    /* align-items: center; */
+    border: 3px solid red;
+    /* width: 100%; */
+    column-gap: 40px; /* 4% */
+    /* animation: spin 15s infinite linear; */
+}
+
+.social-proof__logo {
+    opacity: 0.8;
+    flex: 0 0 500px; /* 16.8% */
+}
+
+.social-proof__logo > img {
+    height: 100px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
