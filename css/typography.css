@@ -341,11 +341,11 @@ Interactive elements (e.g. hover effects):
 }
 
 .label-large-link:hover {
-    color: hsl(var(--clr-bittersweet-50));
+    color: hsl(var(--clr-bittersweet-40));
 }
 
 .label-large-link:active {
-    color: hsl(var(--clr-bittersweet-40));
+    color: hsl(var(--clr-bittersweet-30));
 }
 
 

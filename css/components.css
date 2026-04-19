@@ -90,4 +90,5 @@ flex-direction: column;
 }
 
 .project-card__button > a {
+    z-index: 2;
 }

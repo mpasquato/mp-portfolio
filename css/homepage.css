@@ -34,6 +34,48 @@
 
 
 
+/* Hero Home Desktop */
+
+.home-hero-dsk {
+    background-color: hsl(var(--clr-grape-15));
+    height: clamp(500px, 90vh, 650px);
+    position: relative;
+}
+
+#home-hero-dsk__background-wave {
+    position: absolute;
+    bottom: 0;
+
+    z-index: 1;
+    
+    width: 100%;
+
+    fill: hsl(var(--clr-plump-purple-60));
+}
+
+#home-hero-dsk__foreground-wave {
+    position: absolute;
+    bottom: -2px;
+
+    z-index: 3;
+
+    width: 100%;
+
+    fill: hsl(var(--clr-grape-35));
+}
+
+.home-hero-dsk__container {
+    height: 100%;
+    padding: 0 var(--sz-15);
+}
+
+.home-hero-dsk__image {
+    align-self: end;
+    z-index: 2
+}
+
+
+
 /* Social proof */
 
 .social-proof__title {
