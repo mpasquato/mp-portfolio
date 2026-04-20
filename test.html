@@ -11,6 +11,8 @@
         }
 
         .wrapper {
+            display: block;
+            white-space: nowrap;
             width: 90%;
             margin: 100px auto;
             /* display: flex; */
@@ -18,15 +20,19 @@
         }
 
         .group {
-            display: inline-flex;
-            /* flex: 1 1 0; */
-            gap: 10px;
+            display: inline-block;
+            white-space: nowrap;
+            /* flex: 1 1; */
+            /* gap: 10px; */
             border: 2px solid green;
         }
 
         .item {
             border: 2px solid blue;
-            /* flex: 1 1 20%; */
+            white-space: nowrap;
+            display: inline-block;
+            width: 200px;
+            /* flex: 0 0 200px; */
         }
     </style>
 </head>
