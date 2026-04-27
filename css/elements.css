@@ -71,6 +71,14 @@
     text-decoration: none;
 }
 
+.button--fixed-width {
+    min-width: 200px;
+
+    @media screen and (min-width: 992px) {
+        min-width: auto;
+    }
+}
+
 
 
 /* Text link */

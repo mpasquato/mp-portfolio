@@ -27,6 +27,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
     <link rel="manifest" href="media/favicon/site.webmanifest">
 
+    <script src="js/navbar-desktop.js"></script>
+
     <title>Portfolio | Marco Pasquato</title>
 </head>
 
@@ -90,12 +92,12 @@
     </header>
     <div class="page-container">
         <div class="home-hero-dsk text-light">
-            <svg width="100%" height="337" viewBox="0 0 1440 337" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+            <svg viewBox="0 0 1440 337" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
                 id="home-hero-dsk__background-wave">
                 <path
                     d="M758.5 182.917C1046.89 1.75294 1258.96 -54.3723 1440 57.7523V336.918H0V98.476C189.992 210.296 496.655 347.407 758.5 182.917Z" />
             </svg>
-            <svg width="100%" height="134" viewBox="0 0 1440 134" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+            <svg viewBox="0 0 1440 134" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
                 id="home-hero-dsk__foreground-wave">
                 <path
                     d="M501.5 0C736.5 0 842.5 112 1072 112C1211.56 112 1333.74 75.9541 1440 47.7012V133.5H0V80.5654C184.184 47.4357 348.56 0 501.5 0Z" />
@@ -131,7 +133,8 @@
             </div>
         </div>
 
-        <div id="social-proof-section" class="social-proof container grid row-gap-4 p-t-8">
+        <div id="nav-dsk-appear"></div>
+        <div class="social-proof container grid row-gap-4 p-t-8">
             <div class="col-12 title-small text-center social-proof__title">Companies and brands I worked for</div>
             <div class="col-12 social-proof__carousel">
                 <div class="social-proof__logo-container">
@@ -192,7 +195,7 @@
                                         patients with neurogenerative diseases</div>
                                 </div>
                                 <div class="project-card__button">
-                                    <a href="project-informa.html" class="button button--primary--on-dark label-large">
+                                    <a href="project-informa.html" class="button button--primary--on-dark button--fixed-width label-large">
                                         <div class="button__label">Go to project</div>
                                         <i class="iconoir-arrow-right label-large"></i>
                                     </a>
@@ -222,7 +225,7 @@
                                 </div>
                                 <div class="project-card__button">
                                     <a href="project-pokerstars.html"
-                                        class="button button--primary--on-dark label-large">
+                                        class="button button--primary--on-dark button--fixed-width label-large">
                                         <div class="button__label">Go to project</div>
                                         <i class="iconoir-arrow-right label-large"></i>
                                     </a>
@@ -255,7 +258,7 @@
                                 </div>
                                 <div class="project-card__button">
                                     <a href="project-despar-tribu.html"
-                                        class="button button--primary--on-dark label-large">
+                                        class="button button--primary--on-dark button--fixed-width label-large">
                                         <div class="button__label">Go to project</div>
                                         <i class="iconoir-arrow-right label-large"></i>
                                     </a>
@@ -263,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-2 col-lg-1">
                         <div class="project-card">
                             <a href="project-iopago.html" class="project-card__clickable-area"></a>
                             <div class="project-card__header">
@@ -286,7 +289,7 @@
                                     </div>
                                 </div>
                                 <div class="project-card__button">
-                                    <a href="project-iopago.html" class="button button--primary--on-dark label-large">
+                                    <a href="project-iopago.html" class="button button--primary--on-dark button--fixed-width label-large">
                                         <div class="button__label">Go to project</div>
                                         <i class="iconoir-arrow-right label-large"></i>
                                     </a>
@@ -302,7 +305,7 @@
                     About me
                 </div>
                 <div class="col-12 grid row-gap-9">
-                    <div class="col-12 col-md-8 flex flex-col flex-align-start row-gap-9">
+                    <div class="col-12 col-lg-8 flex flex-col flex-align-start row-gap-9">
                         <div class="flex flex-col row-gap-7">
                             <div class="flex flex-col row-gap-4">
                                 <div class="title-large">In a nutshell: I’m a tech‑oriented creative.</div>
@@ -325,9 +328,9 @@
                                     analysts, and stakeholders to meet shared needs.
                                 </div>
                             </div>
-                            <div>
+                            <div class="about-me__download-container">
                                 <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
-                                    class="button button--primary--on-dark label-large">
+                                    class="button button--primary--on-dark button--fixed-width label-large">
                                     <div class="button__label">Download resume</div>
                                     <i class="iconoir-download label-large"></i>
                                 </a>
@@ -355,7 +358,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 grid grid-2 template-rows-3 row-gap-8 col-gap-8">
+                    <div class="col-12 col-lg-4 grid grid-2 template-rows-3 row-gap-8 col-gap-8">
                         <div class="col-2 row-2">
                             <img class="radius-8 grid-image" src="media/about-me/about-me_01__compressed.jpg" alt="">
                         </div>
@@ -377,13 +380,13 @@
                     <div class="col-12 title-small flex flex-justify-center">
                         Looking forward to work with me? Or just curious to know something more?
                     </div>
-                    <div class="col-12 flex col-gap-7 flex-justify-center">
+                    <div class="col-12 contact-me__button-container">
                         <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
-                            class="button button--secondary--on-dark label-large">
+                            class="button button--secondary--on-dark button--fixed-width label-large">
                             <div class="button__label">My LinkedIn</div>
                             <i class="iconoir-linkedin label-large"></i>
                         </a>
-                        <a href="mailto:marcopasquato2@gmail.com" target="_blank" class="button button--secondary--on-dark label-large">
+                        <a href="mailto:marcopasquato2@gmail.com" target="_blank" class="button button--secondary--on-dark button--fixed-width label-large">
                             <div class="button__label">My Email</div>
                             <i class="iconoir-mail label-large"></i>
                         </a>
@@ -428,7 +431,7 @@
                                 <div class="text-link__label">My LinkedIn</div>
                                 <i class="iconoir-linkedin label-large-link"></i>
                             </a>
-                            <a href="mailto:marcopasquato2@gmail.com" class="text-link label-large-link">
+                            <a href="mailto:marcopasquato2@gmail.com" target="_blank" class="text-link label-large-link">
                                 <div class="text-link__label">My Email</div>
                                 <i class="iconoir-mail label-large-link"></i>
                             </a>

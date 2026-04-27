@@ -28,14 +28,33 @@
 
 /* Desktop navbar */
 .nav-dsk {
-    position: sticky;
+    position: relative;
+    top: 0;
+
+    transform: translateY(0);
+    transition: top .5s ease;
+
     padding: var(--sz-4) 0;
     background-color: hsl(var(--clr-grape-15));
 
-    @media screen and (max-width: 991px) {
-        display: none;
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: block;
     }
 
+}
+
+.nav-dsk.init-animation {
+    position: sticky;
+    top: -100%;
+    z-index: 1000;
+}
+
+.nav-dsk.is-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-dsk__grid-container {
