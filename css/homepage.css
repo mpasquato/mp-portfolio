@@ -62,12 +62,12 @@
 
     @media screen and (min-width: 1200px) {
         display: block;
-        height: clamp(400px, 80vh, 650px);
+        height: clamp(400px, 75vh, 650px);
     }
 
     @media screen and (min-width: 1400px) {
         display: block;
-        height: clamp(500px, 90vh, 650px);
+        height: clamp(500px, 80vh, 650px);
     }
 }
 
@@ -153,7 +153,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 0 var(--sz-12);
+        padding: 0 var(--sz-10);
     }
 
     @media screen and (min-width: 1400px) {
@@ -188,6 +188,30 @@
 .home-hero-dsk__image {
     align-self: end;
     z-index: 2
+}
+
+
+
+/* Hero Home Desktop */
+
+.home-hero-mob {
+    background-color: hsl(var(--clr-grape-15));
+    
+    position: relative;
+
+    display: block;
+
+    @media screen and (min-width: 576px) {
+
+    }
+
+    @media screen and (min-width: 768px) {
+    
+    }
+
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
 }
 
 
