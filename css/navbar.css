@@ -26,6 +26,26 @@
 
 }
 
+.nav-mob__secondary-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--sz-4);
+    color: hsl(var(--clr-basic-white));
+}
+
+.nav-mob__secondary-btn:hover {
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-mob__secondary-btn-icon {
+    font-size: 2.4rem;
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-mob__secondary-btn-label {
+
+}
+
 
 
 /* Desktop navbar */
@@ -111,6 +131,13 @@
     /* background-color: chocolate; */
 }
 
+.nav-mob__secondary-cta-container {
+    justify-self: center;
+    display: flex;
+    gap: var(--sz-11);
+    /* background-color: chocolate; */
+}
+
 
 
 /* Logo colors and animation */
@@ -144,6 +171,10 @@
 
 
 /* Mobile Navbar */
+
+body:has(#sidebar-active:checked) {
+    overflow: hidden;
+}
 
 .nav-mob {
     position: relative;
@@ -184,7 +215,7 @@
     display: grid;
     
     margin: 0 var(--sz-7);
-    width: auto;
+    width: 100%;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -244,12 +275,18 @@
 }
 
 .nav-mob__menu-expanded {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    
+    padding: var(--sz-9) 0;
 
     background-color: hsl(var(--clr-grape-15));
 
