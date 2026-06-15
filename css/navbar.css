@@ -215,7 +215,7 @@ body:has(#sidebar-active:checked) {
     display: grid;
     
     margin: 0 var(--sz-7);
-    width: 100%;
+    width: auto;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -224,11 +224,13 @@ body:has(#sidebar-active:checked) {
     align-items: center;
     
     @media screen and (min-width: 576px) {
+        width: 100%;
         max-width: var(--max-w-sm);
         margin: 0 auto;
     }
     
     @media screen and (min-width: 768px) {
+        width: 100%;
         max-width: var(--max-w-md);
         margin: 0 auto;
     }
