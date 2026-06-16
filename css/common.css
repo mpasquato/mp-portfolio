@@ -28,6 +28,10 @@ footer {
     }
 }
 
+.footer-home-link {
+    display: inline-block;
+}
+
 .footer-content {
     display: grid;
     grid-column: span 4;
