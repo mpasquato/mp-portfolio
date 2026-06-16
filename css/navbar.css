@@ -255,7 +255,7 @@ body:has(#sidebar-active:checked) {
 
 .nav-mob__hamburger-btn:hover {
     color: hsl(var(--clr-bittersweet-60));
-    
+
     cursor: pointer;
 }
 
