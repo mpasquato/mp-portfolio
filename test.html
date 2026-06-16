@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .absolute-block {
+            position: absolute;
+            height: 50vh;
+            width: 100%;
+
+            padding: 50px;
+
+            background-color: blue;
+        }
+
+        .inner-absolute {
+            height: 100px;
+            width: 100%;
+
+            background-color: purple;
+        }
+
+        .fixed-block {
+            position: fixed;
+            top: 50%;
+            left: 0;
+
+            padding: 50px;
+
+            height: 50vh;
+            width: 100%;
+
+            background-color: brown;
+        }
+
+        .inner-fixed {
+            height: 100px;
+            width: 100%;
+            
+            background-color: red;
+        }
+    </style>
+
+    <title>Document</title>
+
+    
+</head>
+
+<body>
+    <div class="absolute-block">
+        <div class="inner-absolute">
+
+        </div>
+        <div class="fixed-block">
+            <div class="inner-fixed">
+    
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
