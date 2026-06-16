@@ -34,8 +34,11 @@ footer {
 
 .footer-content {
     display: grid;
-    grid-column: span 4;
     row-gap: var(--sz-4);
+
+    grid-template-rows: subgrid;
+    grid-column: span 4;
+    grid-row: span 2;
 
     @media screen and (min-width: 576px) {
         grid-column: span 2;
@@ -46,10 +49,8 @@ footer {
     }
 
     @media screen and (min-width: 992px) {
-        grid-template-rows: subgrid;
         grid-row: span 2;
         grid-column: span 1;
-        row-gap: var(--sz-none);
     }
 }
 
@@ -67,6 +68,14 @@ footer {
 
     @media screen and (min-width: 992px) {
         grid-column: span 1;
+    }
+}
+
+.footer-content:last-child > .footer-content__header {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: initial;
     }
 }
 
