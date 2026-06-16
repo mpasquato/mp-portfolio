@@ -5,15 +5,15 @@
 /* Adjust scroll margins for sections */
 
 #my-work {
-    scroll-margin-top: var(--sz-9);
+    scroll-margin-top: var(--sz-15);
 }
 
 #about-me {
-    scroll-margin-top: var(--sz-9);
+    scroll-margin-top: var(--sz-15);
 }
 
 #contacts {
-    scroll-margin-top: var(--sz-9);
+    scroll-margin-top: var(--sz-15);
 }
 
 
