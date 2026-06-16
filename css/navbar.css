@@ -57,7 +57,7 @@
     z-index: 1000;
 
     transform: translateY(0);
-    transition: top .5s ease;
+    transition: top 1s ease;
 
     padding: var(--sz-4) 0;
     background-color: hsl(var(--clr-grape-15));
@@ -180,9 +180,7 @@ body:has(#sidebar-active:checked) {
     position: relative;
     top: 0;
 
-    /* transform: translateY(-100%); */
-
-    transition: top .5s ease;
+    transition: top 1s ease;
 
     padding: var(--sz-4) 0;
     background-color: hsl(var(--clr-grape-15));
@@ -200,14 +198,12 @@ body:has(#sidebar-active:checked) {
 .nav-mob.init-animation {
     position: sticky;
     top: -100%;
-    /* transform: translateY(-100%); */
     z-index: 1000;
 }
 
 .nav-mob.is-sticky {
     position: sticky;
     top: 0;
-    /* transform: translateY(0); */
     z-index: 1000;
 }
 
