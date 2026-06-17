@@ -278,6 +278,7 @@ body:has(#sidebar-active:checked) {
     right: 0;
     z-index: 1;
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
 
     display: grid;
