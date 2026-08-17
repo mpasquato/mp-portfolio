@@ -66,34 +66,18 @@ Interactive elements (e.g. hover effects):
 }
 
 .display-medium-e {
-
     font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-3xl, 36px);
+    font-size: var(--fs-4xl, 45px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--lh-3xl, 43px);
+    line-height: var(--lh-4xl, 54px);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
     text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
     text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
+    text-underline-offset: 8%;
     text-underline-position: from-font;
-
-    @media screen and (min-width: 576px) {}
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 992px) {
-        font-size: var(--fs-4xl, 45px);
-        line-height: var(--lh-4xl, 54px);
-    }
-
-    @media screen and (min-width: 1200px) {}
-
-    @media screen and (min-width: 1400px) {}
-
-
 }
 
 /* Headline / Headline medium */
@@ -116,7 +100,7 @@ Interactive elements (e.g. hover effects):
     text-decoration-skip-ink: auto;
     text-decoration-color: hsl(var(--clr-bittersweet-60));
     text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
+    text-underline-offset: 9%;
     text-underline-position: from-font;
 }
 
@@ -170,12 +154,12 @@ Interactive elements (e.g. hover effects):
     background-color: hsl(var(--clr-bittersweet-60));
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
-}
+  }
 
-.headline-small-int:hover::after {
+  .headline-small-int:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+  }
 
 /* .headline-small-int:hover {
     font-family: var(--ff-serif-text, "DM Serif Text");
@@ -350,8 +334,8 @@ Interactive elements (e.g. hover effects):
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 4%;
     text-underline-position: from-font;
     transition: all 0.3s ease-out;
 }

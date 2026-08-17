@@ -295,9 +295,16 @@
 .home-hero-mob__content {
     z-index: 4;
 
-    @media screen and (min-width: 576px) {
-        padding-bottom: 20px;
+    @media screen and (max-width: 302px) {
+        grid-column: span 12;
+        margin-right: var(--sz-7);
     }
+
+    @media screen and (min-width: 400px) {
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 576px) {}
 
     @media screen and (min-width: 768px) {}
 
@@ -306,6 +313,14 @@
     @media screen and (min-width: 1200px) {}
 
     @media screen and (min-width: 1400px) {}
+}
+
+.home-her-mob__picture {
+
+    @media screen and (max-width: 302px) {
+        display: none;
+        grid-column: span 0;
+    }
 }
 
 .home-hero-mob__custom-typography__display-text {
@@ -319,7 +334,7 @@
     text-decoration-skip-ink: auto;
     text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
     text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
+    text-underline-offset: 9%;
     text-underline-position: from-font;
 
     @media screen and (min-width: 576px) {
@@ -382,6 +397,10 @@
     z-index: 2;
 
     display: initial;
+
+    @media screen and (min-width: 300px) {
+        display: initial;
+    }
 
     @media screen and (min-width: 576px) {
         display: none;
