@@ -26,6 +26,10 @@
     color: hsl(var(--clr-basic-white));
 }
 
+.text-primary {
+    color: hsl(var(--clr-grape-35));
+}
+
 .text-accent {
     color: hsl(var(--clr-bittersweet-60));
 }
