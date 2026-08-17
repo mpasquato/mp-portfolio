@@ -52,6 +52,8 @@
 
     position: relative;
 
+    overflow: hidden;
+
     display: none;
 
     @media screen and (min-width: 576px) {}
@@ -188,11 +190,23 @@
 
     position: relative;
 
+    overflow: hidden;
+
     display: block;
 
-    @media screen and (min-width: 576px) {}
+    height: clamp(300px, 30vh, 350px);
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 365px) {
+        height: clamp(300px, 30vh, 350px);
+    }
+
+    @media screen and (min-width: 576px) {
+        height: clamp(200px, 50vh, 280px);
+    }
+
+    @media screen and (min-width: 768px) {
+        height: initial;
+    }
 
     @media screen and (min-width: 992px) {
         display: none;
@@ -260,8 +274,11 @@
 .home-hero-mob__container {
     height: 100%;
 
+    margin-right: 0;
+
     @media screen and (min-width: 576px) {
         /* padding: 0 var(--sz-15); */
+        margin: 0 auto;
     }
 
     @media screen and (min-width: 768px) {
@@ -278,27 +295,25 @@
 .home-hero-mob__content {
     z-index: 4;
 
-    @media screen and (min-width: 576px) {}
+    @media screen and (min-width: 576px) {
+        padding-bottom: 20px;
+    }
 
     @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 992px) {}
 
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 50px;
-    }
+    @media screen and (min-width: 1200px) {}
 
-    @media screen and (min-width: 1400px) {
-        padding-bottom: 50px;
-    }
+    @media screen and (min-width: 1400px) {}
 }
 
-.home-hero-mob__display-text {
+.home-hero-mob__custom-typography__display-text {
     font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-lg, 24px);
+    font-size: var(--fs-md, 20px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--lh-lg, 32px);
+    line-height: var(--lh-md, 30px);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
@@ -307,9 +322,40 @@
     text-underline-offset: 13.1%;
     text-underline-position: from-font;
 
+    @media screen and (min-width: 576px) {
+        font-size: var(--fs-lg, 24px);
+        line-height: var(--lh-lg, 32px);
+    }
+
     @media screen and (min-width: 768px) {
         font-size: var(--fs-2xl, 32px);
         line-height: var(--lh-2xl, 40px);
+    }
+}
+
+.home-hero-mob__custom-typography__body-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+
+    @media screen and (min-width: 576px) {
+        font-size: var(--fs-sm, 16px);
+        line-height: var(--lh-sm, 23px);
+    }
+}
+
+.home-hero-mob__custom-typography__body-mediu-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-xs, 20px);
+
+    @media screen and (min-width: 576px) {
+        font-size: var(--fs-sm, 16px);
+        line-height: var(--lh-sm, 23px);
     }
 }
 
@@ -322,7 +368,24 @@
 
 .home-hero-mob__image {
     align-self: end;
-    z-index: 2
+    z-index: 2;
+
+    display: none;
+
+    @media screen and (min-width: 576px) {
+        display: initial;
+    }
+}
+
+.home-hero-mob-xs__image {
+    align-self: end;
+    z-index: 2;
+
+    display: initial;
+
+    @media screen and (min-width: 576px) {
+        display: none;
+    }
 }
 
 .home-hero-mob__button {
