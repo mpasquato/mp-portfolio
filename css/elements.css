@@ -90,6 +90,10 @@
     color: hsl(var(--clr-bittersweet-60));
 }
 
+.text-link__primary {
+    color: hsl(var(--clr-grape-35));
+}
+
 .text-link__label {
 
 }

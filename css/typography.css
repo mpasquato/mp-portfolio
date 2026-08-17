@@ -368,3 +368,8 @@ Interactive elements (e.g. hover effects):
     line-height: var(--lh-2xs, 18px);
     text-transform: uppercase;
 }
+
+/* Text styles */
+p {
+    margin-bottom: var(--sz-3, 8px);
+}

@@ -10,6 +10,14 @@ body {
     background-color: hsl(var(--clr-grape-15));
 }
 
+.page-container {
+    background-color: hsl(var(--clr-plump-purple-98));
+}
+
+main {
+    min-height: 60vh;
+}
+
 footer {
     padding-top: var(--sz-11);
     padding-bottom: var(--sz-16);
