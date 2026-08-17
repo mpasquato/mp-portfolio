@@ -579,6 +579,10 @@
     grid-row: span 1;
 }
 
+.row-0 {
+    grid-row: span 0;
+}
+
 /* SM devices */
 
 @media screen and (min-width: 528px) {
@@ -629,6 +633,10 @@
 
     .row-sm-1 {
         grid-row: span 1;
+    }
+
+    .row-sm-0 {
+        grid-row: span 0;
     }
 
 }
@@ -685,6 +693,10 @@
         grid-row: span 1;
     }
 
+    .row-md-0 {
+        grid-row: span 0;
+    }
+
 }
 
 /* LG devices */
@@ -737,6 +749,10 @@
 
     .row-lg-1 {
         grid-row: span 1;
+    }
+
+    .row-lg-0 {
+        grid-row: span 0;
     }
 
 }
@@ -793,6 +809,10 @@
         grid-row: span 1;
     }
 
+    .row-xl-0 {
+        grid-row: span 0;
+    }
+
 }
 
 /* XXL devices */
@@ -845,6 +865,10 @@
 
     .row-xxl-1 {
         grid-row: span 1;
+    }
+
+    .row-xxl-0 {
+        grid-row: span 0;
     }
 
 }
