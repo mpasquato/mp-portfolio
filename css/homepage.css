@@ -62,17 +62,17 @@
 
     @media screen and (min-width: 992px) {
         display: block;
-        height: clamp(200px, 70vh, 650px);
+        height: clamp(500px, 70vh, 600px);
     }
 
     @media screen and (min-width: 1200px) {
         display: block;
-        height: clamp(400px, 75vh, 650px);
+        height: clamp(550px, 70vh, 600px);
     }
 
     @media screen and (min-width: 1400px) {
         display: block;
-        height: clamp(500px, 80vh, 650px);
+        height: clamp(550px, 70vh, 600px);
     }
 }
 
