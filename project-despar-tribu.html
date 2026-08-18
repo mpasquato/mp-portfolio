@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom-reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/iconoir.css">
+    <link rel="stylesheet" href="css/sizes.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/elevation.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project-pages.css">
+    <link rel="stylesheet" href="css/despar.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+
+    <script src="js/navbar.js"></script>
+
+    <title>Portfolio | Marco Pasquato</title>
+</head>
+
+<body class="body-medium">
+    <header class="nav-dsk">
+        <div class="nav-dsk__grid-container">
+            <div class="nav-dsk__logo-container">
+                <a href="index.html" class="nav-dsk__btn-logo">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="mp-navbar-logo" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709)">
+                            <path class="mp-logo__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="mp-logo__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="mp-logo__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709)">
+                            <path class="mp-logo__wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <nav class="nav-dsk__navigation-container">
+                <a href="index.html#my-work" class="nav-dsk__btn headline-small-int">
+                    My work
+                </a>
+                <a href="index.html#about-me" class="nav-dsk__btn headline-small-int">
+                    About me
+                </a>
+                <a href="index.html#contacts" class="nav-dsk__btn headline-small-int">
+                    Contacts
+                </a>
+            </nav>
+            <div class="nav-dsk__secondary-cta-container">
+                <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                    class="nav-dsk__secondary-btn">
+                    <i class="iconoir-download nav-dsk__secondary-btn-icon" class=""></i>
+                    <div class="nav-dsk__secondary-btn-label label-large-int">
+                        Download <br>resume
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank" class="nav-dsk__secondary-btn">
+                    <i class="iconoir-linkedin nav-dsk__secondary-btn-icon" class=""></i>
+                    <div class="nav-dsk__secondary-btn-label label-large-int">
+                        Linkedin <br>profile
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <header class="nav-mob">
+        <div class="nav-mob__grid-container">
+            <div class="nav-mob__logo-container">
+                <a href="index.html" class="nav-mob__btn-logo">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="mp-navbar-logo" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                            <path class="mp-logo__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="mp-logo__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="mp-logo__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                            <path class="mp-logo__wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709M">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709M">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nav-mob__menu-container">
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="nav-mob__hamburger-btn">
+                    <i class="iconoir-menu nav-mob__hamburger-btn-icon"></i>
+                </label>
+
+                <div class="nav-mob__menu-expanded">
+                    <div class="nav-mob__grid-container">
+                        <div class="nav-mob__logo-container">
+                            <a href="index.html" class="nav-mob__btn-logo">
+                                <svg width="63" height="38" viewBox="0 0 63 38" class="mp-navbar-logo" fill="none"
+                                    alt="MP logo" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                                        <path class="mp-logo__upper-m"
+                                            d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                                        <path class="mp-logo__lower-m"
+                                            d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                                        <path class="mp-logo__p"
+                                            d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                                    </g>
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                                        <path class="mp-logo__wave"
+                                            d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_476_709M">
+                                            <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_476_709M">
+                                            <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav-mob__menu-container">
+                            <label for="sidebar-active" class="nav-mob__close-btn">
+                                <i class="iconoir-xmark"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <nav
+                        class="nav-mob__navigation-container flex flex-col flex-justify-center flex-align-center row-gap-8 text-light">
+                        <a href="index.html#my-work" class="headline-small-int">
+                            My work
+                        </a>
+                        <a href="index.html#about-me" class="headline-small-int">
+                            About me
+                        </a>
+                        <a href="index.html#contacts" class="headline-small-int">
+                            Contacts
+                        </a>
+                    </nav>
+                    <div class="nav-mob__secondary-cta-container">
+                        <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                            class="nav-mob__secondary-btn">
+                            <i class="iconoir-download nav-mob__secondary-btn-icon" class=""></i>
+                            <div class="nav-mob__secondary-btn-label label-large-int">
+                                Download <br>resume
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                            class="nav-dsk__secondary-btn">
+                            <i class="iconoir-linkedin nav-mob__secondary-btn-icon" class=""></i>
+                            <div class="nav-mob__secondary-btn-label label-large-int">
+                                Linkedin <br>profile
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <div class="project-hero text-light">
+            <div class="project-hero-background">
+                <div class="project-hero-background-image-container project-hero-container">
+                    <img src="media/projects/despar/pino-hero_2x__edited__compressed.png" alt=""
+                        class="project-hero-background-image">
+                </div>
+                <div class="project-hero-background-wave-container">
+                    <svg viewBox="0 0 1440 99" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="project-hero-background-wave">
+                        <path
+                            d="M1440 98.9668H0V82.1338C208.738 68.4962 346.878 11.3008 515.9 11.3008C707.8 11.3008 886.225 96.9218 1073.63 96.9219C1231.13 96.9218 1340.33 23.4514 1440 0V98.9668Z" />
+                    </svg>
+
+                </div>
+
+                <div class="project-hero-foreground-image-container project-hero-container">
+                    <img src="media/projects/despar/mockup_phone_2x__cropped__compressed.png" alt=""
+                        class="project-hero-foreground-image">
+                </div>
+            </div>
+            <div class="project-hero-info">
+                <div class="container project-hero-container row-gap-4 row-md-gap-5 grid p-y-8">
+                    <div class="col-12 grid row-gap-6 row-md-gap-7">
+                        <h1 class="col-12 project-hero-title headline-large-e text-center">Despar Tribù</h1>
+                        <div class="col-12 project-hero-headline headline-small text-center">
+                            Planning an UX strategy and co‑designing a mass retail chain store app
+                        </div>
+                    </div>
+                    <div class="col-12 flex flex-wrap flex-justify-center col-gap-5 row-gap-4">
+                        <div class="tag label-medium">Mass retail<i class="label-medium"></i></div>
+                        <div class="tag label-medium">UX planning<i class="label-medium"></i></div>
+                        <div class="tag label-medium">Workshop<i class="label-medium"></i></div>
+                        <div class="tag label-medium">UX design<i class="label-medium"></i></div>
+                    </div>
+                </div>
+                <div class="project-hero-info-wave-container">
+                    <svg viewBox="0 0 1440 31" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                        id="project-hero-info-wave">
+                        <path
+                            d="M1319 15.124C1352.33 -5.04069 1385.67 -5.04069 1419 15.124C1426 19.3583 1433 22.6993 1440 25.1553V0H0V5.81443C6.33323 8.18982 12.6668 11.2928 19 15.124C52.3332 35.2886 85.6668 35.2886 119 15.124C152.333 -5.04069 185.667 -5.04069 219 15.124C252.333 35.2886 285.667 35.2886 319 15.124C352.333 -5.04069 385.667 -5.04069 419 15.124C452.333 35.2886 485.667 35.2886 519 15.124C552.333 -5.04069 585.667 -5.04069 619 15.124C652.333 35.2886 685.667 35.2886 719 15.124C752.333 -5.04069 785.667 -5.04069 819 15.124C852.333 35.2886 885.667 35.2886 919 15.124C952.333 -5.04069 985.667 -5.04069 1019 15.124C1052.33 35.2886 1085.67 35.2886 1119 15.124C1152.33 -5.04069 1185.67 -5.04069 1219 15.124C1252.33 35.2886 1285.67 35.2886 1319 15.124Z" />
+                    </svg>
+                </div>
+
+                <div class="container grid p-y-8">
+                </div>
+            </div>
+
+            <div id="nav-appear"></div>
+
+            <div style="height: 1000px"></div>
+
+            <main class="container grid row-gap-12 row-md-gap-15 p-t-10 p-md-t-12 p-b-12 p-md-b-15 text-light">
+                <div class="col-12 grid row-gap-8 row-md-gap-9" id="my-work">
+                    <h2 class="col-12 headline-medium-e text-center">
+                        My work
+                    </h2>
+                    <div class="grid grid-2 row-gap-11 row-md-gap-14 col-12 project-cards-container">
+                        <div class="col-2 col-lg-1">
+                            <div class="project-card">
+                                <a href="project-informa.html" class="project-card__clickable-area"></a>
+                                <div class="project-card__header">
+                                    <img src="media/thumbnails/thumbnail_informa__compressed.jpg"
+                                        class="project-card__image" alt="">
+                                    <img src="media/projects/projects-logos/logo_informa.svg" class="project-card__logo"
+                                        alt="">
+                                    <div class="project-card__tags">
+                                        <div class="tag tag--card label-small">Healthcare<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UX design<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">Research<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">User testing<i class="label-small"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <div class="project-card__content">
+                                        <div class="project-card__title headline-small">Informa</div>
+                                        <div class="project-card__description body-medium">Designing software
+                                            for
+                                            medics and
+                                            patients with neurogenerative diseases</div>
+                                    </div>
+                                    <div class="project-card__button">
+                                        <a href="project-informa.html"
+                                            class="button button--primary--on-dark button--fixed-width label-large">
+                                            <div class="button__label">Go to project</div>
+                                            <i class="iconoir-arrow-right label-large"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-lg-1">
+                            <div class="project-card">
+                                <a href="project-pokerstars.html" class="project-card__clickable-area"></a>
+                                <div class="project-card__header">
+                                    <img src="media/thumbnails/thumbnail_pokerstars__compressed.jpg"
+                                        class="project-card__image" alt="">
+                                    <img src="media/projects/projects-logos/logo_pokerstars.svg"
+                                        class="project-card__logo" alt="">
+                                    <div class="project-card__tags">
+                                        <div class="tag tag--card label-small">iGaming<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UX design<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UI design<i class="label-small"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <div class="project-card__content">
+                                        <div class="project-card__title headline-small">Pokerstars</div>
+                                        <div class="project-card__description body-medium">Creating iGaming user
+                                            flows that
+                                            meet complex legal requirements for different nations</div>
+                                    </div>
+                                    <div class="project-card__button">
+                                        <a href="project-pokerstars.html"
+                                            class="button button--primary--on-dark button--fixed-width label-large">
+                                            <div class="button__label">Go to project</div>
+                                            <i class="iconoir-arrow-right label-large"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-lg-1">
+                            <div class="project-card">
+                                <a href="project-despar-tribu.html" class="project-card__clickable-area"></a>
+                                <div class="project-card__header">
+                                    <img src="media/thumbnails/thumbnail_despar__compressed.jpg"
+                                        class="project-card__image" alt="">
+                                    <img src="media/projects/projects-logos/logo_despar.svg" class="project-card__logo"
+                                        alt="">
+                                    <div class="project-card__tags">
+                                        <div class="tag tag--card label-small">Mass retail<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UX planning<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UX design<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">Workshop<i class="label-small"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <div class="project-card__content">
+                                        <div class="project-card__title headline-small">Despar Tribù</div>
+                                        <div class="project-card__description body-medium">
+                                            Planning an UX strategy and
+                                            co‑designing a mass retail chain store app
+                                        </div>
+                                    </div>
+                                    <div class="project-card__button">
+                                        <a href="project-despar-tribu.html"
+                                            class="button button--primary--on-dark button--fixed-width label-large">
+                                            <div class="button__label">Go to project</div>
+                                            <i class="iconoir-arrow-right label-large"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-lg-1">
+                            <div class="project-card">
+                                <a href="project-iopago.html" class="project-card__clickable-area"></a>
+                                <div class="project-card__header">
+                                    <img src="media/thumbnails/thumbnail_iopago__compressed.jpg"
+                                        class="project-card__image" alt="">
+                                    <img src="media/projects/projects-logos/logo_iopago.svg" class="project-card__logo"
+                                        alt="">
+                                    <div class="project-card__tags">
+                                        <div class="tag tag--card label-small">Finance & credit<i
+                                                class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">UX design<i class="label-small"></i>
+                                        </div>
+                                        <div class="tag tag--card label-small">Co-design<i class="label-small"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <div class="project-card__content">
+                                        <div class="project-card__title headline-small">IoPago</div>
+                                        <div class="project-card__description body-medium">
+                                            Integrating new financial products in a buy now pay later app
+                                        </div>
+                                    </div>
+                                    <div class="project-card__button">
+                                        <a href="project-iopago.html"
+                                            class="button button--primary--on-dark button--fixed-width label-large">
+                                            <div class="button__label">Go to project</div>
+                                            <i class="iconoir-arrow-right label-large"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 grid row-gap-8 row-md-gap-9" id="about-me" style="">
+                    <h2 class="col-12 headline-medium-e text-center">
+                        About me
+                    </h2>
+                    <div class="col-12 grid row-gap-9 row-gap-md-0">
+                        <div class="col-12 col-lg-8 flex flex-col flex-align-start row-gap-9 row-gap-10">
+                            <div class="flex flex-col row-gap-7">
+                                <div class="flex flex-col row-gap-4">
+                                    <h3 class="title-large">In a nutshell: I’m a tech‑oriented creative.</h3>
+                                    <div class="body-medium">
+                                        I’m passionate about technologies and UX design lets me tie them to my
+                                        goal:
+                                        making
+                                        people’s
+                                        lives
+                                        <span class="body-medium-e">easier</span> while being <span
+                                            class="body-medium-e"></span>engaging</span> through sharp
+                                        storytelling.
+                                        As in any design process, technical limits are part of the journey; it’s
+                                        my
+                                        call to
+                                        find
+                                        <span class="body-medium-e"></span>feasible
+                                        solutions</span>. Obstacles can become <span
+                                            class="body-medium-e">opportunities</span>,
+                                        too.
+                                        I believe in <span class="body-medium-e">cooperation</span>, working
+                                        with
+                                        everyone
+                                        involved
+                                        in a
+                                        project: developers, product owners,
+                                        analysts, and stakeholders to meet shared needs.
+                                    </div>
+                                </div>
+                                <div class="about-me__download-container">
+                                    <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                                        class="button button--primary--on-dark button--fixed-width label-large">
+                                        <div class="button__label">Download resume</div>
+                                        <i class="iconoir-download label-large"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col row-gap-7">
+                                <div class="flex flex-col row-gap-4">
+                                    <h3 class="title-large">A glimpse of me outside work...</h3>
+                                    <div class="body-medium">
+                                        I like getting into creative projects, but you can also find me in the
+                                        wild,
+                                        reuniting
+                                        with
+                                        the
+                                        natural world.
+                                    </div>
+                                </div>
+                                <div class="flex flex-row flex-wrap row-gap-4 col-gap-4 text-dark">
+                                    <a href="photo-gallery.html" class="tag tag--clickable label-medium">📸 Film
+                                        photography<i class="iconoir-arrow-up-right label-medium"></i></a>
+                                    <div class="tag label-medium">🖨️ Graphic design<i class="label-medium"></i>
+                                    </div>
+                                    <div class="tag label-medium">✍️ Writing<i class="label-medium"></i></div>
+                                    <div class="tag label-medium">🎤 Singing<i class="label-medium"></i></div>
+                                    <div class="tag label-medium">🌄 Wilderness<i class="label-medium"></i>
+                                    </div>
+                                    <div class="tag label-medium">️️️️✈️️ Travelling<i class="label-medium"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-4 grid grid-2 template-rows-3 row-gap-7 col-gap-7 row-gap-md-8 col-gap-md-8">
+                            <div class="col-2 row-2">
+                                <img class="radius-8 grid-image" src="media/about-me/about-me_01__compressed.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-1 row-1">
+                                <img class="radius-8 grid-image" src="media/about-me/about-me_02__compressed.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-1 row-1">
+                                <img class="radius-8 grid-image" src="media/about-me/about-me_03__compressed.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 grid row-gap-8 row-md-gap-9" id="contacts">
+                    <h2 class="col-12 headline-medium-e text-center">
+                        Contacts
+                    </h2>
+                    <div class="col-12 flex flex-col row-gap-7">
+                        <div class="col-12 title-small flex flex-justify-center">
+                            Looking forward to work with me? Or just curious to know something more?
+                        </div>
+                        <div class="col-12 contact-me__button-container">
+                            <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                                class="button button--secondary--on-dark button--fixed-width label-large">
+                                <div class="button__label">My LinkedIn</div>
+                                <i class="iconoir-linkedin label-large"></i>
+                            </a>
+                            <a href="mailto:marcopasquato2@gmail.com" target="_blank"
+                                class="button button--secondary--on-dark button--fixed-width label-large">
+                                <div class="button__label">My Email</div>
+                                <i class="iconoir-mail label-large"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer class="text-light">
+                <div class="container grid row-gap-9 row-md-gap-7">
+                    <div class="col-12">
+                        <a href="index.html" class="footer-home-link">
+                            <img src="media/logo/logo_mp.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 footer-content-wrapper">
+                        <div class="footer-content">
+                            <div class="footer-content__header">marcopasquato.com</div>
+                            <div class="footer-content__body">
+                                <a href="index.html#my-work" class="text-link label-large-link">
+                                    <div class="text-link__label">My work</div>
+                                    <i></i>
+                                </a>
+                                <a href="index.html#about-me" class="text-link label-large-link">
+                                    <div class="text-link__label">About me</div>
+                                    <i></i>
+                                </a>
+                                <a href="index.html#contacts" class="text-link label-large-link">
+                                    <div class="text-link__label">Contacts</div>
+                                    <i></i>
+                                </a>
+                                <a href="terms-and-conditions.html" class="text-link label-large-link">
+                                    <div class="text-link__label">Terms and conditions</div>
+                                    <i></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content__header">Contacts</div>
+                            <div class="footer-content__body">
+                                <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                                    class="text-link label-large-link">
+                                    <div class="text-link__label">My LinkedIn</div>
+                                    <i class="iconoir-linkedin label-large-link"></i>
+                                </a>
+                                <a href="mailto:marcopasquato2@gmail.com" target="_blank"
+                                    class="text-link label-large-link">
+                                    <div class="text-link__label">My Email</div>
+                                    <i class="iconoir-mail label-large-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content__header">Fonts and assets used</div>
+                            <div class="footer-content__body">
+                                <a href="https://fonts.google.com/specimen/DM+Serif+Display" target="_blank"
+                                    class="text-link label-large-link">
+                                    <div class="text-link__label">DM Serif Display</div>
+                                    <i class="iconoir-arrow-up-right label-large-link"></i>
+                                </a>
+                                <a href="https://fonts.google.com/specimen/DM+Serif+Text" target="_blank"
+                                    class="text-link label-large-link">
+                                    <div class="text-link__label">DM Serif Text</div>
+                                    <i class="iconoir-arrow-up-right label-large-link"></i>
+                                </a>
+                                <a href="https://fonts.google.com/specimen/Funnel+Sans" target="_blank"
+                                    class="text-link label-large-link">
+                                    <div class="text-link__label">Funnel Sans</div>
+                                    <i class="iconoir-arrow-up-right label-large-link"></i>
+                                </a>
+                                <a href="https://iconoir.com/" target="_blank" class="text-link label-large-link">
+                                    <div class="text-link__label">Iconoir</div>
+                                    <i class="iconoir-arrow-up-right label-large-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content__header"></div>
+                            <div class="footer-content__body">
+                                <div>
+                                    No cookies used in this website.
+                                </div>
+                                <div>
+                                    Copyright © 2026-2026, marcopasquato.com <br>All rights reserved
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+</body>
+
+</html>
