@@ -258,14 +258,12 @@
 .prjct-recap-body {
     display: flex;
     column-gap: var(--sz-4);
-    min-width: 0; /**/
 }
 
 .prjct-recap-line-container {
     width: 24px;
     display: flex;
     justify-content: center;
-    flex-shrink: 0;
 }
 
 .prjct-recap-line {
@@ -278,9 +276,4 @@
     list-style-type: none;
     padding: inherit;
     margin: inherit;
-}
-
-.prjct-recap-content {
-    min-width: 0;
-    flex: 1 1 auto;
 }
