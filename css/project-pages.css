@@ -199,6 +199,7 @@
 }
 
 .prjct-recap {
+
     justify-self: center;
 
     width: auto;
@@ -277,3 +278,4 @@
     padding: inherit;
     margin: inherit;
 }
+

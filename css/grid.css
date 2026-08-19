@@ -129,6 +129,10 @@
     }
 }
 
+.grid-no-gap {
+    column-gap: 0;
+}
+
 .grid-1 {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -523,6 +527,33 @@
         grid-column: span 0;
     }
 
+}
+
+/* Grid utilities */
+
+
+.grid-justify-start {
+    justify-content: start;
+}
+
+.grid-justify-center {
+    justify-content: center;
+}
+
+.grid-justify-end {
+    justify-content: end;
+}
+
+.grid-align-start {
+    align-items: start;
+}
+
+.grid-align-center {
+    align-items: center;
+}
+
+.grid-align-end {
+    align-items: end;
 }
 
 
