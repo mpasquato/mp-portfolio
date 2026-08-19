@@ -5,11 +5,30 @@
 .project-hero-background {
     background-color: #B6E8BA;
 
-    height: clamp(300px, 70vh, 550px);
 
     overflow: hidden;
 
     position: relative;
+
+    height: clamp(200px, 50vh, 250px);
+
+    @media screen and (min-width: 400px) {}
+
+    @media screen and (min-width: 576px) {}
+
+    @media screen and (min-width: 768px) {
+        height: clamp(250px, 60vh, 300px)
+    }
+
+    @media screen and (min-width: 992px) {
+        height: clamp(300px, 65vh, 450px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: clamp(300px, 70vh, 500px)
+    }
+
+    @media screen and (min-width: 1400px) {}
 }
 
 .project-inner-container {
@@ -39,11 +58,31 @@
     margin: 0 auto;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
 
+    left: 0;
+
+
+
     height: 95%;
+
+    @media screen and (min-width: 440px) {
+        left: 40%;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 576px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 992px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+    @media screen and (min-width: 1400px) {}
 }
 
 .project-hero-background-image {
@@ -61,6 +100,40 @@
 
 #project-hero-background-wave {
     fill: hsl(var(--clr-grape-15));
+
+    display: none;
+
+    @media screen and (min-width: 440px) {
+        display: initial;
+    }
+
+    @media screen and (min-width: 576px) {}
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 992px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+    @media screen and (min-width: 1400px) {}
+}
+
+#project-hero-background-wave__mob {
+    fill: hsl(var(--clr-grape-15));
+
+    @media screen and (min-width: 440px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 576px) {}
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 992px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+    @media screen and (min-width: 1400px) {}
 }
 
 .project-hero-foreground-image-container {
@@ -69,12 +142,43 @@
 
     position: absolute;
     bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
+
+    right: 0;
+
     z-index: 3;
 
     max-width: 800px;
     height: 85%;
+
+    @media screen and (min-width: 440px) {
+        right: 40%;
+        transform: translateX(40%);
+    }
+
+    @media screen and (min-width: 576px) {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 992px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+    @media screen and (min-width: 1400px) {}
+}
+
+.project-hero-foreground-image-container__despar {
+    @media screen and (min-width: 440px) {
+        right: 30%;
+        transform: translateX(30%);
+    }
+
+    @media screen and (min-width: 576px) {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 
 .project-hero-foreground-image {
@@ -105,7 +209,7 @@
 
     background-color: hsl(var(--clr-plump-purple-80));
 
-    margin-top: calc((-1)*var(--sz-15));
+    margin-top: calc((-1)*var(--sz-13));
     z-index: 1;
 
     max-width: initial;
@@ -116,13 +220,13 @@
 
     @media screen and (min-width: 768px) {
         max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     @media screen and (min-width: 992px) {}
 
-    @media screen and (min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {
+        margin-top: calc((-1)*var(--sz-15));
+    }
 
     @media screen and (min-width: 1400px) {}
 }
