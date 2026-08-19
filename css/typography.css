@@ -272,6 +272,23 @@ Interactive elements (e.g. hover effects):
     text-underline-position: from-font;
 }
 
+/* Body / Body large */
+.body-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-md, 30px);
+}
+
+.body-large-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-md, 30px);
+}
+
 /* Body / Body medium */
 .body-medium {
     font-family: var(--ff-sans, "Funnel Sans");

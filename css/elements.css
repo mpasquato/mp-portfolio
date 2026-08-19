@@ -94,6 +94,17 @@
     color: hsl(var(--clr-grape-35));
 }
 
+.text-link__primary:hover {
+    color: hsl(var(--clr-grape-35));
+    text-decoration-color: hsl(var(--clr-basic-black));
+}
+
+.text-link__primary:active {
+    color: hsl(var(--clr-grape-15));
+    text-decoration-color: hsl(var(--clr-basic-black));
+}
+
+
 .text-link__label {
 
 }
