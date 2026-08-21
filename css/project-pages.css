@@ -2,6 +2,14 @@
 
 
 
+/* Scrolling adjustments */
+
+[id] {
+    scroll-margin-top: var(--sz-15);
+}
+
+
+
 .project-hero-background {
     background-color: #B6E8BA;
 
@@ -491,10 +499,10 @@
 /* Component cmp content block */
 
 .cmp-content-block {
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--sz-3);
-    align-items: center;
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    row-gap: var(--sz-4);
 }
 
 .cmp-content-block-decoration {
@@ -516,29 +524,63 @@
     background-color: hsl(var(--clr-bittersweet-60));
 }
 
-.cmp-content-block-content {
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--sz-4);
+.cmp-content-block-head {
+    align-self: center;
+}
+
+.cmp-content-block-body {
+
 }
 
 
-
-/* Component cmp scrollable content */
-
-.cmp-scrollable-content {}
+/* Component scrollable content */
 
 .cmp-scrollable-content__content-block__double {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     column-gap: var(--sz-9);
 
-    overflow-x: scroll;
-
     @media screen and (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
         column-gap: var(--sz-12);
     }
 }
 
-.cmp-scrollable-content__content-block__double>.cmp-content-block {
-    flex: 1 0 200px;
+.cmp-scrollable-content__content-block__triple {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    column-gap: var(--sz-9);
+
+    @media screen and (min-width: 576px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--sz-12);
+    }
+}
+
+.cmp-scrollable-content {
+    overflow-x: auto;
+
+    margin-right: calc((-1) * var(--sz-7));
+    padding-right: var(--sz-7);
+
+    @media screen and (min-width: 576px) {
+        margin-right: initial;
+        padding-right: initial;
+    }
+}
+
+
+
+/* Component cmp content picture */
+
+.cmp-content-picture {
+
+}
+
+.cmp-content-picture-image {
+    line-height: 0;
+
+    border-radius: var(--sz-7);
 }

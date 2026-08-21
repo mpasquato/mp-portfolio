@@ -92,3 +92,13 @@ footer {
     flex-direction: column;
     gap: var(--sz-3);
 }
+
+ul {
+    margin-top: 0;
+    margin-bottom: var(--sz-3);
+    padding-left: var(--sz-7);
+}
+
+li {
+    padding-left: var(--sz-3);
+}
