@@ -263,6 +263,7 @@
 
 .prjct-recap-line-container {
     width: 24px;
+    flex: none;
     display: flex;
     justify-content: center;
 }
@@ -279,3 +280,28 @@
     margin: inherit;
 }
 
+.overview-body-line-container {
+    width: 24px;
+    flex: none;
+    display: flex;
+    justify-content: center;
+}
+
+.overview-body-line {
+    width: 2px;
+    height: 100%;
+    background-color: hsl(var(--clr-bittersweet-60));
+}
+
+.overview-figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sz-4);
+}
+
+.overview-figure-image {
+    flex-grow: 1;
+    border-radius: var(--sz-7);
+    object-fit: cover;
+}

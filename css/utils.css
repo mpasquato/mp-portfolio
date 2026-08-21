@@ -34,6 +34,10 @@
     color: hsl(var(--clr-bittersweet-60));
 }
 
+.text-neutral {
+    color: hsl(var(--clr-neutral-35));
+}
+
 .text-center {
     text-align: center;
 }

@@ -274,7 +274,7 @@
 .home-hero-mob__container {
     height: 100%;
 
-    margin-right: 0;
+    margin-right: calc((-1)*(var(--sz-7)));
 
     @media screen and (min-width: 576px) {
         /* padding: 0 var(--sz-15); */

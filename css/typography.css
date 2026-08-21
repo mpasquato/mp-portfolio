@@ -200,6 +200,30 @@ Interactive elements (e.g. hover effects):
     text-underline-position: from-font;
 } */
 
+/* Title / Title extra large xl */
+.title-xl {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xl, 36px);
+}
+
+.title-xl-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xl, 36px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+}
+
 /* Title / Title large */
 .title-large {
     font-family: var(--ff-sans, "Funnel Sans");
