@@ -541,6 +541,46 @@
 
 }
 
+.cmp-content-figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sz-4);
+}
+
+.cmp-content-figure-image {
+    flex-grow: 1;
+    border-radius: var(--sz-7);
+    object-fit: cover;
+}
+
+.cmp-content-quote {
+    display: flex;
+    column-gap: var(--sz-3);
+}
+
+.cmp-content-quote-decoration {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-4xl); 
+    color: hsl(var(--clr-bittersweet-60));
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 30px);
+}
+
+.cmp-content-quote-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sz-4);
+}
+
+.cmp-content-quote-text {
+    font-style: italic;
+}
+
+.cmp-content-figure-caption {
+    
+}
 
 /* Component scrollable content */
 

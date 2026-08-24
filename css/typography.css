@@ -347,6 +347,30 @@ Interactive elements (e.g. hover effects):
     line-height: var(--lh-xs, 20px);
 }
 
+/* Body / Body small */
+.body-small-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 4%;
+    text-underline-position: from-font;
+    transition: all 0.3s ease-out;
+}
+
+.body-small-link:hover {
+    text-decoration-color: hsl(var(--clr-basic-black));
+}
+
+.body-small-link:active {
+    color: hsl(var(--clr-basic-black));
+}
+
 /* Body / Body extra small xs */
 .body-xs {
     font-family: var(--ff-sans, "Funnel Sans");
@@ -422,6 +446,17 @@ Interactive elements (e.g. hover effects):
     font-weight: 600;
     line-height: var(--lh-xs, 20px);
     text-transform: uppercase;
+}
+
+/* Label / Label medium link */
+.label-medium-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-xs, 20px);
+    text-transform: uppercase;
+    
 }
 
 /* Label / Label small */
