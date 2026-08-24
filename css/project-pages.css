@@ -535,6 +535,18 @@
 
 /* Component scrollable content */
 
+.cmp-scrollable-content {
+    overflow-x: auto;
+
+    margin-right: calc((-1) * var(--sz-7));
+    padding-right: var(--sz-7);
+
+    @media screen and (min-width: 576px) {
+        margin-right: initial;
+        padding-right: initial;
+    }
+}
+
 .cmp-scrollable-content__content-block__double {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -556,18 +568,6 @@
     @media screen and (min-width: 576px) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: var(--sz-12);
-    }
-}
-
-.cmp-scrollable-content {
-    overflow-x: auto;
-
-    margin-right: calc((-1) * var(--sz-7));
-    padding-right: var(--sz-7);
-
-    @media screen and (min-width: 576px) {
-        margin-right: initial;
-        padding-right: initial;
     }
 }
 
