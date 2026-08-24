@@ -290,6 +290,65 @@
 
 
 
+/* Table of content */
+
+.cmp-toc-body {
+    overflow-x: scroll;
+
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: var(--sz-7);
+
+    padding-left: var(--sz-7);
+    padding-right: var(--sz-7);
+
+    @media screen and (min-width: 576px) {
+        padding-left: var(--sz-7);
+
+        max-width: var(--max-w-sm);
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-left: 0;
+
+        max-width: var(--max-w-md);
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding-left: 0;
+
+        max-width: calc(var(--max-w-lg));
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        overflow-x: initial;
+        flex-wrap: wrap;
+        width: 100%;
+
+        padding-left: 0;
+        padding-right:0;
+        max-width: calc(var(--max-w-xl));
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: calc(var(--max-w-xxl));
+        margin: 0 auto;
+    }
+
+}
+
+.cmp-toc-body>a {
+    white-space: nowrap;
+}
+
+
+
 /* Overview */
 
 .overview-body-line-container {
@@ -537,21 +596,28 @@
     align-self: center;
 }
 
-.cmp-content-block-body {
-
-}
+.cmp-content-block-body {}
 
 .cmp-content-figure {
     height: 100%;
+
     display: flex;
     flex-direction: column;
     row-gap: var(--sz-4);
 }
 
 .cmp-content-figure-image {
-    flex-grow: 1;
-    border-radius: var(--sz-7);
+    flex: 1 1 0;
+    min-height: initial;
+    max-height: 400px;
+    width: 100%;
     object-fit: cover;
+    border-radius: var(--sz-7);
+
+    @media screen and (min-width: 768px) {
+        min-height: 0;
+        max-height: initial;
+    }
 }
 
 .cmp-content-quote {
@@ -561,7 +627,7 @@
 
 .cmp-content-quote-decoration {
     font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-4xl); 
+    font-size: var(--fs-4xl);
     color: hsl(var(--clr-bittersweet-60));
     font-style: normal;
     font-weight: 400;
@@ -578,9 +644,7 @@
     font-style: italic;
 }
 
-.cmp-content-figure-caption {
-    
-}
+.cmp-content-figure-caption {}
 
 /* Component scrollable content */
 
@@ -624,9 +688,7 @@
 
 /* Component cmp content picture */
 
-.cmp-content-picture {
-
-}
+.cmp-content-picture {}
 
 .cmp-content-picture-image {
     line-height: 0;
