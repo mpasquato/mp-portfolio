@@ -490,6 +490,15 @@
     background-color: hsl(var(--clr-bittersweet-60));
 }
 
+.process-widget-spacer {
+    flex: 0 0 var(--sz-7);
+    height: 100%;
+
+    @media screen and (min-width: 576px) {
+        display: none;
+    }
+}
+
 .process-widget-body-line__hidden {
     visibility: hidden;
 }
