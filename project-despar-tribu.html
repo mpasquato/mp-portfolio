@@ -31,6 +31,7 @@
     <script src="js/navbar.js"></script>
     <script src="js/scrollable-toc.js"></script>
     <script src="js/scrollable-process.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <title>Portfolio | Marco Pasquato</title>
 </head>
@@ -614,9 +615,9 @@
                         </div>
 
                         <div class="col-12 grid row-gap-8 row-gap-11 row-lg-gap-14 col-xl-gap-12 grid-align-center">
-                            <div class="col-12 cmp-content-picture">
+                            <div class="col-12">
                                 <img src="media/projects/despar/photo_workshop-blurred__compressed.jpg" alt=""
-                                    class="cmp-content-picture-image">
+                                    class="cmp-content-figure-image cmp-content-figure-image__fullpage cmp-content-figure-image__radius">
                             </div>
 
                             <div class="col-12 col-lg-6">
@@ -645,15 +646,14 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-6 cmp-content-picture">
+                            <div class="col-12 col-lg-6">
                                 <img src="media/projects/despar/photo_timeline__compressed.jpg" alt=""
-                                    class="cmp-content-picture-image">
+                                    class="cmp-content-figure-image cmp-content-figure-image__fullpage cmp-content-figure-image__radius">
                             </div>
 
-                            <div
-                                class="col-12 col-lg-6 row-start-5 row-end-6 row-lg-start-3 row-lg-end-4 cmp-content-picture">
+                            <div class="col-12 col-lg-6 row-start-5 row-end-6 row-lg-start-3 row-lg-end-4">
                                 <img src="media/projects/despar/photo_card-sorting__compressed.jpg" alt=""
-                                    class="cmp-content-picture-image">
+                                    class="cmp-content-figure-image cmp-content-figure-image__fullpage cmp-content-figure-image__radius">
                             </div>
 
                             <div class="col-12 col-lg-6">
@@ -1041,16 +1041,30 @@
                             </ul>
                         </div>
 
-                        <figure class="col-12">
-                            <a href="">
-                                <img src="media/projects/despar/lightbox_wireframes.png" alt="">
-                                <a href="" class="lightbox-button"></a>
+                        <figure class="col-12 cmp-content-figure">
+                            <a href="#lightbox-despar-wireframes" class="cmp-content-figure-linkimage">
+                                <img src="media/projects/despar/lightbox_wireframes.png" alt=""
+                                    class="cmp-content-figure-image cmp-content-figure-image__fullpage cmp-content-figure-image__lightbox">
+                                <div class="fab cmp-content-figure-fab">
+                                    <i class="iconoir-enlarge fab-icon"></i>
+                                </div>
                             </a>
-                            <figcaption class="body-small">
+                            <figcaption class="body-small text-center">
                                 Partial representation of the <span class="body-small-e">wireframes</span>.
                             </figcaption>
                         </figure>
                     </div>
+                </div>
+            </div>
+
+            <div id="lightbox-despar-wireframes" class="cmp-lightbox-wrapper">
+                <div class="cmp-lightbox">
+                    <div class="cmp-lightbox-image-wrapper">
+                        <img src="media/projects/despar/lightbox_wireframes.png" alt="" class="cmp-lightbox-image">
+                    </div>
+                    <a href="#lightbox-despar-wireframes" class="fab cmp-lightbox-fab__close">
+                        <i class="iconoir-xmark fab-icon"></i>
+                    </a>
                 </div>
             </div>
 
@@ -1080,18 +1094,22 @@
 
                         <div class="col-4 col-lg-3">
                             <figure class="cmp-content-figure">
-                                <img src="media/projects/despar/screen_various-01__compressed.png" alt="" class="cmp-content-figure-image">
+                                <img src="media/projects/despar/screen_various-01__compressed.png" alt=""
+                                    class="cmp-content-figure-image">
                                 <figcaption class="body-small">
-                                    Old sections that required user experience adjustments and updating to the latest design system were worked out.
+                                    Old sections that required user experience adjustments and updating to the latest
+                                    design system were worked out.
                                 </figcaption>
                             </figure>
                         </div>
-                        
+
                         <div class="col-4 col-lg-3 col-lg-start-2 col-lg-end-5">
                             <figure class="cmp-content-figure">
-                                <img src="media/projects/despar/screen_various-02__compressed.png" alt="" class="cmp-content-figure-image">
+                                <img src="media/projects/despar/screen_various-02__compressed.png" alt=""
+                                    class="cmp-content-figure-image">
                                 <figcaption class="body-small">
-                                    Extemporaneous items (such as seasonal-themed features) and new functionalities were developed.
+                                    Extemporaneous items (such as seasonal-themed features) and new functionalities were
+                                    developed.
                                 </figcaption>
                             </figure>
                         </div>
