@@ -293,18 +293,22 @@
 /* Table of content */
 
 #table-of-content {
-    margin-bottom: -16px; /* compensate for scrollable toc-body padding */
+    margin-bottom: -16px;
+    /* compensate for scrollable toc-body padding */
 }
 
 .cmp-toc-body::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in Chrome/Safari */
+    display: none;
+    /* Hides scrollbar in Chrome/Safari */
 }
 
 .cmp-toc-body {
     overflow-x: scroll;
 
-    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hides scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
 
     display: flex;
     flex-wrap: nowrap;
@@ -317,18 +321,18 @@
     padding-bottom: 16px;
 
     @media screen and (min-width: 576px) {
-        padding-left: calc( ((100vw) - (var(--max-w-sm))) / 2);
-        padding-right: calc( ((100vw) - (var(--max-w-sm))) / 2);
+        padding-left: calc(((100vw) - (var(--max-w-sm))) / 2);
+        padding-right: calc(((100vw) - (var(--max-w-sm))) / 2);
     }
 
     @media screen and (min-width: 768px) {
-        padding-left: calc( ((100vw) - (var(--max-w-md))) / 2);
-        padding-right: calc( ((100vw) - (var(--max-w-md))) / 2);
+        padding-left: calc(((100vw) - (var(--max-w-md))) / 2);
+        padding-right: calc(((100vw) - (var(--max-w-md))) / 2);
     }
 
     @media screen and (min-width: 992px) {
-        padding-left: calc( ((100vw) - (var(--max-w-lg))) / 2);
-        padding-right: calc( ((100vw) - (var(--max-w-lg))) / 2);
+        padding-left: calc(((100vw) - (var(--max-w-lg))) / 2);
+        padding-right: calc(((100vw) - (var(--max-w-lg))) / 2);
     }
 
     @media screen and (min-width: 1200px) {
@@ -403,16 +407,19 @@
 
 
 .process-widget-section::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in Chrome/Safari */
+    display: none;
+    /* Hides scrollbar in Chrome/Safari */
 }
 
 .process-widget-section {
 
     overflow-x: scroll;
 
-    
-    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
+
+    -ms-overflow-style: none;
+    /* Hides scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
 
     display: flex;
     flex-direction: column;
@@ -614,25 +621,44 @@
 .cmp-content-block-body {}
 
 .cmp-content-figure {
-    height: 100%;
-
     display: flex;
     flex-direction: column;
     row-gap: var(--sz-4);
 }
 
+.cmp-content-figure__fillh {
+    height: 100%
+}
+
 .cmp-content-figure-image {
+    flex: 1 1;
+
+    @media screen and (min-width: 992px) {
+        flex: 1 1;
+    }
+}
+
+.cmp-content-figure-image__fillh {
     flex: 1 1 0;
     min-height: initial;
     max-height: 200px;
     width: 100%;
     object-fit: cover;
-    border-radius: var(--sz-7);
 
     @media screen and (min-width: 992px) {
         min-height: 0;
         max-height: initial;
     }
+}
+
+.cmp-content-figure-image__radius {
+    border-radius: var(--sz-7);
+}
+
+.cmp-content-simplefigure {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sz-4);
 }
 
 .cmp-content-quote {
