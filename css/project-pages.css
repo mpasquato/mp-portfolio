@@ -401,9 +401,18 @@
     background-color: hsl(var(--clr-bittersweet-95));
 }
 
+
+.process-widget-section::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
 .process-widget-section {
 
     overflow-x: scroll;
+
+    
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
 
     display: flex;
     flex-direction: column;
