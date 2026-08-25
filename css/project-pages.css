@@ -292,8 +292,19 @@
 
 /* Table of content */
 
+#table-of-content {
+    margin-bottom: -16px; /* compensate for scrollable toc-body padding */
+}
+
+.cmp-toc-body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
 .cmp-toc-body {
     overflow-x: scroll;
+
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
 
     display: flex;
     flex-wrap: nowrap;
@@ -302,29 +313,27 @@
     padding-left: var(--sz-7);
     padding-right: var(--sz-7);
 
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     @media screen and (min-width: 576px) {
         padding-left: calc( ((100vw) - (var(--max-w-sm))) / 2);
-
-        max-width: ;
-        margin: 0 auto;
+        padding-right: calc( ((100vw) - (var(--max-w-sm))) / 2);
     }
 
     @media screen and (min-width: 768px) {
-        padding-left: 0;
-
-        max-width: var(--max-w-md);
-        margin: 0 auto;
+        padding-left: calc( ((100vw) - (var(--max-w-md))) / 2);
+        padding-right: calc( ((100vw) - (var(--max-w-md))) / 2);
     }
 
     @media screen and (min-width: 992px) {
-        padding-left: 0;
-
-        max-width: calc(var(--max-w-lg));
-        margin: 0 auto;
+        padding-left: calc( ((100vw) - (var(--max-w-lg))) / 2);
+        padding-right: calc( ((100vw) - (var(--max-w-lg))) / 2);
     }
 
     @media screen and (min-width: 1200px) {
         overflow-x: initial;
+
         flex-wrap: wrap;
         width: 100%;
 
@@ -335,10 +344,7 @@
     }
 
     @media screen and (min-width: 1400px) {
-        padding-left: 0;
-        padding-right: 0;
         max-width: calc(var(--max-w-xxl));
-        margin: 0 auto;
     }
 
 }
