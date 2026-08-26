@@ -410,7 +410,7 @@ Interactive elements (e.g. hover effects):
     color: hsl(var(--clr-bittersweet-50));
 }
 
-.label-large-:active {
+.label-large-int:active {
     color: hsl(var(--clr-bittersweet-40));
 }
 
