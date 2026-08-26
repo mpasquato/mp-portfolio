@@ -113,7 +113,7 @@ body {
 .t_body--int--link:hover,
 .t_body--int--link:target,
 .t_body--int--link:hover {
-    text-decoration-color: hsl(var(--clr-basic-black));
+    text-decoration-color: var(--clr-text-invert);
 }
 
 

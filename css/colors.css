@@ -1,5 +1,7 @@
 :root {
 
+    /* Basic tokens */
+
     --clr-basic-white: 0, 0%, 100%;
     --clr-basic-black: 0, 0%, 0%;
 
@@ -135,4 +137,11 @@
     --clr-error-98: 8, 100%, 98%;
     --clr-error-99: 300, 100%, 99%;
     --clr-error-100: 0, 0%, 100%;
+
+
+
+    /* Semantic tokens */
+
+    --clr-text: hsl(var(--clr-basic-black));
+    
 }
