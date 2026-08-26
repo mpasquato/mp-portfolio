@@ -55,7 +55,7 @@ body {
 /* Body */
 
 /* 
-    .body-xs > .t-body .t_body--sz--xs
+    .body-xs > .t_body .t_body--sz--xs
     .body-small > .t_body .t_body--sz--sm
     .body-medium > .t_body
     .body-large > .t_body .t_body--sz--lg
@@ -121,37 +121,55 @@ body {
 
 /* Label */
 
-.label-large {
+/* 
+    .label-small > .t_label .t_label--sz--sm
+    .label-medium > .t_label
+    .label-large > .t_label .t_label--sz--lg
+
+    .label-large-int > .t_label .t_label--sz--lg .t_label--int--btn
+    .label-large-link > .t_label t_label--sz--lg .t_label--int--link
+*/
+
+.t_label {
     font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: var(--fs-xs, 14px);
     line-height: var(--lh-xs, 20px);
 }
 
-.label-large-int {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 500;
+.t_label--sz--sm {
+    font-size: var(--fs-2xs, 12px);
+    line-height: var(--lh-2xs, 18px);
+}
+
+.t_label--sz--md {
+    font-weight: 600;
+    font-size: var(--fs-xs, 14px);
     line-height: var(--lh-xs, 20px);
+}
+
+.t_label--sz--lg {
+    font-weight: 500;
+    text-transform: none;
+    font-size: var(--fs-sm, 16px);
+    line-height: var(--lh-xs, 20px);
+}
+
+.t_label--int--btn {
     transition: color 0.3s ease-out;
 }
 
-.label-large-int:hover {
+.t_label--int--btn:hover, .t_label--int--btn:target {
     color: hsl(var(--clr-bittersweet-50));
 }
 
-.label-large-int:active {
+.t_label--int--btn:active {
     color: hsl(var(--clr-bittersweet-40));
 }
 
-.label-large-link {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xs, 20px);
+.t_label--int--link {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
@@ -161,40 +179,12 @@ body {
     transition: all 0.3s ease-out;
 }
 
-.label-large-link:hover {
+.t_label--int--link:hover, .t_label--int--link:target {
     color: hsl(var(--clr-bittersweet-40));
 }
 
-.label-large-link:active {
+.t_label--int--link:active {
     color: hsl(var(--clr-bittersweet-30));
-}
-
-.label-medium {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-xs, 20px);
-    text-transform: uppercase;
-}
-
-.label-medium-link {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-xs, 20px);
-    text-transform: uppercase;
-
-}
-
-.label-small {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-2xs, 12px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-2xs, 18px);
-    text-transform: uppercase;
 }
 
 
