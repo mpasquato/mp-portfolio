@@ -57,7 +57,6 @@ That applied to typography becomes:  `t_element--modifier-name--mod-value`
 
 `.t_title--sz--sm` label text small
 `.t_title--sz--md` label text medium
-`.t)`
 `.t_title--sz--lg` label text large
 `.t_title--sz--xl` label text x-large
 

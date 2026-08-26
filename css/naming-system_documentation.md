@@ -8,4 +8,3 @@ For most elements/component: Custom BEM system
 
 Custom double dashes
 `namespace_block-name__element-name--modifier-name--mod-value`
-
