@@ -126,7 +126,7 @@ body {
     .label-large > .t_label .t_label--sz--lg
 
     .label-large-int > .t_label .t_label--sz--lg .t_label--int--btn
-    .label-large-link > .t_label t_label--sz--lg .t_label--int--link
+    .label-large-link > .t_label .t_label--sz--lg .t_label--int--link
 */
 
 .t_label {
