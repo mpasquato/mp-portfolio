@@ -74,13 +74,15 @@ That applied to typography becomes:  `t_element--modifier-name--mod-value`
 
 `.t_headline--sz--sm` label text small
 `.t_headline--sz--md` label text medium
-`.t)`
 `.t_headline--sz--lg` label text large
 
 *Emphasis modifiers*
 
 `.t_headline--em--yes` text is emphasized
 
+*Interactive modifiers*
+
+`.t_headline--int--link` used for links
 
 ### Display text
 
@@ -91,7 +93,7 @@ That applied to typography becomes:  `t_element--modifier-name--mod-value`
 *Sizing modifiers*
 
 `.t_display--sz--md` display text medium
-`.t)`
+`.t_display--sz--xl` display text x-large
 
 *Emphasis modifiers*
 

@@ -64,7 +64,6 @@ body {
     .body-small-e > .t_body .t_body--sz--sm .t_body--em--yes
     .body-medium-e > .t_body .t_body--em--yes
     .body-large-e > .t_body .t_body--sz--lg .t_body--em--yes
-    .body-xs-e > .t-body .t_body--sz--xs .t-body--em--yes
     
     .body-small-link > .t_body .t_body--sz--sm .t_body--int--link
 */
@@ -256,7 +255,6 @@ body {
     .headline-small > .t_headline .t_headline--sz--sm
     .headline-medium > .t_headline
     .headline-large > .t_headline .t_headline--sz--lg
-    .title-xl > .t_headline .t_headline--sz--xl
 
     .headline-small-e > .t_headline .t_headline--sz--sm .t_headline--em--yes
     .headline-medium-e > .t_headline .t_headline--em--yes
