@@ -1,9 +1,9 @@
-/* Setting up font-size to be 10px for default browsers (to make rem calculations easier) */
-html {
-    font-size: 62.5%;
-}
+/* TYPOGRAPHY */
 
-/* Setting up variables */
+
+
+/* Variables setup */
+
 :root {
 
     --fs-2xs: 1.2rem;
@@ -34,53 +34,293 @@ html {
 
 }
 
-/* Default body font */
+
+
+/* Basic setup */
+
+html {
+    /* Setting up font-size to be 10px for default browsers (to make rem calculations easier) */
+    font-size: 62.5%;
+}
+
 body {
-    font-family: var(--ff-sans)
+    /* Default body font */
+    font-family: var(--ff-sans);
 }
 
-/* 
-Typography explained
-Display styles: decorative/one shots (e.g. big hero text)
-Headline styles: big titles/Section titles
-Title styles: lower importance titles
-Body: body text
-Labels: labels...
 
-Style naming
-Base formatting:
-    .style-size
-Emphasized formatting:
-    .style-size-e
-Interactive elements (e.g. hover effects):
-    .style-size-int
-*/
 
-/* Display / Display medium */
-.display-medium {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-lg, 24px);
+/* Styling */
+
+/* Body */
+
+.body-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--lh-lg, 32px);
+    line-height: var(--lh-md, 30px);
 }
 
-.display-medium-e {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-4xl, 45px);
+.body-large-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-md, 30px);
+}
+
+.body-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--lh-4xl, 54px);
+    line-height: var(--lh-sm, 23px);
+}
+
+.body-medium-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-sm, 23px);
+}
+
+.body-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
+}
+
+.body-small-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-xs, 20px);
+}
+
+.body-small-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-xs, 20px);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
     text-decoration-thickness: 10%;
-    text-underline-offset: 8%;
+    text-underline-offset: 4%;
+    text-underline-position: from-font;
+    transition: all 0.3s ease-out;
+}
+
+.body-small-link:hover {
+    text-decoration-color: hsl(var(--clr-basic-black));
+}
+
+.body-small-link:active {
+    color: hsl(var(--clr-basic-black));
+}
+
+.body-xs {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xs, 12px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--lh-2xs, 18px);
+}
+
+.body-xs-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xs, 12px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-2xs, 18px);
+}
+
+
+
+/* Label */
+
+.label-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xs, 20px);
+}
+
+.label-large-int {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xs, 20px);
+    transition: color 0.3s ease-out;
+}
+
+.label-large-int:hover {
+    color: hsl(var(--clr-bittersweet-50));
+}
+
+.label-large-int:active {
+    color: hsl(var(--clr-bittersweet-40));
+}
+
+.label-large-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xs, 20px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 4%;
+    text-underline-position: from-font;
+    transition: all 0.3s ease-out;
+}
+
+.label-large-link:hover {
+    color: hsl(var(--clr-bittersweet-40));
+}
+
+.label-large-link:active {
+    color: hsl(var(--clr-bittersweet-30));
+}
+
+.label-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-xs, 20px);
+    text-transform: uppercase;
+}
+
+.label-medium-link {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xs, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-xs, 20px);
+    text-transform: uppercase;
+
+}
+
+.label-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-2xs, 12px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--lh-2xs, 18px);
+    text-transform: uppercase;
+}
+
+
+
+/* Title */
+
+.title-xl {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xl, 36px);
+}
+
+.title-xl-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-xl, 28px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-xl, 36px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
     text-underline-position: from-font;
 }
 
-/* Headline / Headline large */
+.title-large {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-lg, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--lh-lg, 32px);
+}
+
+.title-large-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-lg, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--lh-lg, 32px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+}
+
+.title-medium {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-md, 30px);
+}
+
+.title-medium-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-md, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--lh-md, 30px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+}
+
+.title-small {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: var(--lh-sm, 23px);
+}
+
+.title-small-e {
+    font-family: var(--ff-sans, "Funnel Sans");
+    font-size: var(--fs-sm, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--lh-sm, 23px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60));
+    text-decoration-thickness: 10%;
+    text-underline-offset: 13.1%;
+    text-underline-position: from-font;
+}
+
+
+
+/* Headline */
+
 .headline-large {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-5xl, 56px);
@@ -104,7 +344,6 @@ Interactive elements (e.g. hover effects):
     text-underline-position: from-font;
 }
 
-/* Headline / Headline medium */
 .headline-medium {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-3xl, 36px);
@@ -128,7 +367,6 @@ Interactive elements (e.g. hover effects):
     text-underline-position: from-font;
 }
 
-/* Headline / Headline small - will be used, among other, for navigation */
 .headline-small {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-lg, 24px);
@@ -178,298 +416,43 @@ Interactive elements (e.g. hover effects):
     background-color: hsl(var(--clr-bittersweet-60));
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
-  }
+}
 
-  .headline-small-int:hover::after {
+.headline-small-int:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
-/* .headline-small-int:hover {
+
+
+/* Display */
+
+.display-medium {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-size: var(--fs-lg, 24px);
     font-style: normal;
     font-weight: 400;
     line-height: var(--lh-lg, 32px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 6%;
-    text-underline-position: from-font;
-} */
-
-/* Title / Title extra large xl */
-.title-xl {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xl, 28px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xl, 36px);
 }
 
-.title-xl-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xl, 28px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xl, 36px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
-}
-
-/* Title / Title large */
-.title-large {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-lg, 24px);
-    font-style: normal;
-    font-weight: 800;
-    line-height: var(--lh-lg, 32px);
-}
-
-.title-large-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-lg, 24px);
-    font-style: normal;
-    font-weight: 800;
-    line-height: var(--lh-lg, 32px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
-}
-
-/* Title / Title medium */
-.title-medium {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-md, 20px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-md, 30px);
-}
-
-.title-medium-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-md, 20px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-md, 30px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
-}
-
-/* Title / Title small */
-.title-small {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 800;
-    line-height: var(--lh-sm, 23px);
-}
-
-.title-small-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--lh-sm, 23px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
-}
-
-/* Body / Body large */
-.body-large {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-md, 20px);
+.display-medium-e {
+    font-family: var(--ff-serif-text, "DM Serif Text");
+    font-size: var(--fs-4xl, 45px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--lh-md, 30px);
-}
-
-.body-large-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-md, 20px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--lh-md, 30px);
-}
-
-/* Body / Body medium */
-.body-medium {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-sm, 23px);
-}
-
-.body-medium-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--lh-sm, 23px);
-}
-
-/* Body / Body small */
-.body-small {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-xs, 20px);
-}
-
-.body-small-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--lh-xs, 20px);
-}
-
-/* Body / Body small */
-.body-small-link {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-xs, 20px);
+    line-height: var(--lh-4xl, 54px);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
+    text-decoration-color: hsl(var(--clr-bittersweet-60), 1);
     text-decoration-thickness: 10%;
-    text-underline-offset: 4%;
+    text-underline-offset: 8%;
     text-underline-position: from-font;
-    transition: all 0.3s ease-out;
-}
-
-.body-small-link:hover {
-    text-decoration-color: hsl(var(--clr-basic-black));
-}
-
-.body-small-link:active {
-    color: hsl(var(--clr-basic-black));
-}
-
-/* Body / Body extra small xs */
-.body-xs {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-2xs, 12px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-2xs, 18px);
-}
-
-.body-xs-e {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-2xs, 12px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--lh-2xs, 18px);
-}
-
-/* Label / Label large */
-.label-large {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xs, 20px);
-}
-
-.label-large-int {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xs, 20px);
-    transition: color 0.3s ease-out;
-}
-
-.label-large-int:hover {
-    color: hsl(var(--clr-bittersweet-50));
-}
-
-.label-large-int:active {
-    color: hsl(var(--clr-bittersweet-40));
-}
-
-.label-large-link {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-sm, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: var(--lh-xs, 20px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-thickness: 9%;
-    text-underline-offset: 4%;
-    text-underline-position: from-font;
-    transition: all 0.3s ease-out;
-}
-
-.label-large-link:hover {
-    color: hsl(var(--clr-bittersweet-40));
-}
-
-.label-large-link:active {
-    color: hsl(var(--clr-bittersweet-30));
 }
 
 
-/* Label / Label medium */
-.label-medium {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-xs, 20px);
-    text-transform: uppercase;
-}
 
-/* Label / Label medium link */
-.label-medium-link {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-xs, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-xs, 20px);
-    text-transform: uppercase;
-    
-}
-
-/* Label / Label small */
-.label-small {
-    font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-2xs, 12px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--lh-2xs, 18px);
-    text-transform: uppercase;
-}
-
-/* Text styles */
+/* P - Paragraph */
 p {
     margin-bottom: var(--sz-3, 8px);
 }
