@@ -140,6 +140,7 @@ body {
 }
 
 .t_label--sz--sm {
+    font-weight: 600;
     font-size: var(--fs-2xs, 12px);
     line-height: var(--lh-2xs, 18px);
 }
@@ -197,17 +198,17 @@ body {
     .title-large > .t_title .t_title--sz--lg
     .title-xl > .t_title .t_title--sz--xl
 
-    .title-small-e > .t_title .t_title--sz--sm .t_body--em--yes
+    .title-small-e > .t_title .t_title--sz--sm .t_title--em--yes
     .title-medium-e > .t_title .t_title--em--yes
-    .title-large-e > .t_title .t_title--sz--lg .t_body--em--yes
-    .title-xl-e > .t-title .t_title--sz--xl .t-body--em--yes
+    .title-large-e > .t_title .t_title--sz--lg .t_title--em--yes
+    .title-xl-e > .t-title .t_title--sz--xl .t-title--em--yes
 */
 
 .t_title {
     font-family: var(--ff-sans, "Funnel Sans");
-    font-size: var(--fs-md, 20px);
     font-style: normal;
     font-weight: 500;
+    font-size: var(--fs-md, 20px);
     line-height: var(--lh-md, 30px);
 }
 
@@ -249,20 +250,43 @@ body {
 
 /* Headline */
 
-.headline-large {
+/* 
+    .headline-small > .t_headline .t_headline--sz--sm
+    .headline-medium > .t_headline
+    .headline-large > .t_headline .t_headline--sz--lg
+    .title-xl > .t_headline .t_headline--sz--xl
+
+    .headline-small-e > .t_headline .t_headline--sz--sm .t_headline--em--yes
+    .headline-medium-e > .t_headline .t_headline--em--yes
+    .headline-large-e > .t_theadline .t_theadline--sz--lg .t_headline--em--yes
+
+    .headline-small-int > .t_headline .t_headline--sz--sm .t_headline--int--link
+*/
+
+.t_headline {
     font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-5xl, 56px);
     font-style: normal;
     font-weight: 400;
+    font-size: var(--fs-3xl, 36px);
+    line-height: var(--lh-3xl, 43px);
+}
+
+.t_headline--sz--sm {
+    font-size: var(--fs-lg, 24px);
+    line-height: var(--lh-lg, 32px);
+}
+
+.t_headline--sz--md {
+    font-size: var(--fs-3xl, 36px);
+    line-height: var(--lh-3xl, 43px);
+}
+
+.t_headline--sz--lg {
+    font-size: var(--fs-5xl, 56px);
     line-height: var(--lh-5xl, 67px);
 }
 
-.headline-large-e {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-5xl, 56px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-5xl, 67px);
+.t_headline--em--yes {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
@@ -272,67 +296,14 @@ body {
     text-underline-position: from-font;
 }
 
-.headline-medium {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-3xl, 36px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-3xl, 43px);
-}
-
-.headline-medium-e {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-3xl, 36px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-3xl, 43px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 9%;
-    text-underline-position: from-font;
-}
-
-.headline-small {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-lg, 24px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-lg, 32px);
-}
-
-.headline-small-e {
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-lg, 24px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-lg, 32px);
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: hsl(var(--clr-bittersweet-60));
-    text-decoration-thickness: 10%;
-    text-underline-offset: 13.1%;
-    text-underline-position: from-font;
-}
-
-.headline-small-int {
+.t_headline--int--link {
     display: inline-block;
     position: relative;
 
-    font-family: var(--ff-serif-text, "DM Serif Text");
-    font-size: var(--fs-lg, 24px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--lh-lg, 32px);
-
     transition: transform .5s ease-out;
-
 }
 
-.headline-small-int::after {
+.t_headline--int--link::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -346,7 +317,7 @@ body {
     transition: transform 0.3s ease-out;
 }
 
-.headline-small-int:hover::after {
+.t_headline--int--link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
