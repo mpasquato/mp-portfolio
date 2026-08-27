@@ -112,6 +112,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 
+    column-gap: 0;
+}
+
+.grid-gap {
+
     column-gap: var(--sz-4);
 
     @media screen and (min-width: 576px) {
@@ -133,10 +138,6 @@
     @media screen and (min-width: 1400px) {
         column-gap: var(--sz-10);
     }
-}
-
-.grid-no-gap {
-    column-gap: 0;
 }
 
 .grid-1 {
