@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".cmp-toc-body");
+    const slider = document.querySelector(".c_toc__body");
 
     if (!slider) return;
 

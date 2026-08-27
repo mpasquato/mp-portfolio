@@ -439,24 +439,29 @@
 
 /* Table of content */
 
-#table-of-content {
-    margin-bottom: -16px;
+.cmp-toc,
+.c_toc {
     /* compensate for scrollable toc-body padding */
+    margin-bottom: -16px;
 }
 
-.cmp-toc-body::-webkit-scrollbar {
-    display: none;
+.cmp-toc-body::-webkit-scrollbar, 
+.c_toc__body::-webkit-scrollbar {
     /* Hides scrollbar in Chrome/Safari */
+    display: none;
+
 }
 
-.cmp-toc-body {
+.cmp-toc-body,
+.c_toc__body {
     overflow-x: scroll;
-
-    -ms-overflow-style: none;
+    
     /* Hides scrollbar in Internet Explorer 10+ */
-    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Hides scrollbar in Firefox */
-
+    scrollbar-width: none;
+    
+    
     display: flex;
     flex-wrap: nowrap;
     column-gap: var(--sz-7);
@@ -500,7 +505,8 @@
 
 }
 
-.cmp-toc-body>a {
+.cmp-toc-body>a, 
+.c_toc__body>a {
     white-space: nowrap;
 }
 
