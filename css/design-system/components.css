@@ -115,6 +115,12 @@
 
 /* Project hero */
 
+/*
+    project-hero > c_project-hero
+*/
+
+.project-hero {}
+
 .project-hero-background {
     background-color: #B6E8BA;
 
