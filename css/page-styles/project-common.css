@@ -1,0 +1,10 @@
+/* PROJECT PAGES */
+/* Common CSS for all of the project pages */
+
+
+
+/* Scrolling adjustments */
+
+[id] {
+    scroll-margin-top: var(--sz-15);
+}

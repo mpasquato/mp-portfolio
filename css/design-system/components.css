@@ -1,14 +1,101 @@
-/* PROJECT PAGES (Common CSS for all of the project pages) */
+/* COMPONENTS */
 
 
 
-/* Scrolling adjustments */
+/* Project card */
 
-[id] {
-    scroll-margin-top: var(--sz-15);
+.project-card {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    /* grid-template-rows: 2; */
+flex-direction: column;
+
+    background-color: hsl(var(--clr-grape-15));
+
+    border-radius: var(--sz-3);
+
+    overflow: hidden;
+
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.project-card__clickable-area {
+    position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(calc(var(--sz-7)*(-1)));
+    box-shadow: var(--elv-3);
+}
+
+.project-card__header {
+    position: relative;
+}
+
+.project-card__image {
+    width: 100%;
+    aspect-ratio: 1.2 / 1;
+    object-fit: cover;
+}
+
+.project-card__tags {
+    position: absolute;
+    bottom: var(--sz-6);
+    left: var(--sz-6);
+    right: var(--sz-6);
+    display: inline-flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
+    column-gap: var(--sz-3);
+}
+
+.project-card__logo {
+    position: absolute;
+    top: var(--sz-4);
+    right: var(--sz-4);
+    width: var(--sz-11);
+    aspect-ratio: 1 / 1;
+    filter: drop-shadow(0 var(--sz-1) var(--sz-2) hsla(var(--clr-grape-5), 0.3)) drop-shadow(0 var(--sz-1) var(--sz-2) hsla(var(--clr-grape-5), 0.15));
+}
+
+.project-card__body {
+    display: flex;
+    flex-direction: column;
+    color: hsl(var(--clr-basic-white));
+    gap: var(--sz-5);
+    padding: var(--sz-7);
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.project-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sz-3);
+}
+
+.project-card__button {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card__button > a {
+    z-index: 2;
 }
 
 
+
+/* Project hero */
 
 .project-hero-background {
     background-color: #B6E8BA;
@@ -779,6 +866,8 @@
 
 .cmp-content-figure-caption {}
 
+
+
 /* Component scrollable content */
 
 .cmp-scrollable-content {
@@ -900,4 +989,83 @@
         top: calc((-1) * var(--sz-7));
         right: calc((-1) * var(--sz-7));
     }
+}
+
+
+
+/* Footer */
+
+footer {
+    padding-top: var(--sz-11);
+    padding-bottom: var(--sz-16);
+
+    background-color: hsl(var(--clr-grape-5));
+}
+
+.footer-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: var(--sz-9);
+    column-gap: var(--sz-9);
+
+    @media screen and (min-width: 992px) {
+        column-gap: var(--sz-7);
+    }
+}
+
+.footer-home-link {
+    display: inline-block;
+}
+
+.footer-content {
+    display: grid;
+    row-gap: var(--sz-4);
+
+    grid-template-rows: subgrid;
+    grid-column: span 4;
+    grid-row: span 2;
+
+    @media screen and (min-width: 576px) {
+        grid-column: span 2;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+}
+
+.footer-content:last-child {
+
+    grid-column: 1 / -1;
+
+    @media screen and (min-width: 576px) {
+        grid-column: 1 / -1;
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-column: 1 / -1;
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-column: span 1;
+    }
+}
+
+.footer-content:last-child > .footer-content__header {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: initial;
+    }
+}
+
+.footer-content__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sz-3);
 }

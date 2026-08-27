@@ -18,29 +18,10 @@
 
 
 
-/* Section styles */
+/* Custom styling of common classes */
 
 .page-container {
     background-color: hsl(var(--clr-grape-35));
-}
-
-.project-cards-container {
-
-    padding: 0 var(--sz-4);
-
-    @media screen and (min-width: 576px) {
-        padding: 0 var(--sz-10);
-    }
-
-    @media screen and (min-width: 768px) {
-        padding: 0 var(--sz-12);
-    }
-
-    @media screen and (min-width: 992px) {}
-
-    @media screen and (min-width: 1200px) {}
-
-    @media screen and (min-width: 1400px) {}
 }
 
 
@@ -497,4 +478,27 @@
     @media screen and (min-width: 992px) {
         flex-direction: row;
     }
+}
+
+
+
+/* Project card section */
+
+.project-cards-container {
+
+    padding: 0 var(--sz-4);
+
+    @media screen and (min-width: 576px) {
+        padding: 0 var(--sz-10);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0 var(--sz-12);
+    }
+
+    @media screen and (min-width: 992px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+    @media screen and (min-width: 1400px) {}
 }
