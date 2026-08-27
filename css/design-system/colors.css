@@ -142,6 +142,11 @@
 
     /* Semantic tokens */
 
+    /* 
+    To be defined if it's gonna be implemented.
+    Example:
+
     --clr-text: hsl(var(--clr-basic-black));
+    */
     
 }
