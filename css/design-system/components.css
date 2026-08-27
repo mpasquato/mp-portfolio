@@ -345,7 +345,7 @@
 
 /* Project recap */
 
-.prjct-recap,
+/* .prjct-recap, */
 .c_project-summary {
     justify-self: center;
 
@@ -383,7 +383,7 @@
     @media screen and (min-width: 1400px) {}
 }
 
-.prjct-recap-section,
+/* .prjct-recap-section, */
 .c_project-summary__section {
     row-gap: var(--sz-3);
 }
