@@ -4,14 +4,8 @@
 
 /* Adjust scroll margins for sections */
 
-#my-work {
-    scroll-margin-top: var(--sz-15);
-}
-
-#about-me {
-    scroll-margin-top: var(--sz-15);
-}
-
+#my-work,
+#about-me,
 #contacts {
     scroll-margin-top: var(--sz-15);
 }
