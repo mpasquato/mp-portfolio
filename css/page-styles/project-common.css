@@ -5,6 +5,6 @@
 
 /* Scrolling adjustments */
 
-[id] {
+[id^="section"] {
     scroll-margin-top: var(--sz-15);
 }
