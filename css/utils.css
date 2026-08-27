@@ -19,28 +19,53 @@
 }
 
 .text-dark {
+    color: hsl(var(--clr-basic-black));
+    
+    /* Consider for refactoring */
+    /* 
     --clr-text: hsl(var(--clr-basic-black));
     color: var(--clr-text);
+    */
 }
 
 .text-light {
+    color: hsl(var(--clr-basic-white));
+    
+    /* Consider for refactoring */
+    /*
     --clr-text: hsl(var(--clr-basic-white)); 
     color: var(--clr-text);
+    */
 }
 
 .text-primary {
+    color: hsl(var(--clr-grape-35));
+
+    /* Consider for refactoring */
+    /*
     --clr-text: hsl(var(--clr-grape-35));
     color: var(--clr-text);
+    */
 }
 
 .text-accent {
+    color: hsl(var(--bittersweet-60));
+
+    /* Consider for refactoring */
+    /*
     --clr-text: hsl(var(--clr-bittersweet-60));
     color: var(--clr-text);
+    */
 }
 
 .text-neutral {
+    color: hsl(var(--clr-neutral-35));
+
+    /* Consider for refactoring */
+    /*
     --clr-text: hsl(var(--clr-neutral-35));
     color: var(--clr-text);
+    */
 }
 
 .text-center {
