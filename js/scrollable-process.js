@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".process-widget-section");
+    const slider = document.querySelector(".c_process__content");
 
     if (!slider) return;
 

@@ -439,20 +439,20 @@
 
 /* Table of content */
 
-.cmp-toc,
+/* .cmp-toc, */
 .c_toc {
     /* compensate for scrollable toc-body padding */
     margin-bottom: -16px;
 }
 
-.cmp-toc-body::-webkit-scrollbar, 
+/* .cmp-toc-body::-webkit-scrollbar,  */
 .c_toc__body::-webkit-scrollbar {
     /* Hides scrollbar in Chrome/Safari */
     display: none;
 
 }
 
-.cmp-toc-body,
+/* .cmp-toc-body, */
 .c_toc__body {
     overflow-x: scroll;
     
@@ -505,7 +505,7 @@
 
 }
 
-.cmp-toc-body>a, 
+/* .cmp-toc-body>a,  */
 .c_toc__body>a {
     white-space: nowrap;
 }
@@ -514,27 +514,42 @@
 
 /* Overview */
 
-.overview-body-line-container {
-    width: 24px;
-    flex: none;
+.c_overview {}
+
+.c_overview__content {}
+
+/* .overview-item, */
+.c_overview__item {}
+
+/* .overview-item-head, */
+.c_overview__head {}
+
+/* .overview-item-body, */
+.c_overview__body {
     display: flex;
-    justify-content: center;
 }
 
-.overview-body-line {
-    width: 2px;
-    height: 100%;
+/* .overview-body-line, */
+.c_overview__decoration {
+    flex: 0 0 2px;
+    align-self: stretch;
+
+    margin-left: 11px;
+    margin-right: 11px;
+    
     background-color: hsl(var(--clr-bittersweet-60));
 }
 
-.overview-figure {
+/* .overview-figure, */
+.c_overview__figure {
     height: 100%;
     display: flex;
     flex-direction: column;
     row-gap: var(--sz-4);
 }
 
-.overview-figure-image {
+/* .overview-figure-image, */
+.c_overview__image {
     flex-grow: 1;
     border-radius: var(--sz-7);
     object-fit: cover;
@@ -544,27 +559,33 @@
 
 /* Process */
 
-.process-widget {}
+.process-widget,
+.c_process {}
 
-.process-widget-wrapper__bg-primary {
+.process-widget-wrapper__bg-primary,
+.c_process__section--bg--primary {
     background-color: hsl(var(--clr-grape-95));
 }
 
-.process-widget-wrapper__bg-secondary {
+.process-widget-wrapper__bg-secondary,
+.c_process__section--bg--secondary {
     background-color: hsl(var(--clr-plump-purple-95));
 }
 
-.process-widget-wrapper__bg-tertiary {
+.process-widget-wrapper__bg-tertiary,
+.c_process__section--bg--tertiary {
     background-color: hsl(var(--clr-bittersweet-95));
 }
 
 
-.process-widget-section::-webkit-scrollbar {
+.process-widget-section::-webkit-scrollbar,
+.c_process__content::-webkit-scrollbar {
     display: none;
     /* Hides scrollbar in Chrome/Safari */
 }
 
-.process-widget-section {
+.process-widget-section,
+.c_process__content {
 
     overflow-x: scroll;
 
@@ -588,7 +609,8 @@
     }
 }
 
-.process-widget-section__start {
+.process-widget-section__start,
+.c_process__content--pos--start {
     padding-left: var(--sz-7);
     padding-right: var(--sz-7);
     width: 100%;
@@ -629,7 +651,8 @@
     }
 }
 
-.process-widget-section__end {
+.process-widget-section__end,
+.c_process__content--pos--end {
     padding-left: var(--sz-7);
     padding-right: var(--sz-7);
     width: 100%;
@@ -670,19 +693,22 @@
     }
 }
 
-.process-widget-section__middle {
+.process-widget-section__middle,
+.c_process__content--pos--middle {
     padding-left: var(--sz-8);
     padding-right: var(--sz-8);
 }
 
-.process-widget-item-container {
+.process-widget-item-container,
+.c_process__timeline {
     display: flex;
     align-items: center;
 
     height: 100%;
 }
 
-.process-widget-item {
+.process-widget-item,
+.c_process__item {
     flex: 1 0 160px;
     height: 100%;
 
@@ -700,11 +726,13 @@
     }
 }
 
-.process-widget-item__hidden {
+.process-widget-item__hidden,
+.c_process__item--vis--hidden {
     visibility: hidden;
 }
 
-.process-widget-number {
+.process-widget-number,
+.c_process__number {
     display: flex;
 
     justify-content: center;
@@ -718,23 +746,29 @@
     background-color: hsl(var(--clr-grape-35));
 }
 
-.process-widget-body-line {
+.process-widget-step,
+.c_process__step {}
+
+.process-widget-body-line,
+.c_process__line {
     flex: 0 0 var(--sz-5);
     height: 2px;
     background-color: hsl(var(--clr-bittersweet-60));
 }
 
-.process-widget-spacer {
+.process-widget-body-line__hidden,
+.c_process__line--vis--hidden {
+    visibility: hidden;
+}
+
+.process-widget-spacer,
+.c_process__timeline__spacer {
     flex: 0 0 var(--sz-7);
     height: 100%;
 
     @media screen and (min-width: 576px) {
         display: none;
     }
-}
-
-.process-widget-body-line__hidden {
-    visibility: hidden;
 }
 
 
