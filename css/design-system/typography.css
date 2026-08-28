@@ -11,22 +11,22 @@
     --fs-sm: 1.8rem;
     --fs-md: 2.0rem;
     --fs-lg: 2.4rem;
-    --fs-xl: 2.8rem;
+    --fs-xl: 2.6rem;
     --fs-2xl: 3.2rem;
-    --fs-3xl: 3.6rem;
+    --fs-3xl: 3.4rem;
     --fs-4xl: 4.5rem;
-    --fs-5xl: 5.6rem;
+    --fs-5xl: 5.4rem;
 
     --lh-2xs: 2.0rem;
     --lh-xs: 2.2rem;
     --lh-sm: 2.6rem;
     --lh-md: 2.8rem;
     --lh-lg: 3.2rem;
-    --lh-xl: 3.6rem;
+    --lh-xl: 3.4rem;
     --lh-2xl: 4.0rem;
-    --lh-3xl: 4.3rem;
+    --lh-3xl: 4.1rem;
     --lh-4xl: 5.4rem;
-    --lh-5xl: 6.7rem;
+    --lh-5xl: 6.4rem;
 
     --ff-serif-display: "DM Serif Display", serif;
     --ff-serif: "DM Serif Text", serif;
@@ -133,27 +133,27 @@ body {
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: var(--fs-xs, 14px);
-    line-height: var(--lh-xs, 20px);
+    font-size: var(--fs-xs, 16px);
+    line-height: var(--lh-xs, 22px);
 }
 
 .t_label--sz--sm {
     font-weight: 600;
-    font-size: var(--fs-2xs, 12px);
-    line-height: var(--lh-2xs, 18px);
+    font-size: var(--fs-2xs, 14px);
+    line-height: var(--lh-2xs, 20px);
 }
 
 .t_label--sz--md {
     font-weight: 600;
-    font-size: var(--fs-xs, 14px);
-    line-height: var(--lh-xs, 20px);
+    font-size: var(--fs-xs, 16px);
+    line-height: var(--lh-xs, 22px);
 }
 
 .t_label--sz--lg {
     font-weight: 500;
     text-transform: none;
-    font-size: var(--fs-sm, 16px);
-    line-height: var(--lh-xs, 20px);
+    font-size: var(--fs-sm, 18px);
+    line-height: var(--lh-xs, 22px);
 }
 
 .t_label--int--btn {
@@ -209,7 +209,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: var(--fs-md, 20px);
-    line-height: var(--lh-md, 30px);
+    line-height: var(--lh-md, 38px);
 }
 
 .t_title--sz--sm {
@@ -221,7 +221,7 @@ body {
 .t_title--sz--md {
     font-weight: 500;
     font-size: var(--fs-md, 20px);
-    line-height: var(--lh-md, 30px);
+    line-height: var(--lh-md, 38px);
 }
 
 .t_title--sz--lg {
@@ -232,8 +232,8 @@ body {
 
 .t_title--sz--xl {
     font-weight: 500;
-    font-size: var(--fs-xl, 28px);
-    line-height: var(--lh-xl, 36px);
+    font-size: var(--fs-xl, 26px);
+    line-height: var(--lh-xl, 34px);
 }
 
 .t_title--em--yes {
@@ -266,8 +266,8 @@ body {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-style: normal;
     font-weight: 400;
-    font-size: var(--fs-3xl, 36px);
-    line-height: var(--lh-3xl, 43px);
+    font-size: var(--fs-3xl, 34px);
+    line-height: var(--lh-3xl, 41px);
 }
 
 .t_headline--sz--sm {
@@ -276,8 +276,8 @@ body {
 }
 
 .t_headline--sz--md {
-    font-size: var(--fs-3xl, 36px);
-    line-height: var(--lh-3xl, 43px);
+    font-size: var(--fs-3xl, 34px);
+    line-height: var(--lh-3xl, 41px);
 }
 
 .t_headline--sz--lg {
