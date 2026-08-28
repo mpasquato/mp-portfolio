@@ -1025,8 +1025,8 @@
     }
 }
 
-/* .cmp-scrollable-content__content-block__triple */
-,.c_content-scrollable__content--var--triple {
+/* .cmp-scrollable-content__content-block__triple, */
+.c_content-scrollable__content--var--triple {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(3, minmax(280px, 1fr));
