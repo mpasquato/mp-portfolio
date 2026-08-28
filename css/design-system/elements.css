@@ -160,7 +160,6 @@
     text-decoration-color: hsl(var(--clr-basic-black));
 }
 
-
 .e_link-text__label {}
 
 
@@ -197,3 +196,64 @@
 .e_tag--vr--card {
     background-color: hsl(var(--clr-grape-90));
 }
+
+
+
+/* Navbar elements */
+
+
+/* Desktop navbar elements */
+
+.nav-dsk__btn,
+.e_nav-dsk__btn {
+    display: block;
+    text-align: center;
+    color: hsl(var(--clr-basic-white));
+}
+
+.nav-dsk__secondary-btn,
+.e_nav-dsk__btn--vr--secondary {
+    display: flex;
+    align-items: center;
+    gap: var(--sz-4);
+    color: hsl(var(--clr-basic-white));
+}
+
+.nav-dsk__secondary-btn:hover,
+.e_nav-dsk__btn--vr--secondary:hover {
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-dsk__secondary-btn-icon,
+.e_nav-dsk__btn-icon--vr--secondary {
+    font-size: 2.4rem;
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-dsk__secondary-btn-label,
+.e_nav-dsk__btn-label {}
+
+
+/* Mobile navbar elements */
+
+.nav-mob__secondary-btn,
+.e_nav-mob__btn--vr--secondary {
+    display: flex;
+    align-items: center;
+    gap: var(--sz-4);
+    color: hsl(var(--clr-basic-white));
+}
+
+.nav-mob__secondary-btn:hover,
+.e_nav-mob__btn--vr--secondary:hover {
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-mob__secondary-btn-icon,
+.e_nav-mob__btn-icon--vr--secondary {
+    font-size: 2.4rem;
+    color: hsl(var(--clr-bittersweet-60));
+}
+
+.nav-mob__secondary-btn-label,
+.e_nab-mob__btn-label {}
