@@ -2,34 +2,34 @@
 
 /* Common classes for logo colors and animation */
 
-.mp-navbar-logo,
+/* .mp-navbar-logo, */
 .c_nav__logo-mp {
     display: block;
 }
 
-.mp-logo__wave,
+/* .mp-logo__wave, */
 .c_nav__logo-mp-wave {
     fill: hsl(var(--clr-bittersweet-60));
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }
 
-.mp-navbar-logo:hover .mp-logo__wave, 
+/* .mp-navbar-logo:hover .mp-logo__wave,  */
 .c_nav__logo-mp:hover .c_nav__logo-mp-wave {
     transform: translateX(0%);
 }
 
-.mp-logo__upper-m,
+/* .mp-logo__upper-m, */
 .c_nav__logo-mp__upper-m {
     fill: hsl(var(--clr-basic-white));
 }
 
-.mp-logo__lower-m,
+/* .mp-logo__lower-m, */
 .c_nav__logo-mp__lower-m {
     fill: hsl(var(--clr-basic-white));
 }
 
-.mp-logo__p,
+/* .mp-logo__p, */
 .c_nav__logo-mp__p {
     fill: hsl(var(--clr-basic-white));
 }
