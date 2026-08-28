@@ -6,9 +6,9 @@
 
 :root {
 
-    --fs-2xs: 1.2rem;
-    --fs-xs: 1.4rem;
-    --fs-sm: 1.6rem;
+    --fs-2xs: 1.4rem;
+    --fs-xs: 1.6rem;
+    --fs-sm: 1.8rem;
     --fs-md: 2.0rem;
     --fs-lg: 2.4rem;
     --fs-xl: 2.8rem;
@@ -17,10 +17,10 @@
     --fs-4xl: 4.5rem;
     --fs-5xl: 5.6rem;
 
-    --lh-2xs: 1.8rem;
-    --lh-xs: 2.0rem;
-    --lh-sm: 2.3rem;
-    --lh-md: 3.0rem;
+    --lh-2xs: 2.0rem;
+    --lh-xs: 2.2rem;
+    --lh-sm: 2.6rem;
+    --lh-md: 2.8rem;
     --lh-lg: 3.2rem;
     --lh-xl: 3.6rem;
     --lh-2xl: 4.0rem;
@@ -72,28 +72,28 @@ body {
     font-family: var(--ff-sans, "Funnel Sans");
     font-style: normal;
     font-weight: 400;
-    font-size: var(--fs-sm, 16px);
-    line-height: var(--lh-sm, 23px);
+    font-size: var(--fs-sm, 18px);
+    line-height: var(--lh-sm, 26px);
 }
 
 .t_body--sz--xs {
-    font-size: var(--fs-2xs, 12px);
-    line-height: var(--lh-2xs, 18px);
+    font-size: var(--fs-2xs, 14px);
+    line-height: var(--lh-2xs, 20px);
 }
 
 .t_body--sz--sm {
-    font-size: var(--fs-xs, 14px);
-    line-height: var(--lh-xs, 20px);
+    font-size: var(--fs-xs, 16px);
+    line-height: var(--lh-xs, 22px);
 }
 
 .t_body--sz--md {
-    font-size: var(--fs-sm, 16px);
-    line-height: var(--lh-sm, 23px);
+    font-size: var(--fs-sm, 18px);
+    line-height: var(--lh-sm, 26px);
 }
 
 .t_body--sz--lg {
     font-size: var(--fs-md, 20px);
-    line-height: var(--lh-md, 30px);
+    line-height: var(--lh-md, 28px);
 }
 
 .t_body--em--yes {
@@ -369,6 +369,7 @@ ul {
 }
 
 li {
+    margin-bottom: var(--sz-3);
     padding-left: var(--sz-3);
 }
 
