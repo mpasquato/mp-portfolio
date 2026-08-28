@@ -884,9 +884,9 @@
 }
 
 /* to be removed */
-.cmp-content-figure-image__radius {
+/* .cmp-content-figure-image__radius {
     border-radius: var(--sz-7);
-}
+} */
 
 .cmp-content-figure-caption,
 .c_content-figure__caption {}
@@ -900,8 +900,8 @@
     position: relative;
 }
 
-.cmp-content-figure-linkimage::after, 
-.c_content-figure__linkimage::after {
+.cmp-content-figure-linkimage:after, 
+.c_content-figure__linkimage:after {
     position: absolute;
     content: '';
     top: 0;
