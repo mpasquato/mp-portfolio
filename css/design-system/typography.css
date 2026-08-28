@@ -266,8 +266,8 @@ body {
     font-family: var(--ff-serif-text, "DM Serif Text");
     font-style: normal;
     font-weight: 400;
-    font-size: var(--fs-3xl, 34px);
-    line-height: var(--lh-3xl, 41px);
+    font-size: var(--fs-2xl, 32px);
+    line-height: var(--lh-2xl, 40px);
 }
 
 .t_headline--sz--sm {
@@ -276,8 +276,13 @@ body {
 }
 
 .t_headline--sz--md {
-    font-size: var(--fs-3xl, 34px);
-    line-height: var(--lh-3xl, 41px);
+    font-size: var(--fs-2xl, 32px);
+    line-height: var(--lh-2xl, 40px);
+
+    @media screen and (min-width: 576px) {
+        font-size: var(--fs-3xl, 34px);
+        line-height: var(--lh-3xl, 41px);
+    }
 }
 
 .t_headline--sz--lg {
