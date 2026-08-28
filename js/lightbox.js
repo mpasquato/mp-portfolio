@@ -1,6 +1,6 @@
 document.addEventListener('click', function (event)
 {
-    const closeButton = event.target.closest('.cmp-lightbox-fab__close');
+    const closeButton = event.target.closest('.c_lightbox__fab--vr--close');
 
     if (closeButton)
     {
@@ -9,7 +9,7 @@ document.addEventListener('click', function (event)
         return;
     }
 
-    const wrapper = event.target.closest('.cmp-lightbox-wrapper');
+    const wrapper = event.target.closest('.c_lightbox');
 
     if (wrapper && event.target === wrapper)
     {

@@ -1042,7 +1042,8 @@
 
 /* Lightbox */
 
-.cmp-lightbox-wrapper {
+.cmp-lightbox-wrapper,
+.c_lightbox {
     visibility: hidden;
     opacity: 0;
 
@@ -1065,7 +1066,8 @@
         visibility 0s linear 0.5s;
 }
 
-.cmp-lightbox-wrapper:target {
+.cmp-lightbox-wrapper:target,
+.c_lightbox:target {
     visibility: visible;
     opacity: 1;
 
@@ -1074,7 +1076,8 @@
         visibility 0s linear 0s;
 }
 
-.cmp-lightbox {
+.cmp-lightbox,
+.c_lightbox__content {
     position: relative;
 
     width: calc(100vw - (4 * var(--sz-5)));
@@ -1094,7 +1097,9 @@
     background-color: hsl(var(--clr-plump-purple-98));
 }
 
-.cmp-lightbox-image-wrapper {
+/* TBD if this is gonna be scrollable */
+.cmp-lightbox-image-wrapper,
+.c_lightbox__image-container {
     width: 100%;
     height: 100%;
     overflow: scroll;
@@ -1105,12 +1110,14 @@
     align-items: center;
 }
 
-.cmp-lightbox-image {
+.cmp-lightbox-image,
+.c_lightbox__image {
     max-height: 100%;
     max-width: 100%;
 }
 
-.cmp-lightbox-fab__close {
+.cmp-lightbox-fab__close,
+.c_lightbox__fab--vr--close {
     position: absolute;
     top: calc((-1) * var(--sz-7));
     right: calc((-1) * var(--sz-7));
