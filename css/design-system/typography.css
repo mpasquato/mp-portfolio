@@ -281,8 +281,13 @@ body {
 }
 
 .t_headline--sz--lg {
-    font-size: var(--fs-5xl, 56px);
-    line-height: var(--lh-5xl, 67px);
+    font-size: var(--fs-4xl, 45px);
+    line-height: var(--lh-4xl, 54px);
+
+    @media screen and (min-width: 576px) {
+        font-size: var(--fs-5xl, 56px);
+        line-height: var(--lh-5xl, 67px);
+    }
 }
 
 .t_headline--em--yes {
