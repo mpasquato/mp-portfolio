@@ -1,7 +1,7 @@
 /* Desktop animation */
 
 window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".nav-dsk");
+    const navbar = document.querySelector(".c_nav-dsk");
     const trigger = document.getElementById("c_nav_appear");
 
     const triggerTop = trigger.getBoundingClientRect().top;
@@ -55,7 +55,9 @@ window.addEventListener("scroll", () => {
     const trigger = document.getElementById("c_nav_appear");
 
     const triggerTop = trigger.getBoundingClientRect().top;
-    console.log("triggerTop:", triggerTop);
+    
+    // Debug
+    // console.log("triggerTop:", triggerTop);
 
     if (triggerTop <= 0) {
         navbar.classList.add("init-animation");
