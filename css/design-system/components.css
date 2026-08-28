@@ -991,6 +991,9 @@
     font-style: italic;
 }
 
+.cmp-content-quote-content-author,
+.c_content-quote__author {}
+
 
 
 /* Component scrollable content */
