@@ -2,7 +2,7 @@
 
 window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".nav-dsk");
-    const trigger = document.getElementById("nav-appear");
+    const trigger = document.getElementById("c_nav_appear");
 
     const triggerTop = trigger.getBoundingClientRect().top;
 
@@ -19,10 +19,10 @@ window.addEventListener("scroll", () => {
 /* Mobile Navigation*/
 
 document.addEventListener('DOMContentLoaded', () => {
-    const checkbox = document.getElementById('sidebar-active');
-    const menu = document.querySelector('.nav-mob__menu-expanded');
+    const checkbox = document.getElementById('c_nav-mob__sidebar-active');
+    const menu = document.querySelector('.c_nav-mob__menu-expanded');
 
-    document.querySelectorAll('.nav-mob__navigation-container a')
+    document.querySelectorAll('.c_nav-mob__navigation a')
         .forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Mobile animation */
 
 window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".nav-mob");
-    const trigger = document.getElementById("nav-appear");
+    const navbar = document.querySelector(".c_nav-mob");
+    const trigger = document.getElementById("c_nav_appear");
 
     const triggerTop = trigger.getBoundingClientRect().top;
     console.log("triggerTop:", triggerTop);
