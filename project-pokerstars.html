@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design-system_basics.css">
+    <link rel="stylesheet" href="css/design-system_elements.css">
+    <link rel="stylesheet" href="css/design-system_components.css">
+
+    <link rel="stylesheet" href="css/page-styles/common.css">
+    <link rel="stylesheet" href="css/page-styles/project-common.css">
+    <link rel="stylesheet" href="css/page-styles/project-pokerstars.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+
+    <script src="js/c_navbar.js"></script>
+    <script src="js/c_toc_scrollable.js"></script>
+    <script src="js/c_process_scrollable.js"></script>
+    <script src="js/c_lightbox.js"></script>
+
+    <title>Portfolio | Marco Pasquato</title>
+</head>
+
+<body class="t_body">
+    <div class="c_nav-dsk">
+        <div class="c_nav-dsk__content">
+            <div class="c_nav-dsk__logo-container">
+                <a href="index.html" class="c_nav-dsk__logo-btn">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709)">
+                            <path class="c_nav__logo-mp__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="c_nav__logo-mp__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="c_nav__logo-mp__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709)">
+                            <path class="c_nav__logo-mp-wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <nav class="c_nav-dsk__navigation">
+                <a href="index.html#my-work" class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    My work
+                </a>
+                <a href="index.html#about-me"
+                    class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    About me
+                </a>
+                <a href="index.html#contacts"
+                    class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    Contacts
+                </a>
+            </nav>
+            <div class="c_nav-dsk__secondary-navigation">
+                <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                    class="e_nav-dsk__btn--vr--secondary">
+                    <i class="iconoir-download e_nav-dsk__btn-icon--vr--secondary" class=""></i>
+                    <div class="e_nav-dsk__btn-label t_label t_label--sz--lg t_label--int--btn">
+                        Download <br>resume
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                    class="e_nav-dsk__btn--vr--secondary">
+                    <i class="iconoir-linkedin e_nav-dsk__btn-icon--vr--secondary" class=""></i>
+                    <div class="e_nav-dsk__btn-label t_label t_label--sz--lg t_label--int--btn">
+                        Linkedin <br>profile
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c_nav-mob">
+        <div class="c_nav-mob__container">
+            <div class="c_nav-mob__logo-container">
+                <a href="index.html" class="c_nav-mob__logo-btn">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                            <path class="c_nav__logo-mp__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="c_nav__logo-mp__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="c_nav__logo-mp__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                            <path class="c_nav__logo-mp-wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709M">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709M">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="c_nav-mob__menu">
+                <input type="checkbox" id="c_nav-mob__sidebar-active">
+                <label for="c_nav-mob__sidebar-active" class="c_nav-mob__hamburger-btn">
+                    <i class="iconoir-menu"></i>
+                </label>
+
+                <div class="c_nav-mob__menu-expanded">
+                    <div class="c_nav-mob__container">
+                        <div class="c_nav-mob__logo-container">
+                            <a href="index.html" class="c_nav-mob__logo-btn">
+                                <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none"
+                                    alt="MP logo" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                                        <path class="c_nav__logo-mp__upper-m"
+                                            d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                                        <path class="c_nav__logo-mp__lower-m"
+                                            d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                                        <path class="c_nav__logo-mp__p"
+                                            d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                                    </g>
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                                        <path class="c_nav__logo-mp-wave"
+                                            d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_476_709M">
+                                            <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_476_709M">
+                                            <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="c_nav-mob__menu">
+                            <label for="c_nav-mob__sidebar-active" class="c_nav-mob__close-btn">
+                                <i class="iconoir-xmark"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <nav
+                        class="c_nav-mob__navigation flex flex-col flex-justify-center flex-align-center row-gap-8 u_text-light">
+                        <a href="index.html#my-work" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            My work
+                        </a>
+                        <a href="index.html#about-me" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            About me
+                        </a>
+                        <a href="index.html#contacts" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            Contacts
+                        </a>
+                    </nav>
+                    <div class="c_nav-mob__secondary-navigation">
+                        <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                            class="e_nav-mob__btn--vr--secondary">
+                            <i class="iconoir-download e_nav-mob__btn-icon--vr--secondary" class=""></i>
+                            <div class="e_nab-mob__btn-label t_label t_label--sz--lg t_label--int--btn">
+                                Download <br>resume
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                            class="e_nav-dsk__btn--vr--secondary">
+                            <i class="iconoir-linkedin e_nav-mob__btn-icon--vr--secondary" class=""></i>
+                            <div class="e_nab-mob__btn-label t_label t_label--sz--lg t_label--int--btn">
+                                Linkedin <br>profile
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container u_text-dark">
+        <div class="grid grid-gap c_project-hero">
+            <div class="col-12 u_text-light c_project-hero__content ">
+                <div class="c_project-hero__bg c_project-hero__bg--bg--pokerstars">
+                    <div class="c_project-hero__bg__content c_project-hero__inner-container">
+                        <img src="media/projects/despar/pino-hero_2x__edited__compressed.png" alt=""
+                            class="c_project-hero__bg__image">
+                    </div>
+                    <div class="c_project-hero__bg__decoration">
+                        <svg viewBox="0 0 1440 99" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="c_project-hero__bg__wave--dev--dsk">
+                            <path
+                                d="M1440 98.9668H0V82.1338C208.738 68.4962 346.878 11.3008 515.9 11.3008C707.8 11.3008 886.225 96.9218 1073.63 96.9219C1231.13 96.9218 1340.33 23.4514 1440 0V98.9668Z" />
+                        </svg>
+
+                        <svg viewBox="0 0 390 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="c_project-hero__bg__wave--dev--mob">
+                            <path
+                                d="M110.951 0C198.48 0 279.863 45.7557 365.343 45.7559C373.862 45.7559 382.071 45.2779 390 44.4199V49.7803H0V20.1582C37.323 9.51509 72.3736 1.00366e-05 110.951 0Z" />
+                        </svg>
+                    </div>
+
+                    <div
+                        class="c_project-hero__fg__content c_project-hero__fg__content--page--despar c_project-hero__inner-container">
+                        <img src="media/projects/despar/mockup_phone_2x__cropped__compressed.png" alt=""
+                            class="c_project-hero__fg__image">
+                    </div>
+                </div>
+                <div class="c_project-hero__head">
+                    <div
+                        class="container row-gap-6 row-md-gap-7 grid grid-gap p-t-8 p-b-15 c_project-hero__inner-container">
+                        <div class="col-12 grid grid-gap row-gap-6 row-md-gap-7 c_project-hero__head">
+                            <h1
+                                class="col-12 t_headline t_headline--sz--lg t_headline--em--yes u_text-center c_project-hero__headline">
+                                Pokerstars</h1>
+                            <div class="col-12 t_title u_text-center c_project-hero__lead-copy">
+                                Creating iGaming user flows that meet complex legal requirements for different nations
+                            </div>
+                        </div>
+                        <div class="col-12 flex flex-wrap flex-justify-center col-gap-5 row-gap-4 c_project-hero__tags">
+                            <div class="e_tag t_label">iGaming<i class="t_label"></i></div>
+                            <div class="e_tag t_label">UX design<i class="t_label"></i></div>
+                            <div class="e_tag t_label">UI design<i class="t_label"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg class="col-12" viewBox="0 0 1440 34" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                id="c_project-hero__bottom-wave">
+                <path
+                    d="M1320.56 17.1932C1352.85 -1.73083 1385.15 -1.73083 1417.44 17.1932L1420.56 19.0546C1427.04 22.8513 1433.52 25.8819 1440 28.1552V0H0L0 8.81532C5.81231 10.9953 11.6252 13.787 17.4375 17.1932L20.5625 19.0546C52.854 37.9785 85.146 37.9785 117.438 19.0546L120.562 17.1932C152.854 -1.73083 185.146 -1.73083 217.438 17.1932L220.562 19.0546C252.854 37.9785 285.146 37.9785 317.438 19.0546L320.562 17.1932C352.854 -1.73083 385.146 -1.73083 417.438 17.1932L420.562 19.0546C452.854 37.9785 485.146 37.9785 517.438 19.0546L520.562 17.1932C552.854 -1.73083 585.146 -1.73083 617.438 17.1932L620.562 19.0546C652.854 37.9785 685.146 37.9785 717.438 19.0546L720.562 17.1932C752.854 -1.73083 785.146 -1.73083 817.438 17.1932L820.562 19.0546C852.854 37.9785 885.146 37.9785 917.438 19.0546L920.562 17.1932C952.854 -1.73083 985.146 -1.73083 1017.44 17.1932L1020.56 19.0546C1052.85 37.9785 1085.15 37.9785 1117.44 19.0546L1120.56 17.1932C1152.85 -1.73083 1185.15 -1.73083 1217.44 17.1932L1220.56 19.0546C1252.85 37.9785 1285.15 37.9785 1317.44 19.0546L1320.56 17.1932Z" />
+            </svg>
+        </div>
+
+        <div id="c_nav_appear"></div>
+
+        <main class="grid row-gap-12 row-md-gap-14 p-b-12 p-md-b-15">
+            <div id="project-summary"
+                class="col-12 grid grid-3 t_body t_body--sz--lg grid-align-start c_project-summary">
+                <div class="col-3 col-sm-1 grid row-gap-7">
+                    <div class="col-12">
+                        <div class="grid c_project-summary__section">
+                            <div class="col-12 c_project-summary__head">
+                                <i class="iconoir-user-square c_project-summary__icon"></i>
+                                <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                    My role
+                                </div>
+                            </div>
+                            <div class="col-12 c_project-summary__body">
+                                <div class="c_project-summary__decoration">
+                                </div>
+                                <div class="c_project-summary__content">
+                                    UX/UI designer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="grid c_project-summary__section">
+                            <div class="col-12 c_project-summary__head">
+                                <i class="iconoir-timer c_project-summary__icon"></i>
+                                <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                    Timeframe
+                                </div>
+                            </div>
+                            <div class="col-12 c_project-summary__body">
+                                <div class="c_project-summary__decoration">
+                                </div>
+                                <div class="c_project-summary__content">
+                                    6 months
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-1 grid c_project-summary__section">
+                    <div class="col-12 c_project-summary__head">
+                        <i class="iconoir-community c_project-summary__icon"></i>
+                        <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                            Team
+                        </div>
+                    </div>
+                    <div class="col-12 c_project-summary__body">
+                        <div class="c_project-summary__decoration">
+                        </div>
+                        <div class="c_project-summary__content">
+                            <ul>
+                                <li>1 Project manager</li>
+                                <li>2 UX/UI designers</li>
+                                <li>1 Functional analyst</li>
+                                <li>1 Regulatory / Compliance specialist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-1 grid c_project-summary__section">
+                    <div class="col-12 c_project-summary__head">
+                        <i class="c_project-summary__icon iconoir-tools"></i>
+                        <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                            Tools
+                        </div>
+                    </div>
+                    <div class="col-12 c_project-summary__body">
+                        <div class="c_project-summary__decoration">
+                        </div>
+                        <div class="c_project-summary__content">
+                            <ul>
+                                <li>Figma</li>
+                                <li>Miro</li>
+                                <li>Google suite (in p. docs)</li>
+                                <li>Slack</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="section_table-of-content" class="col-12">
+                <div class="grid c_toc">
+
+                    <div class="col-12 container">
+                        <div class="u_text-primary">
+                            <h2 class="t_headline t_headline--sz--lg">Table of contents</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12  c_toc__body">
+                        <a href="project-despar-tribu.html#section_overview"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Overview</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-despar-tribu.html#section_process"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Process</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-despar-tribu.html#section_exploration-phase"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Exploration phase</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-despar-tribu.html#section_design-phase"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Design phase</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-despar-tribu.html#section_validation"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Validation</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-despar-tribu.html#section_what-i-learnt"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">What I learnt</div>
+                            <i class=""></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_overview" class="col-12 container">
+                <div class="grid row-gap-8 row-md-gap-9">
+
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Overview</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Designing and adapting flows to comply with international iGaming regulations
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid grid-gap row-gap-9 c_overview">
+
+                        <div class="col-12 col-md-9 grid row-gap-8 c_overview__content">
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Project's context
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        Flutter entertainment is a company active in the <span class="t_body t_body--em--yes">gaming and gambling industry</span>. Part of it are the PokerStars brand and the lately acquired Italian company Sisal.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Sisal and PokerStars platforms
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        Sisal and PokerStars operate separate gaming platforms for betting, casino games and slots. To simplify business and IT systems, PokerStars has begun <span class="t_body t_body--em--yes">migrating to the same systems</span> used by Sisal.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Problem statement and requirements
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        <span class="t_body t_body--em--yes">New legal requirements</span> prompted a <span class="t_body t_body--em--yes">review of user flows</span> such as login, account settings and deactivation. They apply to <span class="t_body t_body--em--yes">Portugal</span>, <span class="t_body t_body--em--yes">Spain</span> and <span class="t_body t_body--em--yes">France</span>, each with specific corner cases, increasing <span class="t_body t_body--em--yes"></span>complexity</span>. English was used for official communication and project deliverables.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <figure class="col-12 col-md-3 c_overview__figure">
+                            <img src="media/projects/despar/despar_building__compressed.jpg" alt=""
+                                class="c_overview__image">
+                            <figcaption class="overview-figure-caption t_body t_body--sz--sm u_text-neutral">
+                                Courtesy of: <span class="t_body t_body--sz--sm t_body--em--yes">urbanfile</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_process" class="col-12 grid row-gap-7">
+                <div class="col-12 container">
+                    <div class="grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Process</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            A workflow including exploration, flow design, and regulatory validation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 c_process grid row-gap-4">
+                    <div class="col-12 col-lg-4 c_process__section--bg--primary">
+                        <div class="c_process__content c_process__content--pos--start">
+                            <div class="t_title">Finding new opportunities</div>
+
+                            <div class="c_process__timeline u_text-center">
+                                <div class="c_process__item">
+                                    <div class="c_process__number t_title u_text-light">1</div>
+                                    <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">Discovery
+                                        <br>workshop
+                                    </div>
+                                </div>
+                                <div class="c_process__line"></div>
+
+                                <div class="c_process__item">
+                                    <div class="c_process__number t_title u_text-light">2</div>
+                                    <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">User
+                                        <br>research
+                                    </div>
+                                </div>
+                                <div class="c_process__line"></div>
+
+                                <div class="c_process__item">
+                                    <div class="c_process__number t_title u_text-light">3</div>
+                                    <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">Lo-fi
+                                        <br>wireframing
+                                    </div>
+                                </div>
+
+                                <div class="c_process__timeline__spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 c_process__section--bg--tertiary">
+                        <div class="c_process__content c_process__content--pos--end">
+                            <div class="t_title">Meanwhile, an evergoing...</div>
+
+                            <div class="c_process__timeline u_text-center">
+                                <div class="c_process__item">
+                                    <div class="c_process__number t_title u_text-light">↻</div>
+                                    <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">(Re) Design
+                                        of single functionalities
+                                    </div>
+                                </div>
+                                <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                <div class="c_process__item c_process__item--vis--hidden">
+                                    <div class="c_process__number t_title u_text-light"></div>
+                                    <div class="c_process__step t_title"></div>
+                                </div>
+                                <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                <div class="c_process__item c_process__item--vis--hidden">
+                                    <div class="c_process__number t_title u_text-light"></div>
+                                    <div class="c_process__step t_title"></div>
+                                </div>
+
+                                <div class="c_process__timeline__spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 c_process__section--bg--secondary">
+                        <div class="c_process__content c_process__content--pos--end">
+                            <div class="t_title">Meanwhile, an evergoing...</div>
+
+                            <div class="c_process__timeline u_text-center">
+                                <div class="c_process__item">
+                                    <div class="c_process__number t_title u_text-light">↻</div>
+                                    <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">(Re) Design
+                                        of single functionalities
+                                    </div>
+                                </div>
+                                <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                <div class="c_process__item c_process__item--vis--hidden">
+                                    <div class="c_process__number t_title u_text-light"></div>
+                                    <div class="c_process__step t_title"></div>
+                                </div>
+                                <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                <div class="c_process__item c_process__item--vis--hidden">
+                                    <div class="c_process__number t_title u_text-light"></div>
+                                    <div class="c_process__step t_title"></div>
+                                </div>
+
+                                <div class="c_process__timeline__spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_exploration-phase" class="col-12 container">
+                <div class="grid row-gap-8">
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Exploration phase</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Analyzing regulatory requirements and benchmarking existing iGaming platforms
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-8 row-md-gap-9 t_body">
+
+                        <div class="col-12 grid row-gap-3 row-md-gap-4">
+                            <div class="col-12 t_headline u_text-primary">Requirement analysis</div>
+                            <div class="col-12 t_body">Requirements for Spanish, Portuguese and French legal restriction were analyzed in-depth. Miro boards were used for three main processes:</div>
+                        </div>
+
+                        <div class="col-12 grid grid-3 col-lg-gap-12 row-gap-9">
+
+                            <div class="col-3 col-md-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-list-select c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__body u_text-center">
+                                    <p>
+                                        <span class="t_body t_body--em--yes">Comparing</span> all countries <span class="t_body t_body--em--yes">requirements</span> and track down <span class="t_body t_body--em--yes">common</span> use cases and <span class="t_body t_body--em--yes">differences</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 col-md-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-group c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__body u_text-center">
+                                    <p>
+                                        <span class="t_body t_body--em--yes">Translating</span> higher-level requirements <span class="t_body t_body--em--yes">into practical tasks</span>, user processes and UX corner cases
+                                        </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 col-md-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-laptop c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__body u_text-center">
+                                    <p>
+                                        Annotating <span
+                                        class="t_body t_body--em--yes">open points</span> that needed deeper analysis or to be discussed with legal representatives
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <figure class="col-12 c_content-figure">
+                                <img src="media/projects/despar/lightbox_wireframes.png" alt=""
+                                    class="c_content-figure__image c_content-figure__image--ht--fullpage">
+                            <figcaption class="t_body t_body--sz--sm u_text-center">
+                                Representation of the analysis process through Miro.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="u_text-light c_footer">
+            <div class="container grid grid-gap row-gap-9 row-md-gap-7">
+                <div class="col-12">
+                    <a href="index.html" class="c_footer__logo">
+                        <img src="media/logo/logo_mp.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 c_footer__grid">
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">marcopasquato.com</div>
+                        <div class="c_footer__body">
+                            <a href="index.html#my-work" class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My work</div>
+                                <i></i>
+                            </a>
+                            <a href="index.html#about-me"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">About me</div>
+                                <i></i>
+                            </a>
+                            <a href="index.html#contacts"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Contacts</div>
+                                <i></i>
+                            </a>
+                            <a href="terms-and-conditions.html"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Terms and conditions</div>
+                                <i></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">Contacts</div>
+                        <div class="c_footer__body">
+                            <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My LinkedIn</div>
+                                <i class="iconoir-linkedin t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="mailto:marcopasquato2@gmail.com" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My Email</div>
+                                <i class="iconoir-mail t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">Fonts and assets used</div>
+                        <div class="c_footer__body">
+                            <a href="https://fonts.google.com/specimen/DM+Serif+Display" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">DM Serif Display</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://fonts.google.com/specimen/DM+Serif+Text" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">DM Serif Text</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://fonts.google.com/specimen/Funnel+Sans" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Funnel Sans</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://iconoir.com/" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Iconoir</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head"></div>
+                        <div class="c_footer__body">
+                            <div>
+                                No cookies used in this website.
+                            </div>
+                            <div>
+                                Copyright © 2026-2026, marcopasquato.com <br>All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

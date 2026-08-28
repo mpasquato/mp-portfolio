@@ -144,7 +144,7 @@
 
 /* .project-hero-background, */
 .c_project-hero__bg {
-    background-color: #B6E8BA;
+    background-color: hsl(var(--clr-plump-purple-80));
 
 
     overflow: hidden;
@@ -170,6 +170,14 @@
     }
 
     @media screen and (min-width: 1400px) {}
+}
+
+.c_project-hero__bg--bg--despar {
+    background-color: #B6E8BA;
+}
+
+.c_project-hero__bg--bg--pokerstars {
+    background-color: #DEB1C4;
 }
 
 /* .project-hero-background-image-container, */
@@ -434,7 +442,9 @@
     padding: inherit;
     margin: inherit;
 }
-
+.c_project-summary__content>ul>li {
+    margin-bottom: var(--sz-2);
+}
 
 
 /* Table of content */
@@ -590,10 +600,10 @@
     overflow-x: scroll;
 
 
-    -ms-overflow-style: none;
     /* Hides scrollbar in Internet Explorer 10+ */
-    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Hides scrollbar in Firefox */
+    scrollbar-width: none;
 
     display: flex;
     flex-direction: column;
