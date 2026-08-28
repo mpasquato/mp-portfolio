@@ -209,19 +209,19 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: var(--fs-md, 20px);
-    line-height: var(--lh-md, 38px);
+    line-height: var(--lh-md, 28px);
 }
 
 .t_title--sz--sm {
     font-weight: 800;
-    font-size: var(--fs-sm, 16px);
-    line-height: var(--lh-sm, 23px);
+    font-size: var(--fs-sm, 18px);
+    line-height: var(--lh-sm, 26px);
 }
 
 .t_title--sz--md {
     font-weight: 500;
     font-size: var(--fs-md, 20px);
-    line-height: var(--lh-md, 38px);
+    line-height: var(--lh-md, 28px);
 }
 
 .t_title--sz--lg {
@@ -290,8 +290,8 @@ body {
     line-height: var(--lh-4xl, 54px);
 
     @media screen and (min-width: 576px) {
-        font-size: var(--fs-5xl, 56px);
-        line-height: var(--lh-5xl, 67px);
+        font-size: var(--fs-5xl, 54px);
+        line-height: var(--lh-5xl, 64px);
     }
 }
 
