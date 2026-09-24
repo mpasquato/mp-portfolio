@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design-system_basics.css">
+    <link rel="stylesheet" href="css/design-system_elements.css">
+    <link rel="stylesheet" href="css/design-system_components.css">
+
+    <link rel="stylesheet" href="css/page-styles/common.css">
+    <link rel="stylesheet" href="css/page-styles/project-common.css">
+    <link rel="stylesheet" href="css/page-styles/project-informa.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+
+    <script src="js/c_navbar.js"></script>
+    <script src="js/c_toc_scrollable.js"></script>
+    <script src="js/c_process_scrollable.js"></script>
+    <script src="js/c_lightbox.js"></script>
+
+    <title>Portfolio | Marco Pasquato</title>
+</head>
+
+<body class="t_body">
+    <div class="c_nav-dsk">
+        <div class="c_nav-dsk__content">
+            <div class="c_nav-dsk__logo-container">
+                <a href="index.html" class="c_nav-dsk__logo-btn">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709)">
+                            <path class="c_nav__logo-mp__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="c_nav__logo-mp__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="c_nav__logo-mp__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709)">
+                            <path class="c_nav__logo-mp-wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <nav class="c_nav-dsk__navigation">
+                <a href="index.html#my-work" class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    My work
+                </a>
+                <a href="index.html#about-me"
+                    class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    About me
+                </a>
+                <a href="index.html#contacts"
+                    class="e_nav-dsk__btn t_headline t_headline--sz--sm t_headline--int--link">
+                    Contacts
+                </a>
+            </nav>
+            <div class="c_nav-dsk__secondary-navigation">
+                <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                    class="e_nav-dsk__btn--vr--secondary">
+                    <i class="iconoir-download e_nav-dsk__btn-icon--vr--secondary" class=""></i>
+                    <div class="e_nav-dsk__btn-label t_label t_label--sz--lg t_label--int--btn">
+                        Download <br>resume
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                    class="e_nav-dsk__btn--vr--secondary">
+                    <i class="iconoir-linkedin e_nav-dsk__btn-icon--vr--secondary" class=""></i>
+                    <div class="e_nav-dsk__btn-label t_label t_label--sz--lg t_label--int--btn">
+                        Linkedin <br>profile
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c_nav-mob">
+        <div class="c_nav-mob__container">
+            <div class="c_nav-mob__logo-container">
+                <a href="index.html" class="c_nav-mob__logo-btn">
+                    <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none" alt="MP logo"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                            <path class="c_nav__logo-mp__upper-m"
+                                d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                            <path class="c_nav__logo-mp__lower-m"
+                                d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                            <path class="c_nav__logo-mp__p"
+                                d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                        </g>
+                        <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                            <path class="c_nav__logo-mp-wave"
+                                d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_476_709M">
+                                <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                            </clipPath>
+                            <clipPath id="clip1_476_709M">
+                                <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="c_nav-mob__menu">
+                <input type="checkbox" id="c_nav-mob__sidebar-active">
+                <label for="c_nav-mob__sidebar-active" class="c_nav-mob__hamburger-btn">
+                    <i class="iconoir-menu"></i>
+                </label>
+
+                <div class="c_nav-mob__menu-expanded">
+                    <div class="c_nav-mob__container">
+                        <div class="c_nav-mob__logo-container">
+                            <a href="index.html" class="c_nav-mob__logo-btn">
+                                <svg width="63" height="38" viewBox="0 0 63 38" class="c_nav__logo-mp" fill="none"
+                                    alt="MP logo" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip0_476_709M)">
+                                        <path class="c_nav__logo-mp__upper-m"
+                                            d="M14.8563 22.403C15.1878 22.4944 15.5438 22.5581 15.8998 22.5744C15.9749 22.5777 16.0337 22.5793 16.0941 22.5793C17.0461 22.5793 17.8724 22.1711 18.8979 21.5114C19.2098 21.3105 19.5315 21.0917 19.8712 20.8598C19.8908 20.8467 19.9104 20.8337 19.93 20.8206V7.00391L27.6508 17.1888H29.2168L37.6626 7.02351V3.05176e-05L28.397 11.6645L19.7896 3.05176e-05H14.8677L14.8579 22.403H14.8563Z" />
+                                        <path class="c_nav__logo-mp__lower-m"
+                                            d="M15.7822 30.3622C15.467 30.354 15.16 30.3295 14.8579 30.2985V35.3754H14.8677V35.3967H19.93V29.6861C18.6775 30.1401 17.4152 30.3654 16.0957 30.3654C15.9912 30.3654 15.8851 30.3638 15.7822 30.3622Z" />
+                                        <path class="c_nav__logo-mp__p"
+                                            d="M58.2153 4.64754C54.7518 1.60692 49.6748 6.10352e-05 43.5331 6.10352e-05H41.2502V24.4769C39.0147 24.4736 37.416 23.4383 35.5674 22.2413C33.6144 20.9758 31.4 19.542 28.3643 19.542C25.0967 19.542 22.8775 21.0525 20.9212 22.3867C20.5733 22.6235 20.2353 22.8537 19.9006 23.0693C18.6872 23.8498 17.5246 24.4312 16.0957 24.4312C16.0026 24.4312 15.9095 24.4295 15.8181 24.4246C12.4166 24.2711 9.94097 21.3399 9.89198 21.2811L6.99996 24.1732C7.95363 25.2166 11.2229 28.3863 15.8181 28.5104C15.9095 28.5104 16.0026 28.5136 16.0957 28.5136C17.5474 28.5136 18.7918 28.1887 19.9006 27.7086C21.1433 27.173 22.2161 26.443 23.2188 25.7604C24.9008 24.6141 26.3541 23.6245 28.3643 23.6245C30.1933 23.6245 31.6548 24.5716 33.3482 25.6673C35.4384 27.0211 37.8079 28.5561 41.2502 28.5594V35.3967H46.1492V4.19684C55.5127 5.04109 58.9159 10.443 58.9159 15.1232C58.9159 17.5726 58.0063 19.9846 56.419 21.7367C55.2237 23.0562 53.0877 24.6304 49.696 24.6304V28.7129C53.5107 28.7129 56.9743 27.2089 59.4466 24.4769C61.705 21.9833 63 18.5737 63 15.1232C63 11.075 61.3017 7.3534 58.2186 4.64754H58.2153Z" />
+                                    </g>
+                                    <g transform="translate(-4, 0)" clip-path="url(#clip1_476_709M)">
+                                        <path class="c_nav__logo-mp-wave"
+                                            d="M35.5679 29.0496C37.4163 30.2465 39.0149 31.2816 41.2503 31.2849C41.6753 31.2855 43.5 31.5 45 30V34C44.1708 35.558 41.2503 35.3674 41.2503 35.3674C37.8086 35.3641 35.4393 33.8296 33.3494 32.4761L33.3482 32.4753L33.3421 32.4713C31.6513 31.3773 30.1911 30.4325 28.3644 30.4325C26.3542 30.4325 24.9008 31.4221 23.2188 32.5684C22.2162 33.251 21.1433 33.981 19.9006 34.5166C18.7918 34.9967 17.5475 35.3216 16.0957 35.3216C16.0027 35.3216 15.9096 35.3184 15.8181 35.3184C11.2229 35.1943 7.95366 32.0246 7 30.9812L9.89202 28.0891C9.94101 28.1479 12.4166 31.0791 15.8181 31.2326C15.9096 31.2375 16.0027 31.2392 16.0957 31.2392C17.5246 31.2392 18.6873 30.6578 19.9006 29.8773C20.2317 29.6641 20.566 29.4365 20.9098 29.2025L20.9212 29.1947C22.8775 27.8605 25.0968 26.35 28.3644 26.35C31.4001 26.35 33.6144 27.7838 35.5675 29.0493L35.5679 29.0496Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_476_709M">
+                                            <rect width="56" height="35.3684" fill="white" transform="translate(7)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_476_709M">
+                                            <rect width="41" height="15" fill="white" transform="translate(0 23)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="c_nav-mob__menu">
+                            <label for="c_nav-mob__sidebar-active" class="c_nav-mob__close-btn">
+                                <i class="iconoir-xmark"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <nav
+                        class="c_nav-mob__navigation flex flex-col flex-justify-center flex-align-center row-gap-8 u_text-light">
+                        <a href="index.html#my-work" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            My work
+                        </a>
+                        <a href="index.html#about-me" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            About me
+                        </a>
+                        <a href="index.html#contacts" class="t_headline t_headline--sz--sm t_headline--int--link">
+                            Contacts
+                        </a>
+                    </nav>
+                    <div class="c_nav-mob__secondary-navigation">
+                        <a href="media/resume/resume_marco-pasquato.pdf" download="resume_marco-pasquato"
+                            class="e_nav-mob__btn--vr--secondary">
+                            <i class="iconoir-download e_nav-mob__btn-icon--vr--secondary" class=""></i>
+                            <div class="e_nab-mob__btn-label t_label t_label--sz--lg t_label--int--btn">
+                                Download <br>resume
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                            class="e_nav-dsk__btn--vr--secondary">
+                            <i class="iconoir-linkedin e_nav-mob__btn-icon--vr--secondary" class=""></i>
+                            <div class="e_nab-mob__btn-label t_label t_label--sz--lg t_label--int--btn">
+                                Linkedin <br>profile
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container u_text-dark">
+        <div class="grid grid-gap c_project-hero">
+            <div class="col-12 u_text-light c_project-hero__content ">
+                <div class="c_project-hero__bg c_project-hero__bg--bg--informa">
+                    <div class="c_project-hero__bg__content c_project-hero__inner-container">
+                        <img src="media/projects/despar/pino-hero_2x__edited__compressed.png" alt=""
+                            class="c_project-hero__bg__image">
+                    </div>
+                    <div class="c_project-hero__bg__decoration">
+                        <svg viewBox="0 0 1440 99" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="c_project-hero__bg__wave--dev--dsk">
+                            <path
+                                d="M1440 98.9668H0V82.1338C208.738 68.4962 346.878 11.3008 515.9 11.3008C707.8 11.3008 886.225 96.9218 1073.63 96.9219C1231.13 96.9218 1340.33 23.4514 1440 0V98.9668Z" />
+                        </svg>
+
+                        <svg viewBox="0 0 390 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="c_project-hero__bg__wave--dev--mob">
+                            <path
+                                d="M110.951 0C198.48 0 279.863 45.7557 365.343 45.7559C373.862 45.7559 382.071 45.2779 390 44.4199V49.7803H0V20.1582C37.323 9.51509 72.3736 1.00366e-05 110.951 0Z" />
+                        </svg>
+                    </div>
+
+                    <div
+                        class="c_project-hero__fg__content c_project-hero__fg__content--page--despar c_project-hero__inner-container">
+                        <img src="media/projects/despar/mockup_phone_2x__cropped__compressed.png" alt=""
+                            class="c_project-hero__fg__image">
+                    </div>
+                </div>
+                <div class="c_project-hero__head">
+                    <div
+                        class="container row-gap-6 row-md-gap-7 grid grid-gap p-t-8 p-b-15 c_project-hero__inner-container">
+                        <div class="col-12 grid grid-gap row-gap-6 row-md-gap-7 c_project-hero__head">
+                            <h1
+                                class="col-12 t_headline t_headline--sz--lg t_headline--em--yes u_text-center c_project-hero__headline">
+                                Informa</h1>
+                            <div class="col-12 t_title u_text-center c_project-hero__lead-copy">
+                                Designing software for medics and patients with neurodegenerative diseases
+                            </div>
+                        </div>
+                        <div class="col-12 flex flex-wrap flex-justify-center col-gap-5 row-gap-4 c_project-hero__tags">
+                            <div class="e_tag t_label">Healthcare<i class="t_label"></i></div>
+                            <div class="e_tag t_label">UX research<i class="t_label"></i></div>
+                            <div class="e_tag t_label">UX design<i class="t_label"></i></div>
+                            <div class="e_tag t_label">User testing<i class="t_label"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg class="col-12" viewBox="0 0 1440 34" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                id="c_project-hero__bottom-wave">
+                <path
+                    d="M1320.56 17.1932C1352.85 -1.73083 1385.15 -1.73083 1417.44 17.1932L1420.56 19.0546C1427.04 22.8513 1433.52 25.8819 1440 28.1552V0H0L0 8.81532C5.81231 10.9953 11.6252 13.787 17.4375 17.1932L20.5625 19.0546C52.854 37.9785 85.146 37.9785 117.438 19.0546L120.562 17.1932C152.854 -1.73083 185.146 -1.73083 217.438 17.1932L220.562 19.0546C252.854 37.9785 285.146 37.9785 317.438 19.0546L320.562 17.1932C352.854 -1.73083 385.146 -1.73083 417.438 17.1932L420.562 19.0546C452.854 37.9785 485.146 37.9785 517.438 19.0546L520.562 17.1932C552.854 -1.73083 585.146 -1.73083 617.438 17.1932L620.562 19.0546C652.854 37.9785 685.146 37.9785 717.438 19.0546L720.562 17.1932C752.854 -1.73083 785.146 -1.73083 817.438 17.1932L820.562 19.0546C852.854 37.9785 885.146 37.9785 917.438 19.0546L920.562 17.1932C952.854 -1.73083 985.146 -1.73083 1017.44 17.1932L1020.56 19.0546C1052.85 37.9785 1085.15 37.9785 1117.44 19.0546L1120.56 17.1932C1152.85 -1.73083 1185.15 -1.73083 1217.44 17.1932L1220.56 19.0546C1252.85 37.9785 1285.15 37.9785 1317.44 19.0546L1320.56 17.1932Z" />
+            </svg>
+        </div>
+
+        <div id="c_nav_appear"></div>
+
+        <main class="grid row-gap-12 row-md-gap-14 p-b-12 p-md-b-15">
+
+            <section class="col-12 grid row-gap-7 row-md-gap-9">
+
+                <div id="project-summary"
+                    class="col-12 grid grid-3 t_body t_body--sz--lg grid-align-start c_project-summary">
+                    <div class="col-3 col-sm-1 grid row-gap-7">
+                        <div class="col-12">
+                            <div class="grid c_project-summary__section">
+                                <div class="col-12 c_project-summary__head">
+                                    <i class="iconoir-user-square c_project-summary__icon"></i>
+                                    <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                        My role
+                                    </div>
+                                </div>
+                                <div class="col-12 c_project-summary__body">
+                                    <div class="c_project-summary__decoration">
+                                    </div>
+                                    <div class="c_project-summary__content">
+                                        UX designer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="grid c_project-summary__section">
+                                <div class="col-12 c_project-summary__head">
+                                    <i class="iconoir-timer c_project-summary__icon"></i>
+                                    <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                        Timeframe
+                                    </div>
+                                </div>
+                                <div class="col-12 c_project-summary__body">
+                                    <div class="c_project-summary__decoration">
+                                    </div>
+                                    <div class="c_project-summary__content">
+                                        2 months
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-sm-1 grid c_project-summary__section">
+                        <div class="col-12 c_project-summary__head">
+                            <i class="iconoir-community c_project-summary__icon"></i>
+                            <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                Team
+                            </div>
+                        </div>
+                        <div class="col-12 c_project-summary__body">
+                            <div class="c_project-summary__decoration">
+                            </div>
+                            <div class="c_project-summary__content">
+                                <ul>
+                                    <li>1 Project manager</li>
+                                    <li>1 Solution architect</li>
+                                    <li>2 UX designers</li>
+                                    <li>1 UI designer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-sm-1 grid c_project-summary__section">
+                        <div class="col-12 c_project-summary__head">
+                            <i class="c_project-summary__icon iconoir-tools"></i>
+                            <div class="t_body t_body--sz--lg t_body--em--yes c_project-summary__title">
+                                Tools
+                            </div>
+                        </div>
+                        <div class="col-12 c_project-summary__body">
+                            <div class="c_project-summary__decoration">
+                            </div>
+                            <div class="c_project-summary__content">
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Useberry</li>
+                                    <li>Google suite (in p. Sheets)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="section_table-of-content" class="col-12">
+                <div class="grid c_toc">
+
+                    <div class="col-12 container">
+                        <div class="u_text-primary">
+                            <h2 class="t_headline t_headline--sz--lg">Table of contents</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12  c_toc__body">
+                        <a href="project-informa.html#section_overview"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Overview</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_process"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Process</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_interviews"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Interviews</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_customer-journey-maps"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Customer Journey maps</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_information-architecture"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Information architecture</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_lo-fi-wireframing"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Lo-fi wireframing</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_testing"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Testing</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_hi-fi-wireframing"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">Hi-fi wireframing</div>
+                            <i class=""></i>
+                        </a>
+                        <a href="project-informa.html#section_what-i-learnt"
+                            class="e_link-text--vr--primary t_label t_label--sz--lg t_label--int--link">
+                            <div class="e_link-text__label">What I learnt</div>
+                            <i class=""></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_overview" class="col-12 container">
+                <div class="grid row-gap-8 row-md-gap-9">
+
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Overview</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Redefining a mass retail app experience through workshops and co-design
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid grid-gap row-gap-9 c_overview">
+
+                        <div class="col-12 col-md-9 grid row-gap-8 c_overview__content">
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Project's context
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        Despar is a <span class="t_body t_body--em--yes">multinational</span> brand in
+                                        the <span class="t_body t_body--em--yes">mass retail</span> industry. The brand
+                                        entrust local
+                                        companies to concretely manage stores and day-to-day activities; in North-East
+                                        Italy, the concessionaire is Aspiag Service.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Despar Tribù app
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        Despar Tribù is an app developed for customers of the North-East stores of
+                                        Italy. It encompasses a <span class="t_body t_body--em--yes">wide variety of
+                                            services</span>, from <span class="t_body t_body--em--yes">loyalty
+                                            programs</span> to
+                                        <span class="t_body t_body--em--yes">online shopping</span>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 grid row-gap-3 c_overview__item">
+                                <div class="col-12 col-md-4 c_overview__head t_title">
+                                    Problem statement and requirements
+                                </div>
+                                <div class="col-12 col-md-8 c_overview__body">
+                                    <div class="c_overview__decoration"></div>
+                                    <div class="overview-body-content t_body">
+                                        Without a clear overall customer experience vision and with designers involved
+                                        only halfway through, opportunities were missed and several areas needed
+                                        improvement. The <span class="t_body t_body--em--yes">homepage,
+                                            navigation</span>
+                                        patterns and <span class="t_body t_body--em--yes">architecture</span> also
+                                        required a
+                                        full review.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <figure class="col-12 col-md-3 c_overview__figure">
+                            <img src="media/projects/despar/despar_building__compressed.jpg" alt=""
+                                class="c_overview__image">
+                            <figcaption class="overview-figure-caption t_body t_body--sz--sm u_text-neutral">
+                                Courtesy of: <span class="t_body t_body--sz--sm t_body--em--yes">Giorgio De
+                                    Vecchi</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_process" class="col-12 grid row-gap-7">
+
+                <div class="col-12 container">
+                    <div class="grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Process</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Driving innovation through new design directions while iterating on the existing app
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 c_process">
+
+                    <div class="c_process__container">
+
+                        <div class="c_process__margin c_process__margin--bg--primary"></div>
+
+                        <div class="c_process__section c_process__section--bg--primary">
+
+                            <div class="c_process__content">
+
+                                <div class="c_process__title t_title">
+                                    Finding new opportunities
+                                </div>
+
+                                <div class="c_process__timeline u_text-center">
+
+                                    <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                    <div class="c_process__item">
+                                        <div class="c_process__number t_title u_text-light">1</div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                            Disco&shy;very <br>work&shy;shop
+                                        </div>
+                                    </div>
+
+                                    <div class="c_process__line"></div>
+
+                                    <div class="c_process__item">
+                                        <div class="c_process__number t_title u_text-light">2</div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                            User <br>re&shy;search
+                                        </div>
+                                    </div>
+
+                                    <div class="c_process__line"></div>
+
+                                    <div class="c_process__item">
+                                        <div class="c_process__number t_title u_text-light">3</div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                            Lo-fi <br>wire&shy;framing
+                                        </div>
+                                    </div>
+
+                                    <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="c_process__section c_process__section--bg--tertiary">
+
+                            <div class="c_process__content">
+
+                                <div class="c_process__title t_title">
+                                    Meanwhile, an evergoing...
+                                </div>
+
+                                <div class="c_process__timeline u_text-center">
+
+                                    <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                    <div class="c_process__item">
+                                        <div class="c_process__number t_title u_text-light">↻</div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                            (Re) De&shy;sign of sin&shy;gle functio&shy;nali&shy;ties
+                                        </div>
+                                    </div>
+
+                                    <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                    <div class="c_process__item c_process__item--vis--hidden">
+                                        <div class="c_process__number t_title u_text-light"></div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                        </div>
+                                    </div>
+
+                                    <div class="c_process__line c_process__line--vis--hidden"></div>
+
+                                    <div class="c_process__item c_process__item--vis--hidden">
+                                        <div class="c_process__number t_title u_text-light"></div>
+                                        <div class="c_process__step t_body t_body--sz--lg t_body--em--yes">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="c_process__margin c_process__margin--bg--tertiary"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="section_workshop" class="col-12 container">
+                <div class="grid row-gap-8">
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Workshop</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Involving all stakeholders to identify shared, achievable goals
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-8 row-md-gap-9 t_body">
+                        <div class="col-12 col-lg-9">
+                            <p>
+                                A one-day discovery workshop was scheduled in order to <span
+                                    class="t_body t_body--em--yes">explore needs</span>, pinpoint them, understand their
+                                impact
+                                and effort needed to fulfill them; last but not least, <span
+                                    class="t_body t_body--em--yes">planning next steps</span> in the app
+                                development based on what came to light.
+                            </p>
+                            <p>
+                                <span class="t_body t_body--em--yes">Stakeholders of all branches</span> have been
+                                involved in
+                                order to cover problems of the <span class="t_body t_body--em--yes">whole
+                                    organization’s spectrum</span>.
+                            </p>
+                        </div>
+
+                        <div class="col-12 grid grid-2 col-lg-gap-12 row-gap-8">
+
+                            <div class="col-2 col-lg-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-color-filter c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                    Objective mapping & clustering
+                                </div>
+                                <div class="c_content-block__body">
+                                    <p>
+                                        The first activity was mapping objectives: within 5 minutes, everyone had to
+                                        write on a <span class="t_body t_body--em--yes">single post-it each need or
+                                            goal</span>
+                                        considered relevant to their
+                                        professional responsibilities and to the organization’s direction.
+                                    </p>
+                                    <p>
+                                        All post-its were then collected and affixed to the wall. We then
+                                        collectively
+                                        <span class="t_body t_body--em--yes">grouped together</span> the post-its that
+                                        shared
+                                        the
+                                        <span class="t_body t_body--em--yes">same theme or objectives</span>, creating
+                                        clusters. A descriptive title was assigned to each cluster.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 col-lg-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-priority-up c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                    Objective prioritization
+                                </div>
+                                <div class="c_content-block__body">
+                                    <p>
+                                        Next step was building a priority matrix. We assessed <span
+                                            class="t_body t_body--em--yes">impact on business/user</span>
+                                        and <span class="t_body t_body--em--yes">effort</span> needed to achieve each
+                                        <span class="t_body t_body--em--yes">objective</span>; then we assigned the
+                                        respective
+                                        post-it to the matrix.
+                                    </p>
+                                    <p>
+                                        <span class="t_body t_body--em--yes">Positioning in the matrix</span> gave us an
+                                        understanding of which needs had the
+                                        <span class="t_body t_body--em--yes">priority</span>, what to do first and what
+                                        not to
+                                        pursuit.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 grid grid-4 grid-gap row-gap-10 row-lg-gap-14 col-gap-12 grid-align-center">
+
+                            <div class="col-4">
+                                <img src="media/projects/despar/photo_workshop-blurred__compressed.jpg" alt=""
+                                    class="c_content-figure__image ">
+                            </div>
+
+                            <div class="col-4 col-lg-2">
+                                <div class="c_content-block">
+                                    <div class="c_content-block__decoration">
+                                        <i class="iconoir-wristwatch c_content-block__icon"></i>
+                                        <div class="c_content-block__separator"></div>
+                                    </div>
+
+                                    <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                        Planning through a timeline
+                                    </div>
+                                    <div class="c_content-block__body">
+                                        <p>
+                                            This task involved moving all post-its from the priority matrix to a
+                                            timeline from the workshop’s day to the next 18 months. This way needs and
+                                            objectives were formalized into a <span
+                                                class="t_body t_body--em--yes">planning</span>
+                                            that was based on <span class="t_body t_body--em--yes">feasible
+                                                tasks</span>.
+                                        </p>
+                                        <p>
+                                            A refined version of this timeline, as all of the insights emerged from this
+                                            workshop, were shared to all the stakeholders.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-2">
+                                <img src="media/projects/despar/photo_timeline__compressed.jpg" alt=""
+                                    class="c_content-figure__image">
+                            </div>
+
+                            <div class="col-4 col-lg-2 row-start-5 row-end-6 row-lg-start-3 row-lg-end-4">
+                                <img src="media/projects/despar/photo_card-sorting__compressed.jpg" alt=""
+                                    class="c_content-figure__image">
+                            </div>
+
+                            <div class="col-4 col-lg-2">
+                                <div class="c_content-block">
+                                    <div class="c_content-block__decoration">
+                                        <i class="iconoir-sort c_content-block__icon"></i>
+                                        <div class="c_content-block__separator"></div>
+                                    </div>
+
+                                    <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                        Bonus activity: card sorting
+                                    </div>
+                                    <div class="c_content-block__body">
+                                        <p>
+                                            Since a review of the app’s homepage and navigation was one of the hot
+                                            topics, we took this opportunity to do a card sorting activity.
+                                        </p>
+                                        <p>
+                                            We brought a deck of cards representing <span
+                                                class="t_body t_body--em--yes">each
+                                                app’s functionality</span> for participants to <span
+                                                class="t_body t_body--em--yes">group into themes</span>. Because of the
+                                            large
+                                            number of cards, an <span class="t_body t_body--em--yes">iterative
+                                                approach</span>
+                                            was adopted: first participants were asked to create 8 groups of cards,
+                                            after that we asked to narrow them down to 5 groups and name each group.
+                                        </p>
+                                        <p>
+                                            This work was used as one of several references for the app’s redesign later
+                                            on.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_user-research" class="col-12 container">
+                <div class="grid row-gap-8">
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">User research</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Gathering data from multiple sources to inform design decisions
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-8 row-md-gap-11 t_body">
+                        <div class="col-12 col-lg-9">
+                            <p>
+                                In order to assess users’ needs, pain points and priorities related to both the app and
+                                the overall shopping experience, we planned <span
+                                    class="t_body t_body--em--yes">different user
+                                    research activities</span>. Focus was narrowed to the <span
+                                    class="t_body t_body--em--yes">existing user base</span> to ensure that any design
+                                evolution
+                                would <span class="t_body t_body--em--yes">strengthen engagement</span> rather than
+                                compromise
+                                it, preventing decisions that might lead users to abandon the app.
+                            </p>
+                            <p>
+                                3 key areas guided the research planning:
+                            <ul>
+                                <li>Despar customers’ <span class="t_body t_body--em--yes">shopping routines;</span>
+                                </li>
+                                <li>their <span class="t_body t_body--em--yes">technological habits</span> and
+                                    proficiency;</li>
+                                <li>the app’s <span class="t_body t_body--em--yes">most used features</span> and user
+                                    <span class="t_body t_body--em--yes">motivations</span>.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <div class="col-12 grid grid-3 col-lg-gap-12 row-gap-9">
+
+                            <div class="col-3 col-lg-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-list-select c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                    Surveys
+                                </div>
+                                <div class="c_content-block__body">
+                                    <p>
+                                        Two different quantitative surveys were carried out in different timeframes.
+                                    </p>
+                                    <p>
+                                        Surveys were an important <span class="t_body t_body--em--yes">quantitative
+                                            indicator</span> that has been <span
+                                            class="t_body t_body--em--yes">accompanied by
+                                            open questions</span> for some qualitative data, gathering any type of
+                                        suggestion or need out of the survey’s track.
+                                    </p>
+                                    <p>
+                                        Surveys were sent to a <span class="t_body t_body--em--yes">selection</span> of
+                                        people
+                                        from the user pool subscribed to Despar’s <span
+                                            class="t_body t_body--em--yes">newsletter</span>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 col-lg-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-group c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                    Interviews
+                                </div>
+                                <div class="c_content-block__body">
+                                    <p>
+                                        7 <span class="t_body t_body--em--yes">semi-structured</span> interviews were
+                                        carried
+                                        out, leaving space for interviewees to express their thoughts freely.
+                                    </p>
+                                    <p>
+                                        Acquiring candidates was done through previously sent surveys. To get as much
+                                        <span class="t_body t_body--em--yes">variety</span> as possible, users of
+                                        different
+                                        social background, gender and shopping habits have been selected.
+                                    </p>
+                                    <p>
+                                        Users were <span class="t_body t_body--em--yes">awarded</span> with a coupon for
+                                        their
+                                        next purchase in Despar’s shops.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 col-lg-1 c_content-block">
+                                <div class="c_content-block__decoration">
+                                    <i class="iconoir-laptop c_content-block__icon"></i>
+                                    <div class="c_content-block__separator"></div>
+                                </div>
+
+                                <div class="c_content-block__head t_title t_title--sz--lg u_text-center">
+                                    Desk research
+                                </div>
+                                <div class="c_content-block__body">
+                                    <p>
+                                        Other elements have been taken into account while performing the research in
+                                        order to achieve a complete perspective, including contextual elements:
+                                    </p>
+                                    <p>
+                                    <ul>
+                                        <li>an in-depth study of the app’s <span
+                                                class="t_body t_body--em--yes">analytics</span>
+                                            provided by third parties</li>
+                                        <li>an examination of the <span class="t_body t_body--em--yes">existing
+                                                app</span> and
+                                            its <span class="t_body t_body--em--yes">historical evolution</span></li>
+                                        <li>a <span class="t_body t_body--em--yes">benchmark</span> of <span
+                                                class="t_body t_body--em--yes">competitors’</span> apps in the mass
+                                            retail
+                                            industry has been performed</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_insights" class="col-12 container">
+                <div class="grid row-gap-9 row-md-gap-12">
+
+                    <div class="col-12 grid row-gap-8">
+                        <div class="col-12 grid row-gap-3 u_text-primary">
+                            <h2 class="col-12 t_headline t_headline--sz--lg">Insights</h2>
+                            <div class="col-12 t_title t_title--sz--xl">
+                                Meaningful discoveries for a better experience
+                            </div>
+                        </div>
+
+                        <div class="col-12 grid row-gap-11 t_body">
+                            <div class="col-12 col-lg-9">
+                                <p>
+                                    A great amount of <span class="t_body t_body--em--yes">insights emerged</span> from
+                                    the user
+                                    research: here you can find <span class="t_body t_body--em--yes">part of
+                                        them</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-11 row-md-gap-14">
+
+                        <div class="col-12 grid grid-4 grid-align-center row-gap-9 col-md-gap-12">
+                            <figure class="col-4 col-lg-1 c_content-figure c_content-figure--ht--fill">
+                                <img src="media/projects/despar/stock_copywriting__compressed.jpg" alt=""
+                                    class="c_content-figure__image c_content-figure__image--ht--fill">
+                                <figcaption class="c_content-figure__caption t_body t_body--sz--sm u_text-neutral">
+                                    Photo by <a
+                                        href="https://unsplash.com/@theconnectednarrative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">The Connected
+                                        Narrative</a> on <a
+                                        href="https://unsplash.com/photos/a-person-working-on-a-laptop-8m9m7TqtBe4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">Unsplash</a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="col-4 col-lg-3 grid row-gap-8">
+                                <div class="col-12 grid row-gap-3 row-md-gap-4">
+                                    <div class="col-12 t_headline u_text-primary">Copy: a matter of words</div>
+                                    <div class="col-12 t_body">Copywriting in the app is not always straightforward.
+                                        Opportunities arise in the context <span
+                                            class="t_body t_body--em--yes">consistency,
+                                            clarity</span> of texts and labels but also deciding to adopt a specific
+                                        <span class="t_body t_body--em--yes">tone of voice.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 grid grid-3 col-md-gap-10">
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                Greater clarity is needed on how to use discounts. [...] The
+                                                explanations
+                                                are ambiguous; I once lost the discount because of this
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                Change the label “Cataloghi speciali” to “Volantini”
+                                            </blockquote>
+                                            <figcaption class="cmp-content-quote-author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                For the prize collection section, it would have been clearer to write
+                                                “prenota e ritira” instead of just “ritira”
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 grid grid-4 grid-align-center row-gap-9 col-md-gap-12">
+                            <div class="col-4 col-lg-3 grid row-gap-8">
+                                <div class="col-12 grid row-gap-3 row-md-gap-4">
+                                    <div class="col-12 t_headline u_text-primary">Navigation: simple, but not ideal
+                                    </div>
+                                    <div class="col-12 t_body">Even though users appreciate the app’s simplicity, often
+                                        the interface is not functional. Some <span
+                                            class="t_body t_body--em--yes">areas</span> are
+                                        <span class="t_body t_body--em--yes">hard to reach</span>; users tend to ignore
+                                        what
+                                        is just
+                                        outside of the viewport or functionalities that are unknown.
+                                    </div>
+                                </div>
+
+                                <div class="col-12 grid grid-3 col-md-gap-10">
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                As far as I’m concerned, there’s too much going on
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                I have nothing to complain about regarding the app… I find it simple,
+                                                with
+                                                its big square buttons
+                                            </blockquote>
+                                            <figcaption class="cmp-content-quote-author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                The home screen should be improved to make it easier to access the
+                                                submenus
+                                                used most frequently
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <figure
+                                class="col-4 col-lg-1 c_content-figure c_content-figure--ht--fill row-start-1 row-end-2 col-lg-start-4 col-lg-end-5">
+                                <img src="media/projects/despar/stock_navigation__compressed.jpg" alt=""
+                                    class="c_content-figure__image c_content-figure__image--ht--fill">
+                                <figcaption class="c_content-figure__caption t_body t_body--sz--sm u_text-neutral">
+                                    Photo by <a
+                                        href="https://unsplash.com/@mariannebos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">marianne bos</a>
+                                    on
+                                    <a href="https://unsplash.com/photos/a-person-working-on-a-laptop-8m9m7TqtBe4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">Unsplash</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-12 grid grid-4 grid-align-center row-gap-9 col-md-gap-12">
+                            <figure class="col-4 col-lg-1 c_content-figure c_content-figure--ht--fill">
+                                <img src="media/projects/despar/stock_games__compressed.jpg" alt=""
+                                    class="c_content-figure__image c_content-figure__image--ht--fill">
+                                <figcaption class="c_content-figure__caption t_body t_body--sz--sm u_text-neutral">
+                                    Photo by <a
+                                        href="https://unsplash.com/@kshar2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">kiryl</a> on <a
+                                        href="https://unsplash.com/photos/a-person-working-on-a-laptop-8m9m7TqtBe4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                                        target="_blank" class="t_body t_body--sz--sm t_body--int--link">Unsplash</a>
+                                </figcaption>
+                            </figure>
+
+                            <div class="col-4 col-lg-3 grid row-gap-8">
+                                <div class="col-12 grid row-gap-3 row-md-gap-4">
+                                    <div class="col-12 t_headline u_text-primary">Games: high engagement, yet low
+                                        satisfaction</div>
+                                    <div class="col-12 t_body">Users really enjoy games embedded into Despar Tribù,
+                                        though they find the current system <span
+                                            class="t_body t_body--em--yes">frustrating</span>:
+                                        winnings are guaranteed just to a small part of the community, as ruled by a
+                                        recent
+                                        ranking system that replaced instant rewards. Also, the only way to get
+                                        expendable
+                                        loyalty points through games <span
+                                            class="t_body t_body--em--yes">excludes</span>
+                                        some
+                                        categories of users.</div>
+                                </div>
+
+                                <div class="col-12 grid grid-3 col-md-gap-10">
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                The number of plays is based on number of purchases, not on total amount
+                                                spent
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                Not everyone likes social games, since they’re the only ones that let
+                                                you
+                                                earn points immediately but require a social media profile
+                                            </blockquote>
+                                            <figcaption class="cmp-content-quote-author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-3 col-md-1 c_content-quote">
+                                        <div class="c_content-quote__marks">“</div>
+                                        <figure class="c_content-quote__body">
+                                            <blockquote class="c_content-quote__text">
+                                                They’re not liked [games] because they don’t let you earn points right
+                                                away
+                                            </blockquote>
+                                            <figcaption class="c_content-quote__author t_body t_body--em--yes">
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_lo-fi-wireframing" class="col-12 container">
+
+                <div class="col-12 grid row-gap-8">
+
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Lo-fi wireframing</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Translating research insights into wireframes
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-9 row-md-gap-11 t_body">
+
+                        <div class="col-12 col-lg-9">
+                            <p>
+                                Having gathered all the relevant data and insights, a lo-fi wireframing phase was
+                                started.
+                            </p>
+                            <p>
+                                Several challenges were tackled:
+                            </p>
+                            <ul>
+                                <li>
+                                    The urge to <span class="t_body t_body--em--yes">align</span> Despar Tribù to
+                                    the
+                                    <span class="t_body t_body--em--yes">industry standard</span> of retail apps
+                                </li>
+                                <li>
+                                    Managing the <span class="t_body t_body--em--yes">wide complexity</span> of
+                                    sections
+                                    and
+                                    functionalities, engaging users to explore
+                                </li>
+                                <li>
+                                    <span class="t_body t_body--em--yes">Renovating</span> navigation <span
+                                        class="t_body t_body--em--yes">without disrupting</span> the user base,
+                                    accustomed to the
+                                    old design
+                                </li>
+                            </ul>
+                        </div>
+
+                        <figure class="col-12 c_content-figure">
+                            <a href="#c_lightbox_despar_wireframes" class="c_content-figure__linkimage">
+                                <img src="media/projects/despar/lightbox_wireframes.png" alt=""
+                                    class="c_content-figure__image c_content-figure__image--ht--max-height c_content-figure__image--vr--lightbox">
+                                <div class="e_fab c_content-figure__fab">
+                                    <i class="iconoir-enlarge e_fab__icon"></i>
+                                </div>
+                            </a>
+                            <figcaption class="t_body t_body--sz--sm u_text-center">
+                                Partial representation of the <span
+                                    class="t_body t_body--sz--sm t_body--em--yes">wireframes</span>.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="c_lightbox_despar_wireframes" class="c_lightbox">
+                <div class="c_lightbox__content">
+                    <div class="c_lightbox__image-container">
+                        <img src="media/projects/despar/lightbox_wireframes.png" alt="" class="c_lightbox__image">
+                    </div>
+                    <a href="#c_lightbox_despar_wireframes" class="e_fab c_lightbox__fab--vr--close">
+                        <i class="iconoir-xmark e_fab__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <section id="section_in-the-meantime" class="col-12 container">
+                <div class="grid row-gap-9 row-lg-gap-8">
+
+                    <div class="col-12 grid row-gap-8">
+                        <div class="col-12 grid row-gap-3 u_text-primary">
+                            <h2 class="col-12 t_headline t_headline--sz--lg">In the meantime...</h2>
+                            <div class="col-12 t_title t_title--sz--xl">
+                                Improving existing sections and building new features
+                            </div>
+                        </div>
+
+                        <div class="col-12 grid row-gap-11 t_body">
+                            <div class="col-12 col-lg-9">
+                                <p>
+                                    While research and design process for the home and navigation were progressing,
+                                    various
+                                    short-term tasks were handled.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid grid-4 row-gap-12">
+
+                        <div class="col-4 col-lg-3">
+                            <figure class="c_content-figure">
+                                <img src="media/projects/despar/screen_various-01__compressed.png" alt=""
+                                    class="c_content-figure__image">
+                                <figcaption class="t_body t_body--sz--sm">
+                                    Old sections that required user experience adjustments and updating to the latest
+                                    design system were worked out.
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-4 col-lg-3 col-lg-start-2 col-lg-end-5">
+                            <figure class="c_content-figure">
+                                <img src="media/projects/despar/screen_various-02__compressed.png" alt=""
+                                    class="c_content-figure__image">
+                                <figcaption class="t_body t_body--sz--sm">
+                                    Extemporaneous items (such as seasonal-themed features) and new functionalities were
+                                    developed.
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="section_next-steps" class="col-12 container">
+                <div class="grid grid-no-gap row-gap-8">
+                    <div class="col-12 grid grid-no-gap row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">Next steps</h2>
+                        <div class="col-12 t_title t_title--sz--xl">
+                            Refinement and validation through testing and iteration
+                        </div>
+                    </div>
+
+                    <div class="col-12 grid row-gap-11 t_body">
+                        <div class="col-12 col-lg-9">
+                            <p>
+                                Next step in the designing journey included <span class="t_body t_body--em--yes">user
+                                    testing</span> of our lo-fi wireframes, <span
+                                    class="t_body t_body--em--yes">iterate</span>
+                                the design and testing process in light of user feedback and finally proceed to design
+                                the <span class="t_body t_body--em--yes">high fidelity</span> version before handing
+                                over to
+                                developers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_what-i-learnt" class="col-12 container">
+                <div class="grid row-gap-5 row-md-gap-7">
+                    <div class="col-12 grid row-gap-3 u_text-primary">
+                        <h2 class="col-12 t_headline t_headline--sz--lg">What I learnt</h2>
+                    </div>
+
+                    <div class="col-12 grid row-gap-11 t_body">
+                        <div class="col-12 col-lg-9">
+                            <p>
+                                My <span class="t_body t_body--em--yes">proactivity</span> was what propelled initiative
+                                in this project, proposing activities to <span class="t_body t_body--em--yes">plan an
+                                    evolution</span> of the app rather than risking its stagnation. I learnt the
+                                importance of an enterprising spirit, how to draft important <span
+                                    class="t_body t_body--em--yes">business documents</span> (benchmarks, research
+                                results) in a <span class="t_body t_body--em--yes">communicative</span> way, <span
+                                    class="t_body t_body--em--yes">managing</span> effectively <span
+                                    class="t_body t_body--em--yes">concurrent tasks</span> that influence both <span
+                                    class="t_body t_body--em--yes">day-to-day</span> problems and <span
+                                    class="t_body t_body--em--yes">long term</span> advancement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="u_text-light c_footer">
+            <div class="container grid grid-gap row-gap-9 row-md-gap-7">
+                <div class="col-12">
+                    <a href="index.html" class="c_footer__logo">
+                        <img src="media/logo/logo_mp.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 c_footer__grid">
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">marcopasquato.com</div>
+                        <div class="c_footer__body">
+                            <a href="index.html#my-work" class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My work</div>
+                                <i></i>
+                            </a>
+                            <a href="index.html#about-me"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">About me</div>
+                                <i></i>
+                            </a>
+                            <a href="index.html#contacts"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Contacts</div>
+                                <i></i>
+                            </a>
+                            <a href="terms-and-conditions.html"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Terms and conditions</div>
+                                <i></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">Contacts</div>
+                        <div class="c_footer__body">
+                            <a href="https://www.linkedin.com/in/marco-pasquato/" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My LinkedIn</div>
+                                <i class="iconoir-linkedin t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="mailto:marcopasquato2@gmail.com" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">My Email</div>
+                                <i class="iconoir-mail t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head">Fonts and assets used</div>
+                        <div class="c_footer__body">
+                            <a href="https://fonts.google.com/specimen/DM+Serif+Display" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">DM Serif Display</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://fonts.google.com/specimen/DM+Serif+Text" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">DM Serif Text</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://fonts.google.com/specimen/Funnel+Sans" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Funnel Sans</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                            <a href="https://iconoir.com/" target="_blank"
+                                class="e_link-text t_label t_label--sz--lg t_label--int--link">
+                                <div class="e_link-text__label">Iconoir</div>
+                                <i class="iconoir-arrow-up-right t_label t_label--sz--lg t_label--int--link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c_footer__content">
+                        <div class="c_footer__head"></div>
+                        <div class="c_footer__body">
+                            <div>
+                                No cookies used in this website.
+                            </div>
+                            <div>
+                                Copyright © 2026-2026, marcopasquato.com <br>All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

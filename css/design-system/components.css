@@ -154,6 +154,10 @@
     @media screen and (min-width: 1400px) {}
 }
 
+.c_project-hero__bg--bg--informa {
+    background-color: #8892E2;
+}
+
 .c_project-hero__bg--bg--despar {
     background-color: #B6E8BA;
 }
@@ -556,6 +560,23 @@
     flex-grow: 1;
     border-radius: var(--sz-7);
     object-fit: cover;
+    max-height: 250px;
+
+    @media screen and (min-width: 576px) {
+    }
+
+    @media screen and (min-width: 768px) {
+        max-height: initial;
+    }
+
+    @media screen and (min-width: 992px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+
+    @media screen and (min-width: 1400px) {
+    }
 }
 
 
