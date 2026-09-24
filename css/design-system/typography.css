@@ -390,3 +390,7 @@ li {
 p {
     margin-bottom: var(--sz-4, 12px);
 }
+
+p:last-of-type {
+    margin-bottom: 0;
+}
