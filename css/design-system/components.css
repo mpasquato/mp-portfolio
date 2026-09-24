@@ -623,6 +623,10 @@
     }
 }
 
+.c_process__content--var--not-scrollable {
+    overflow-x: none;
+}
+
 .c_process__content::-webkit-scrollbar {
     /* Hides scrollbar in Chrome/Safari */
     display: none;
