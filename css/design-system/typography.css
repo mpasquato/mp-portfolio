@@ -236,6 +236,12 @@ body {
     line-height: var(--lh-xl, 34px);
 }
 
+.t_title--sz--2xl {
+    font-weight: 800;
+    font-size: var(--fs-xl, 26px);
+    line-height: var(--lh-xl, 34px);
+}
+
 .t_title--em--yes {
     text-decoration-line: underline;
     text-decoration-style: solid;
