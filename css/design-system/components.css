@@ -1015,6 +1015,10 @@
     border-radius: 0;
 }
 
+.c_content-figure__image--rd--3 {
+    border-radius: var(--sz-3);
+}
+
 /* .cmp-content-figure-image__lightbox, */
 .c_content-figure__image--vr--lightbox {
     /* border-radius: 0; */
